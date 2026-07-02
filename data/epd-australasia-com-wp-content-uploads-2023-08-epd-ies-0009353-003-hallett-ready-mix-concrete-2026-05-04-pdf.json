@@ -1,0 +1,2396 @@
+{
+  "schema_version": "1.0",
+  "epd": {
+    "id": "EPD-IES-0009353:003",
+    "source_pdf": "epd-australasia-com-wp-content-uploads-2023-08-epd-ies-0009353-003-hallett-ready-mix-concrete-2026-05-04-pdf.pdf",
+    "pages": 37,
+    "program_operator": "EPD International AB (The International EPD System); licensee EPD Australasia",
+    "pcr": "PCR 2019:14 Construction products, version applied per EPD International (2021); Thinkstep-anz",
+    "reference_standard": "ISO 14025:2006 and EN 15804:2012+A2:2019/AC:2021",
+    "en15804_version": "A2",
+    "characterisation": "EN 15804+A2 (core indicators); additional GWP-GHG uses IPCC AR5",
+    "published": "2026-05-04",
+    "valid_until": "2028-07-31",
+    "provenance": {
+      "program_operator": null,
+      "pcr": {
+        "page": 8,
+        "snippet": "PCR (EPD International, 2021). Thinkstep-anz"
+      },
+      "published": null,
+      "valid_until": {
+        "page": 36,
+        "snippet": "valid until 2024-12-20"
+      }
+    }
+  },
+  "products": [
+    {
+      "name": "N2020P Ref",
+      "manufacturer": "Hallett Group",
+      "concrete_type": "Ready-mix concrete",
+      "compressive_strength": {
+        "value_mpa": 20,
+        "class": "N20",
+        "raw": "20",
+        "status": "found",
+        "provenance": {
+          "page": 5,
+          "snippet": "Table 1. Concrete mix names, grades and Enviro Construct ... N2020P ... Grade (MPa) 20"
+        }
+      },
+      "enviro_construct_level": null,
+      "manufacturing_location": {
+        "site": "Dry Creek batch plant",
+        "city": "Dry Creek",
+        "region": "South Australia",
+        "country": "AU",
+        "raw": "Dry Creek | 140 Churchill Road North, Dry Creek",
+        "provenance": {
+          "page": 5,
+          "snippet": "Dry Creek | 140 Churchill Road North, Dry Creek"
+        }
+      },
+      "declared_unit": {
+        "unit": "m3",
+        "description": "1 m3 of Ready Mix concrete at the batching plant gate which is purchased by the customer and is paid for",
+        "provenance": {
+          "page": 10,
+          "snippet": "declared unit: 1 m3 of Ready Mix concrete at the batching plant gate which is"
+        }
+      },
+      "indicators": {
+        "GWP_total": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 275.0,
+              "raw": "275",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 13)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq",
+                "plant": "Dry Creek batch plant",
+                "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            }
+          }
+        },
+        "GWP_fossil": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 272.0,
+              "raw": "272",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 13)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq",
+                "plant": "Dry Creek batch plant",
+                "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            }
+          }
+        },
+        "GWP_biogenic": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 3.0,
+              "raw": "3.00",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 13)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq",
+                "plant": "Dry Creek batch plant",
+                "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "N2020P F30",
+      "manufacturer": "Hallett Group",
+      "concrete_type": "Ready-mix concrete",
+      "compressive_strength": {
+        "value_mpa": 20,
+        "class": "N20",
+        "raw": "20",
+        "status": "found",
+        "provenance": {
+          "page": 5,
+          "snippet": "Table 1. Concrete mix names, grades and Enviro Construct ... N2020P ... Grade (MPa) 20"
+        }
+      },
+      "enviro_construct_level": "Level 1",
+      "manufacturing_location": {
+        "site": "Dry Creek batch plant",
+        "city": "Dry Creek",
+        "region": "South Australia",
+        "country": "AU",
+        "raw": "Dry Creek | 140 Churchill Road North, Dry Creek",
+        "provenance": {
+          "page": 5,
+          "snippet": "Dry Creek | 140 Churchill Road North, Dry Creek"
+        }
+      },
+      "declared_unit": {
+        "unit": "m3",
+        "description": "1 m3 of Ready Mix concrete at the batching plant gate which is purchased by the customer and is paid for",
+        "provenance": {
+          "page": 10,
+          "snippet": "declared unit: 1 m3 of Ready Mix concrete at the batching plant gate which is"
+        }
+      },
+      "indicators": {
+        "GWP_total": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 203.0,
+              "raw": "203",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 13)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq",
+                "plant": "Dry Creek batch plant",
+                "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            }
+          }
+        },
+        "GWP_fossil": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 201.0,
+              "raw": "201",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 13)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq",
+                "plant": "Dry Creek batch plant",
+                "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            }
+          }
+        },
+        "GWP_biogenic": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 2.52,
+              "raw": "2.52",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 13)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq",
+                "plant": "Dry Creek batch plant",
+                "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "N2020P S30",
+      "manufacturer": "Hallett Group",
+      "concrete_type": "Ready-mix concrete",
+      "compressive_strength": {
+        "value_mpa": 20,
+        "class": "N20",
+        "raw": "20",
+        "status": "found",
+        "provenance": {
+          "page": 5,
+          "snippet": "Table 1. Concrete mix names, grades and Enviro Construct ... N2020P ... Grade (MPa) 20"
+        }
+      },
+      "enviro_construct_level": "Level 1",
+      "manufacturing_location": {
+        "site": "Dry Creek batch plant",
+        "city": "Dry Creek",
+        "region": "South Australia",
+        "country": "AU",
+        "raw": "Dry Creek | 140 Churchill Road North, Dry Creek",
+        "provenance": {
+          "page": 5,
+          "snippet": "Dry Creek | 140 Churchill Road North, Dry Creek"
+        }
+      },
+      "declared_unit": {
+        "unit": "m3",
+        "description": "1 m3 of Ready Mix concrete at the batching plant gate which is purchased by the customer and is paid for",
+        "provenance": {
+          "page": 10,
+          "snippet": "declared unit: 1 m3 of Ready Mix concrete at the batching plant gate which is"
+        }
+      },
+      "indicators": {
+        "GWP_total": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 206.0,
+              "raw": "206",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 13)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq",
+                "plant": "Dry Creek batch plant",
+                "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            }
+          }
+        },
+        "GWP_fossil": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 203.0,
+              "raw": "203",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 13)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq",
+                "plant": "Dry Creek batch plant",
+                "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            }
+          }
+        },
+        "GWP_biogenic": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 2.51,
+              "raw": "2.51",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 13)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq",
+                "plant": "Dry Creek batch plant",
+                "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "N2020P S50",
+      "manufacturer": "Hallett Group",
+      "concrete_type": "Ready-mix concrete",
+      "compressive_strength": {
+        "value_mpa": 20,
+        "class": "N20",
+        "raw": "20",
+        "status": "found",
+        "provenance": {
+          "page": 5,
+          "snippet": "Table 1. Concrete mix names, grades and Enviro Construct ... N2020P ... Grade (MPa) 20"
+        }
+      },
+      "enviro_construct_level": "Level 2",
+      "manufacturing_location": {
+        "site": "Dry Creek batch plant",
+        "city": "Dry Creek",
+        "region": "South Australia",
+        "country": "AU",
+        "raw": "Dry Creek | 140 Churchill Road North, Dry Creek",
+        "provenance": {
+          "page": 5,
+          "snippet": "Dry Creek | 140 Churchill Road North, Dry Creek"
+        }
+      },
+      "declared_unit": {
+        "unit": "m3",
+        "description": "1 m3 of Ready Mix concrete at the batching plant gate which is purchased by the customer and is paid for",
+        "provenance": {
+          "page": 10,
+          "snippet": "declared unit: 1 m3 of Ready Mix concrete at the batching plant gate which is"
+        }
+      },
+      "indicators": {
+        "GWP_total": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 162.0,
+              "raw": "162",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 13)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq",
+                "plant": "Dry Creek batch plant",
+                "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            }
+          }
+        },
+        "GWP_fossil": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 159.0,
+              "raw": "159",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 13)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq",
+                "plant": "Dry Creek batch plant",
+                "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            }
+          }
+        },
+        "GWP_biogenic": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 2.18,
+              "raw": "2.18",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 13)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq",
+                "plant": "Dry Creek batch plant",
+                "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "N2520P Ref",
+      "manufacturer": "Hallett Group",
+      "concrete_type": "Ready-mix concrete",
+      "compressive_strength": {
+        "value_mpa": 25,
+        "class": "N25",
+        "raw": "25",
+        "status": "found",
+        "provenance": {
+          "page": 5,
+          "snippet": "Table 1. Concrete mix names, grades and Enviro Construct ... N2520P ... Grade (MPa) 25"
+        }
+      },
+      "enviro_construct_level": null,
+      "manufacturing_location": {
+        "site": "Dry Creek batch plant",
+        "city": "Dry Creek",
+        "region": "South Australia",
+        "country": "AU",
+        "raw": "Dry Creek | 140 Churchill Road North, Dry Creek",
+        "provenance": {
+          "page": 5,
+          "snippet": "Dry Creek | 140 Churchill Road North, Dry Creek"
+        }
+      },
+      "declared_unit": {
+        "unit": "m3",
+        "description": "1 m3 of Ready Mix concrete at the batching plant gate which is purchased by the customer and is paid for",
+        "provenance": {
+          "page": 10,
+          "snippet": "declared unit: 1 m3 of Ready Mix concrete at the batching plant gate which is"
+        }
+      },
+      "indicators": {
+        "GWP_total": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 301.0,
+              "raw": "301",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 13)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq",
+                "plant": "Dry Creek batch plant",
+                "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            }
+          }
+        },
+        "GWP_fossil": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 298.0,
+              "raw": "298",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 13)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq",
+                "plant": "Dry Creek batch plant",
+                "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            }
+          }
+        },
+        "GWP_biogenic": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 3.19,
+              "raw": "3.19",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 13)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq",
+                "plant": "Dry Creek batch plant",
+                "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "N2520P F30",
+      "manufacturer": "Hallett Group",
+      "concrete_type": "Ready-mix concrete",
+      "compressive_strength": {
+        "value_mpa": 25,
+        "class": "N25",
+        "raw": "25",
+        "status": "found",
+        "provenance": {
+          "page": 5,
+          "snippet": "Table 1. Concrete mix names, grades and Enviro Construct ... N2520P ... Grade (MPa) 25"
+        }
+      },
+      "enviro_construct_level": "Level 1",
+      "manufacturing_location": {
+        "site": "Dry Creek batch plant",
+        "city": "Dry Creek",
+        "region": "South Australia",
+        "country": "AU",
+        "raw": "Dry Creek | 140 Churchill Road North, Dry Creek",
+        "provenance": {
+          "page": 5,
+          "snippet": "Dry Creek | 140 Churchill Road North, Dry Creek"
+        }
+      },
+      "declared_unit": {
+        "unit": "m3",
+        "description": "1 m3 of Ready Mix concrete at the batching plant gate which is purchased by the customer and is paid for",
+        "provenance": {
+          "page": 10,
+          "snippet": "declared unit: 1 m3 of Ready Mix concrete at the batching plant gate which is"
+        }
+      },
+      "indicators": {
+        "GWP_total": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 221.0,
+              "raw": "221",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 13)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq",
+                "plant": "Dry Creek batch plant",
+                "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            }
+          }
+        },
+        "GWP_fossil": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 219.0,
+              "raw": "219",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 13)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq",
+                "plant": "Dry Creek batch plant",
+                "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            }
+          }
+        },
+        "GWP_biogenic": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 2.65,
+              "raw": "2.65",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 13)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq",
+                "plant": "Dry Creek batch plant",
+                "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "N2520P S30",
+      "manufacturer": "Hallett Group",
+      "concrete_type": "Ready-mix concrete",
+      "compressive_strength": {
+        "value_mpa": 25,
+        "class": "N25",
+        "raw": "25",
+        "status": "found",
+        "provenance": {
+          "page": 5,
+          "snippet": "Table 1. Concrete mix names, grades and Enviro Construct ... N2520P ... Grade (MPa) 25"
+        }
+      },
+      "enviro_construct_level": "Level 1",
+      "manufacturing_location": {
+        "site": "Dry Creek batch plant",
+        "city": "Dry Creek",
+        "region": "South Australia",
+        "country": "AU",
+        "raw": "Dry Creek | 140 Churchill Road North, Dry Creek",
+        "provenance": {
+          "page": 5,
+          "snippet": "Dry Creek | 140 Churchill Road North, Dry Creek"
+        }
+      },
+      "declared_unit": {
+        "unit": "m3",
+        "description": "1 m3 of Ready Mix concrete at the batching plant gate which is purchased by the customer and is paid for",
+        "provenance": {
+          "page": 10,
+          "snippet": "declared unit: 1 m3 of Ready Mix concrete at the batching plant gate which is"
+        }
+      },
+      "indicators": {
+        "GWP_total": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 225.0,
+              "raw": "225",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 13)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq",
+                "plant": "Dry Creek batch plant",
+                "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            }
+          }
+        },
+        "GWP_fossil": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 222.0,
+              "raw": "222",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 13)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq",
+                "plant": "Dry Creek batch plant",
+                "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            }
+          }
+        },
+        "GWP_biogenic": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 2.64,
+              "raw": "2.64",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 13)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq",
+                "plant": "Dry Creek batch plant",
+                "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "N2520P T50",
+      "manufacturer": "Hallett Group",
+      "concrete_type": "Ready-mix concrete",
+      "compressive_strength": {
+        "value_mpa": 25,
+        "class": "N25",
+        "raw": "25",
+        "status": "found",
+        "provenance": {
+          "page": 5,
+          "snippet": "Table 1. Concrete mix names, grades and Enviro Construct ... N2520P ... Grade (MPa) 25"
+        }
+      },
+      "enviro_construct_level": "Level 3",
+      "manufacturing_location": {
+        "site": "Dry Creek batch plant",
+        "city": "Dry Creek",
+        "region": "South Australia",
+        "country": "AU",
+        "raw": "Dry Creek | 140 Churchill Road North, Dry Creek",
+        "provenance": {
+          "page": 5,
+          "snippet": "Dry Creek | 140 Churchill Road North, Dry Creek"
+        }
+      },
+      "declared_unit": {
+        "unit": "m3",
+        "description": "1 m3 of Ready Mix concrete at the batching plant gate which is purchased by the customer and is paid for",
+        "provenance": {
+          "page": 10,
+          "snippet": "declared unit: 1 m3 of Ready Mix concrete at the batching plant gate which is"
+        }
+      },
+      "indicators": {
+        "GWP_total": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 171.0,
+              "raw": "171",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 13)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq",
+                "plant": "Dry Creek batch plant",
+                "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            }
+          }
+        },
+        "GWP_fossil": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 168.0,
+              "raw": "168",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 13)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq",
+                "plant": "Dry Creek batch plant",
+                "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            }
+          }
+        },
+        "GWP_biogenic": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 2.28,
+              "raw": "2.28",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 13)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq",
+                "plant": "Dry Creek batch plant",
+                "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "N2520P S50",
+      "manufacturer": "Hallett Group",
+      "concrete_type": "Ready-mix concrete",
+      "compressive_strength": {
+        "value_mpa": 25,
+        "class": "N25",
+        "raw": "25",
+        "status": "found",
+        "provenance": {
+          "page": 5,
+          "snippet": "Table 1. Concrete mix names, grades and Enviro Construct ... N2520P ... Grade (MPa) 25"
+        }
+      },
+      "enviro_construct_level": "Level 2",
+      "manufacturing_location": {
+        "site": "Dry Creek batch plant",
+        "city": "Dry Creek",
+        "region": "South Australia",
+        "country": "AU",
+        "raw": "Dry Creek | 140 Churchill Road North, Dry Creek",
+        "provenance": {
+          "page": 5,
+          "snippet": "Dry Creek | 140 Churchill Road North, Dry Creek"
+        }
+      },
+      "declared_unit": {
+        "unit": "m3",
+        "description": "1 m3 of Ready Mix concrete at the batching plant gate which is purchased by the customer and is paid for",
+        "provenance": {
+          "page": 10,
+          "snippet": "declared unit: 1 m3 of Ready Mix concrete at the batching plant gate which is"
+        }
+      },
+      "indicators": {
+        "GWP_total": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 176.0,
+              "raw": "176",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 13)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq",
+                "plant": "Dry Creek batch plant",
+                "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            }
+          }
+        },
+        "GWP_fossil": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 173.0,
+              "raw": "173",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 13)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq",
+                "plant": "Dry Creek batch plant",
+                "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            }
+          }
+        },
+        "GWP_biogenic": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 2.27,
+              "raw": "2.27",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 13)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq",
+                "plant": "Dry Creek batch plant",
+                "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "N3220P Ref",
+      "manufacturer": "Hallett Group",
+      "concrete_type": "Ready-mix concrete",
+      "compressive_strength": {
+        "value_mpa": 32,
+        "class": "N32",
+        "raw": "32",
+        "status": "found",
+        "provenance": {
+          "page": 5,
+          "snippet": "Table 1. Concrete mix names, grades and Enviro Construct ... N3220P ... Grade (MPa) 32"
+        }
+      },
+      "enviro_construct_level": null,
+      "manufacturing_location": {
+        "site": "Dry Creek batch plant",
+        "city": "Dry Creek",
+        "region": "South Australia",
+        "country": "AU",
+        "raw": "Dry Creek | 140 Churchill Road North, Dry Creek",
+        "provenance": {
+          "page": 5,
+          "snippet": "Dry Creek | 140 Churchill Road North, Dry Creek"
+        }
+      },
+      "declared_unit": {
+        "unit": "m3",
+        "description": "1 m3 of Ready Mix concrete at the batching plant gate which is purchased by the customer and is paid for",
+        "provenance": {
+          "page": 10,
+          "snippet": "declared unit: 1 m3 of Ready Mix concrete at the batching plant gate which is"
+        }
+      },
+      "indicators": {
+        "GWP_total": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 344.0,
+              "raw": "344",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 13)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq",
+                "plant": "Dry Creek batch plant",
+                "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            }
+          }
+        },
+        "GWP_fossil": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 340.0,
+              "raw": "340",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 13)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq",
+                "plant": "Dry Creek batch plant",
+                "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            }
+          }
+        },
+        "GWP_biogenic": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 3.51,
+              "raw": "3.51",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 13)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq",
+                "plant": "Dry Creek batch plant",
+                "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "N3220P F30",
+      "manufacturer": "Hallett Group",
+      "concrete_type": "Ready-mix concrete",
+      "compressive_strength": {
+        "value_mpa": 32,
+        "class": "N32",
+        "raw": "32",
+        "status": "found",
+        "provenance": {
+          "page": 5,
+          "snippet": "Table 1. Concrete mix names, grades and Enviro Construct ... N3220P ... Grade (MPa) 32"
+        }
+      },
+      "enviro_construct_level": "Level 1",
+      "manufacturing_location": {
+        "site": "Dry Creek batch plant",
+        "city": "Dry Creek",
+        "region": "South Australia",
+        "country": "AU",
+        "raw": "Dry Creek | 140 Churchill Road North, Dry Creek",
+        "provenance": {
+          "page": 5,
+          "snippet": "Dry Creek | 140 Churchill Road North, Dry Creek"
+        }
+      },
+      "declared_unit": {
+        "unit": "m3",
+        "description": "1 m3 of Ready Mix concrete at the batching plant gate which is purchased by the customer and is paid for",
+        "provenance": {
+          "page": 10,
+          "snippet": "declared unit: 1 m3 of Ready Mix concrete at the batching plant gate which is"
+        }
+      },
+      "indicators": {
+        "GWP_total": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 251.0,
+              "raw": "251",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 13)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq",
+                "plant": "Dry Creek batch plant",
+                "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            }
+          }
+        },
+        "GWP_fossil": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 248.0,
+              "raw": "248",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 13)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq",
+                "plant": "Dry Creek batch plant",
+                "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            }
+          }
+        },
+        "GWP_biogenic": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 2.89,
+              "raw": "2.89",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 13)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq",
+                "plant": "Dry Creek batch plant",
+                "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "N3220P S30",
+      "manufacturer": "Hallett Group",
+      "concrete_type": "Ready-mix concrete",
+      "compressive_strength": {
+        "value_mpa": 32,
+        "class": "N32",
+        "raw": "32",
+        "status": "found",
+        "provenance": {
+          "page": 5,
+          "snippet": "Table 1. Concrete mix names, grades and Enviro Construct ... N3220P ... Grade (MPa) 32"
+        }
+      },
+      "enviro_construct_level": "Level 1",
+      "manufacturing_location": {
+        "site": "Dry Creek batch plant",
+        "city": "Dry Creek",
+        "region": "South Australia",
+        "country": "AU",
+        "raw": "Dry Creek | 140 Churchill Road North, Dry Creek",
+        "provenance": {
+          "page": 5,
+          "snippet": "Dry Creek | 140 Churchill Road North, Dry Creek"
+        }
+      },
+      "declared_unit": {
+        "unit": "m3",
+        "description": "1 m3 of Ready Mix concrete at the batching plant gate which is purchased by the customer and is paid for",
+        "provenance": {
+          "page": 10,
+          "snippet": "declared unit: 1 m3 of Ready Mix concrete at the batching plant gate which is"
+        }
+      },
+      "indicators": {
+        "GWP_total": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 255.0,
+              "raw": "255",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 13)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq",
+                "plant": "Dry Creek batch plant",
+                "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            }
+          }
+        },
+        "GWP_fossil": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 253.0,
+              "raw": "253",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 13)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq",
+                "plant": "Dry Creek batch plant",
+                "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            }
+          }
+        },
+        "GWP_biogenic": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 2.88,
+              "raw": "2.88",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 13)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq",
+                "plant": "Dry Creek batch plant",
+                "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "N3220P T50",
+      "manufacturer": "Hallett Group",
+      "concrete_type": "Ready-mix concrete",
+      "compressive_strength": {
+        "value_mpa": 32,
+        "class": "N32",
+        "raw": "32",
+        "status": "found",
+        "provenance": {
+          "page": 5,
+          "snippet": "Table 1. Concrete mix names, grades and Enviro Construct ... N3220P ... Grade (MPa) 32"
+        }
+      },
+      "enviro_construct_level": "Level 3",
+      "manufacturing_location": {
+        "site": "Dry Creek batch plant",
+        "city": "Dry Creek",
+        "region": "South Australia",
+        "country": "AU",
+        "raw": "Dry Creek | 140 Churchill Road North, Dry Creek",
+        "provenance": {
+          "page": 5,
+          "snippet": "Dry Creek | 140 Churchill Road North, Dry Creek"
+        }
+      },
+      "declared_unit": {
+        "unit": "m3",
+        "description": "1 m3 of Ready Mix concrete at the batching plant gate which is purchased by the customer and is paid for",
+        "provenance": {
+          "page": 10,
+          "snippet": "declared unit: 1 m3 of Ready Mix concrete at the batching plant gate which is"
+        }
+      },
+      "indicators": {
+        "GWP_total": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 192.0,
+              "raw": "192",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 13)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq",
+                "plant": "Dry Creek batch plant",
+                "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            }
+          }
+        },
+        "GWP_fossil": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 190.0,
+              "raw": "190",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 13)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq",
+                "plant": "Dry Creek batch plant",
+                "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            }
+          }
+        },
+        "GWP_biogenic": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 2.47,
+              "raw": "2.47",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 13)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq",
+                "plant": "Dry Creek batch plant",
+                "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "N3220P S50",
+      "manufacturer": "Hallett Group",
+      "concrete_type": "Ready-mix concrete",
+      "compressive_strength": {
+        "value_mpa": 32,
+        "class": "N32",
+        "raw": "32",
+        "status": "found",
+        "provenance": {
+          "page": 5,
+          "snippet": "Table 1. Concrete mix names, grades and Enviro Construct ... N3220P ... Grade (MPa) 32"
+        }
+      },
+      "enviro_construct_level": "Level 3",
+      "manufacturing_location": {
+        "site": "Dry Creek batch plant",
+        "city": "Dry Creek",
+        "region": "South Australia",
+        "country": "AU",
+        "raw": "Dry Creek | 140 Churchill Road North, Dry Creek",
+        "provenance": {
+          "page": 5,
+          "snippet": "Dry Creek | 140 Churchill Road North, Dry Creek"
+        }
+      },
+      "declared_unit": {
+        "unit": "m3",
+        "description": "1 m3 of Ready Mix concrete at the batching plant gate which is purchased by the customer and is paid for",
+        "provenance": {
+          "page": 10,
+          "snippet": "declared unit: 1 m3 of Ready Mix concrete at the batching plant gate which is"
+        }
+      },
+      "indicators": {
+        "GWP_total": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 198.0,
+              "raw": "198",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 13)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq",
+                "plant": "Dry Creek batch plant",
+                "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            },
+            "C1": {
+              "value": 14.8,
+              "raw": "14.8",
+              "status": "declared",
+              "provenance": {
+                "page": 35,
+                "section": "RESULTS | C1-C4 + D | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 43)",
+                "module": "C1",
+                "unit_raw": "kg CO2-eq",
+                "representative_mix": "N3220P S50 - representative for average density (2 332 kg/m3)",
+                "snippet": "Table 43. Module C1-C4 + D Core environmental impact indicator results for 1 m3 of product"
+              }
+            },
+            "C2": {
+              "value": 5.96,
+              "raw": "5.96",
+              "status": "declared",
+              "provenance": {
+                "page": 35,
+                "section": "RESULTS | C1-C4 + D | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 43)",
+                "module": "C2",
+                "unit_raw": "kg CO2-eq",
+                "representative_mix": "N3220P S50 - representative for average density (2 332 kg/m3)",
+                "snippet": "Table 43. Module C1-C4 + D Core environmental impact indicator results for 1 m3 of product"
+              }
+            },
+            "C3": {
+              "value": 5.02,
+              "raw": "5.02",
+              "status": "declared",
+              "provenance": {
+                "page": 35,
+                "section": "RESULTS | C1-C4 + D | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 43)",
+                "module": "C3",
+                "unit_raw": "kg CO2-eq",
+                "representative_mix": "N3220P S50 - representative for average density (2 332 kg/m3)",
+                "snippet": "Table 43. Module C1-C4 + D Core environmental impact indicator results for 1 m3 of product"
+              }
+            },
+            "C4": {
+              "value": 8.45,
+              "raw": "8.45",
+              "status": "declared",
+              "provenance": {
+                "page": 35,
+                "section": "RESULTS | C1-C4 + D | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 43)",
+                "module": "C4",
+                "unit_raw": "kg CO2-eq",
+                "representative_mix": "N3220P S50 - representative for average density (2 332 kg/m3)",
+                "snippet": "Table 43. Module C1-C4 + D Core environmental impact indicator results for 1 m3 of product"
+              }
+            },
+            "D": {
+              "value": -11.6,
+              "raw": "-11.6",
+              "status": "declared",
+              "provenance": {
+                "page": 35,
+                "section": "RESULTS | C1-C4 + D | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 43)",
+                "module": "D",
+                "unit_raw": "kg CO2-eq",
+                "representative_mix": "N3220P S50 - representative for average density (2 332 kg/m3)",
+                "snippet": "Table 43. Module C1-C4 + D Core environmental impact indicator results for 1 m3 of product"
+              }
+            }
+          }
+        },
+        "GWP_fossil": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 196.0,
+              "raw": "196",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 13)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq",
+                "plant": "Dry Creek batch plant",
+                "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            }
+          }
+        },
+        "GWP_biogenic": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 2.45,
+              "raw": "2.45",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 13)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq",
+                "plant": "Dry Creek batch plant",
+                "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "N4020P Ref",
+      "manufacturer": "Hallett Group",
+      "concrete_type": "Ready-mix concrete",
+      "compressive_strength": {
+        "value_mpa": 40,
+        "class": "N40",
+        "raw": "40",
+        "status": "found",
+        "provenance": {
+          "page": 5,
+          "snippet": "Table 1. Concrete mix names, grades and Enviro Construct ... N4020P ... Grade (MPa) 40"
+        }
+      },
+      "enviro_construct_level": null,
+      "manufacturing_location": {
+        "site": "Dry Creek batch plant",
+        "city": "Dry Creek",
+        "region": "South Australia",
+        "country": "AU",
+        "raw": "Dry Creek | 140 Churchill Road North, Dry Creek",
+        "provenance": {
+          "page": 5,
+          "snippet": "Dry Creek | 140 Churchill Road North, Dry Creek"
+        }
+      },
+      "declared_unit": {
+        "unit": "m3",
+        "description": "1 m3 of Ready Mix concrete at the batching plant gate which is purchased by the customer and is paid for",
+        "provenance": {
+          "page": 10,
+          "snippet": "declared unit: 1 m3 of Ready Mix concrete at the batching plant gate which is"
+        }
+      },
+      "indicators": {
+        "GWP_total": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 412.0,
+              "raw": "412",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 13)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq",
+                "plant": "Dry Creek batch plant",
+                "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            }
+          }
+        },
+        "GWP_fossil": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 408.0,
+              "raw": "408",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 13)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq",
+                "plant": "Dry Creek batch plant",
+                "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            }
+          }
+        },
+        "GWP_biogenic": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 4.0,
+              "raw": "4.00",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 13)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq",
+                "plant": "Dry Creek batch plant",
+                "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "N4020P F30",
+      "manufacturer": "Hallett Group",
+      "concrete_type": "Ready-mix concrete",
+      "compressive_strength": {
+        "value_mpa": 40,
+        "class": "N40",
+        "raw": "40",
+        "status": "found",
+        "provenance": {
+          "page": 5,
+          "snippet": "Table 1. Concrete mix names, grades and Enviro Construct ... N4020P ... Grade (MPa) 40"
+        }
+      },
+      "enviro_construct_level": "Level 1",
+      "manufacturing_location": {
+        "site": "Dry Creek batch plant",
+        "city": "Dry Creek",
+        "region": "South Australia",
+        "country": "AU",
+        "raw": "Dry Creek | 140 Churchill Road North, Dry Creek",
+        "provenance": {
+          "page": 5,
+          "snippet": "Dry Creek | 140 Churchill Road North, Dry Creek"
+        }
+      },
+      "declared_unit": {
+        "unit": "m3",
+        "description": "1 m3 of Ready Mix concrete at the batching plant gate which is purchased by the customer and is paid for",
+        "provenance": {
+          "page": 10,
+          "snippet": "declared unit: 1 m3 of Ready Mix concrete at the batching plant gate which is"
+        }
+      },
+      "indicators": {
+        "GWP_total": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 299.0,
+              "raw": "299",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 13)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq",
+                "plant": "Dry Creek batch plant",
+                "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            }
+          }
+        },
+        "GWP_fossil": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 296.0,
+              "raw": "296",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 13)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq",
+                "plant": "Dry Creek batch plant",
+                "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            }
+          }
+        },
+        "GWP_biogenic": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 3.25,
+              "raw": "3.25",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 13)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq",
+                "plant": "Dry Creek batch plant",
+                "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "N4020P S30",
+      "manufacturer": "Hallett Group",
+      "concrete_type": "Ready-mix concrete",
+      "compressive_strength": {
+        "value_mpa": 40,
+        "class": "N40",
+        "raw": "40",
+        "status": "found",
+        "provenance": {
+          "page": 5,
+          "snippet": "Table 1. Concrete mix names, grades and Enviro Construct ... N4020P ... Grade (MPa) 40"
+        }
+      },
+      "enviro_construct_level": "Level 1",
+      "manufacturing_location": {
+        "site": "Dry Creek batch plant",
+        "city": "Dry Creek",
+        "region": "South Australia",
+        "country": "AU",
+        "raw": "Dry Creek | 140 Churchill Road North, Dry Creek",
+        "provenance": {
+          "page": 5,
+          "snippet": "Dry Creek | 140 Churchill Road North, Dry Creek"
+        }
+      },
+      "declared_unit": {
+        "unit": "m3",
+        "description": "1 m3 of Ready Mix concrete at the batching plant gate which is purchased by the customer and is paid for",
+        "provenance": {
+          "page": 10,
+          "snippet": "declared unit: 1 m3 of Ready Mix concrete at the batching plant gate which is"
+        }
+      },
+      "indicators": {
+        "GWP_total": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 304.0,
+              "raw": "304",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 13)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq",
+                "plant": "Dry Creek batch plant",
+                "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            }
+          }
+        },
+        "GWP_fossil": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 301.0,
+              "raw": "301",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 13)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq",
+                "plant": "Dry Creek batch plant",
+                "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            }
+          }
+        },
+        "GWP_biogenic": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 3.24,
+              "raw": "3.24",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 13)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq",
+                "plant": "Dry Creek batch plant",
+                "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "N4020P T50",
+      "manufacturer": "Hallett Group",
+      "concrete_type": "Ready-mix concrete",
+      "compressive_strength": {
+        "value_mpa": 40,
+        "class": "N40",
+        "raw": "40",
+        "status": "found",
+        "provenance": {
+          "page": 5,
+          "snippet": "Table 1. Concrete mix names, grades and Enviro Construct ... N4020P ... Grade (MPa) 40"
+        }
+      },
+      "enviro_construct_level": "Level 3",
+      "manufacturing_location": {
+        "site": "Dry Creek batch plant",
+        "city": "Dry Creek",
+        "region": "South Australia",
+        "country": "AU",
+        "raw": "Dry Creek | 140 Churchill Road North, Dry Creek",
+        "provenance": {
+          "page": 5,
+          "snippet": "Dry Creek | 140 Churchill Road North, Dry Creek"
+        }
+      },
+      "declared_unit": {
+        "unit": "m3",
+        "description": "1 m3 of Ready Mix concrete at the batching plant gate which is purchased by the customer and is paid for",
+        "provenance": {
+          "page": 10,
+          "snippet": "declared unit: 1 m3 of Ready Mix concrete at the batching plant gate which is"
+        }
+      },
+      "indicators": {
+        "GWP_total": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 227.0,
+              "raw": "227",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 13)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq",
+                "plant": "Dry Creek batch plant",
+                "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            }
+          }
+        },
+        "GWP_fossil": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 224.0,
+              "raw": "224",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 13)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq",
+                "plant": "Dry Creek batch plant",
+                "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            }
+          }
+        },
+        "GWP_biogenic": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 2.72,
+              "raw": "2.72",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 13)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq",
+                "plant": "Dry Creek batch plant",
+                "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "N4020P S50",
+      "manufacturer": "Hallett Group",
+      "concrete_type": "Ready-mix concrete",
+      "compressive_strength": {
+        "value_mpa": 40,
+        "class": "N40",
+        "raw": "40",
+        "status": "found",
+        "provenance": {
+          "page": 5,
+          "snippet": "Table 1. Concrete mix names, grades and Enviro Construct ... N4020P ... Grade (MPa) 40"
+        }
+      },
+      "enviro_construct_level": "Level 3",
+      "manufacturing_location": {
+        "site": "Dry Creek batch plant",
+        "city": "Dry Creek",
+        "region": "South Australia",
+        "country": "AU",
+        "raw": "Dry Creek | 140 Churchill Road North, Dry Creek",
+        "provenance": {
+          "page": 5,
+          "snippet": "Dry Creek | 140 Churchill Road North, Dry Creek"
+        }
+      },
+      "declared_unit": {
+        "unit": "m3",
+        "description": "1 m3 of Ready Mix concrete at the batching plant gate which is purchased by the customer and is paid for",
+        "provenance": {
+          "page": 10,
+          "snippet": "declared unit: 1 m3 of Ready Mix concrete at the batching plant gate which is"
+        }
+      },
+      "indicators": {
+        "GWP_total": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 234.0,
+              "raw": "234",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 13)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq",
+                "plant": "Dry Creek batch plant",
+                "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            }
+          }
+        },
+        "GWP_fossil": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 231.0,
+              "raw": "231",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 13)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq",
+                "plant": "Dry Creek batch plant",
+                "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            }
+          }
+        },
+        "GWP_biogenic": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 2.71,
+              "raw": "2.71",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 13)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq",
+                "plant": "Dry Creek batch plant",
+                "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "N5020P Ref",
+      "manufacturer": "Hallett Group",
+      "concrete_type": "Ready-mix concrete",
+      "compressive_strength": {
+        "value_mpa": 50,
+        "class": "N50",
+        "raw": "50",
+        "status": "found",
+        "provenance": {
+          "page": 5,
+          "snippet": "Table 1. Concrete mix names, grades and Enviro Construct ... N5020P ... Grade (MPa) 50"
+        }
+      },
+      "enviro_construct_level": null,
+      "manufacturing_location": {
+        "site": "Dry Creek batch plant",
+        "city": "Dry Creek",
+        "region": "South Australia",
+        "country": "AU",
+        "raw": "Dry Creek | 140 Churchill Road North, Dry Creek",
+        "provenance": {
+          "page": 5,
+          "snippet": "Dry Creek | 140 Churchill Road North, Dry Creek"
+        }
+      },
+      "declared_unit": {
+        "unit": "m3",
+        "description": "1 m3 of Ready Mix concrete at the batching plant gate which is purchased by the customer and is paid for",
+        "provenance": {
+          "page": 10,
+          "snippet": "declared unit: 1 m3 of Ready Mix concrete at the batching plant gate which is"
+        }
+      },
+      "indicators": {
+        "GWP_total": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 506.0,
+              "raw": "506",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 13)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq",
+                "plant": "Dry Creek batch plant",
+                "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            }
+          }
+        },
+        "GWP_fossil": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 502.0,
+              "raw": "502",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 13)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq",
+                "plant": "Dry Creek batch plant",
+                "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            }
+          }
+        },
+        "GWP_biogenic": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 4.6,
+              "raw": "4.60",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 13)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq",
+                "plant": "Dry Creek batch plant",
+                "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "N5020P F30",
+      "manufacturer": "Hallett Group",
+      "concrete_type": "Ready-mix concrete",
+      "compressive_strength": {
+        "value_mpa": 50,
+        "class": "N50",
+        "raw": "50",
+        "status": "found",
+        "provenance": {
+          "page": 5,
+          "snippet": "Table 1. Concrete mix names, grades and Enviro Construct ... N5020P ... Grade (MPa) 50"
+        }
+      },
+      "enviro_construct_level": "Level 1",
+      "manufacturing_location": {
+        "site": "Dry Creek batch plant",
+        "city": "Dry Creek",
+        "region": "South Australia",
+        "country": "AU",
+        "raw": "Dry Creek | 140 Churchill Road North, Dry Creek",
+        "provenance": {
+          "page": 5,
+          "snippet": "Dry Creek | 140 Churchill Road North, Dry Creek"
+        }
+      },
+      "declared_unit": {
+        "unit": "m3",
+        "description": "1 m3 of Ready Mix concrete at the batching plant gate which is purchased by the customer and is paid for",
+        "provenance": {
+          "page": 10,
+          "snippet": "declared unit: 1 m3 of Ready Mix concrete at the batching plant gate which is"
+        }
+      },
+      "indicators": {
+        "GWP_total": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 365.0,
+              "raw": "365",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 13)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq",
+                "plant": "Dry Creek batch plant",
+                "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            }
+          }
+        },
+        "GWP_fossil": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 362.0,
+              "raw": "362",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 13)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq",
+                "plant": "Dry Creek batch plant",
+                "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            }
+          }
+        },
+        "GWP_biogenic": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 3.66,
+              "raw": "3.66",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 13)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq",
+                "plant": "Dry Creek batch plant",
+                "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "N5020P S30",
+      "manufacturer": "Hallett Group",
+      "concrete_type": "Ready-mix concrete",
+      "compressive_strength": {
+        "value_mpa": 50,
+        "class": "N50",
+        "raw": "50",
+        "status": "found",
+        "provenance": {
+          "page": 5,
+          "snippet": "Table 1. Concrete mix names, grades and Enviro Construct ... N5020P ... Grade (MPa) 50"
+        }
+      },
+      "enviro_construct_level": "Level 1",
+      "manufacturing_location": {
+        "site": "Dry Creek batch plant",
+        "city": "Dry Creek",
+        "region": "South Australia",
+        "country": "AU",
+        "raw": "Dry Creek | 140 Churchill Road North, Dry Creek",
+        "provenance": {
+          "page": 5,
+          "snippet": "Dry Creek | 140 Churchill Road North, Dry Creek"
+        }
+      },
+      "declared_unit": {
+        "unit": "m3",
+        "description": "1 m3 of Ready Mix concrete at the batching plant gate which is purchased by the customer and is paid for",
+        "provenance": {
+          "page": 10,
+          "snippet": "declared unit: 1 m3 of Ready Mix concrete at the batching plant gate which is"
+        }
+      },
+      "indicators": {
+        "GWP_total": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 370.0,
+              "raw": "370",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 13)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq",
+                "plant": "Dry Creek batch plant",
+                "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            }
+          }
+        },
+        "GWP_fossil": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 366.0,
+              "raw": "366",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 13)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq",
+                "plant": "Dry Creek batch plant",
+                "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            }
+          }
+        },
+        "GWP_biogenic": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 3.65,
+              "raw": "3.65",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 13)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq",
+                "plant": "Dry Creek batch plant",
+                "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "N5020P T50",
+      "manufacturer": "Hallett Group",
+      "concrete_type": "Ready-mix concrete",
+      "compressive_strength": {
+        "value_mpa": 50,
+        "class": "N50",
+        "raw": "50",
+        "status": "found",
+        "provenance": {
+          "page": 5,
+          "snippet": "Table 1. Concrete mix names, grades and Enviro Construct ... N5020P ... Grade (MPa) 50"
+        }
+      },
+      "enviro_construct_level": "Level 3",
+      "manufacturing_location": {
+        "site": "Dry Creek batch plant",
+        "city": "Dry Creek",
+        "region": "South Australia",
+        "country": "AU",
+        "raw": "Dry Creek | 140 Churchill Road North, Dry Creek",
+        "provenance": {
+          "page": 5,
+          "snippet": "Dry Creek | 140 Churchill Road North, Dry Creek"
+        }
+      },
+      "declared_unit": {
+        "unit": "m3",
+        "description": "1 m3 of Ready Mix concrete at the batching plant gate which is purchased by the customer and is paid for",
+        "provenance": {
+          "page": 10,
+          "snippet": "declared unit: 1 m3 of Ready Mix concrete at the batching plant gate which is"
+        }
+      },
+      "indicators": {
+        "GWP_total": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 274.0,
+              "raw": "274",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 13)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq",
+                "plant": "Dry Creek batch plant",
+                "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            }
+          }
+        },
+        "GWP_fossil": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 271.0,
+              "raw": "271",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 13)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq",
+                "plant": "Dry Creek batch plant",
+                "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            }
+          }
+        },
+        "GWP_biogenic": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 3.01,
+              "raw": "3.01",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 13)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq",
+                "plant": "Dry Creek batch plant",
+                "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "N5020P S50",
+      "manufacturer": "Hallett Group",
+      "concrete_type": "Ready-mix concrete",
+      "compressive_strength": {
+        "value_mpa": 50,
+        "class": "N50",
+        "raw": "50",
+        "status": "found",
+        "provenance": {
+          "page": 5,
+          "snippet": "Table 1. Concrete mix names, grades and Enviro Construct ... N5020P ... Grade (MPa) 50"
+        }
+      },
+      "enviro_construct_level": "Level 3",
+      "manufacturing_location": {
+        "site": "Dry Creek batch plant",
+        "city": "Dry Creek",
+        "region": "South Australia",
+        "country": "AU",
+        "raw": "Dry Creek | 140 Churchill Road North, Dry Creek",
+        "provenance": {
+          "page": 5,
+          "snippet": "Dry Creek | 140 Churchill Road North, Dry Creek"
+        }
+      },
+      "declared_unit": {
+        "unit": "m3",
+        "description": "1 m3 of Ready Mix concrete at the batching plant gate which is purchased by the customer and is paid for",
+        "provenance": {
+          "page": 10,
+          "snippet": "declared unit: 1 m3 of Ready Mix concrete at the batching plant gate which is"
+        }
+      },
+      "indicators": {
+        "GWP_total": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 282.0,
+              "raw": "282",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 13)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq",
+                "plant": "Dry Creek batch plant",
+                "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            }
+          }
+        },
+        "GWP_fossil": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 279.0,
+              "raw": "279",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 13)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq",
+                "plant": "Dry Creek batch plant",
+                "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            }
+          }
+        },
+        "GWP_biogenic": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 3.0,
+              "raw": "3.00",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 (Table 13)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq",
+                "plant": "Dry Creek batch plant",
+                "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "system_boundary": {
+    "A1": "declared",
+    "A2": "declared",
+    "A3": "declared",
+    "A1-A3": "declared",
+    "A4": "not_declared",
+    "A5": "not_declared",
+    "B1": "not_declared",
+    "B2": "not_declared",
+    "B3": "not_declared",
+    "B4": "not_declared",
+    "B5": "not_declared",
+    "B6": "not_declared",
+    "B7": "not_declared",
+    "C1": "declared",
+    "C2": "declared",
+    "C3": "declared",
+    "C4": "declared",
+    "D": "declared"
+  },
+  "comparability_notes": [
+    "Cradle-to-gate (A1-A3) + end-of-life (C1-C4) + module D EPD. A4, A5 and all B (use-stage) modules are NOT declared.",
+    "This is a multi-product EPD. Products are manufactured at five South Australian batching plants (Dry Creek, Elizabeth, Mile End, McLaren Vale, Osborne). A1-A3 GWP is declared separately per plant and differs slightly by plant (e.g. N3220P Ref A1-A3 GWPt = 342 McLaren Vale, 344 Dry Creek, 346 Osborne, 349 Elizabeth). The A1-A3 values in this extraction are taken from the DRY CREEK plant results (page 11).",
+    "Modules C1-C4 and D core GWP are declared ONLY for one representative mix, 'N3220P S50', with density 2 332 kg/m3 (page 35, Table 43). For all other mixes the C/D results are not separately printed; the EPD states they can be scaled linearly by density (Annex, printed page 70). C/D modules are therefore recorded only on the N3220P S50 product; on all other products C/D are omitted (not declared as printed values).",
+    "Core GWP-total (GWPt) uses EN 15804+A2 characterisation. Note: the candidate JSON's C-module GWP values (14.7/5.65/4.93/8.33/-11.4) come from the ADDITIONAL indicator GWP-GHG (IPCC AR5, Table 46), not the core GWPt (14.8/5.96/5.02/8.45/-11.6, Table 43). This extraction records core GWPt.",
+    "Enviro Construct low-carbon variants: F30/S30/S50/T50 are reduced-carbon mix designs (levels per Table 1, page 5); Ref is the reference mix with no Enviro Construct designation.",
+    "Only the primary N-series product family (N2020P, N2520P, N3220P, N4020P, N5020P, strengths 20/25/32/40/50 MPa) and their Dry Creek A1-A3 variants were extracted. Many additional S-series and special-class mixes (S1020, S1520, S2520, S3220, S4020, S5010, S5020, S6510, S6520, S8010, CLSM, NOFINES, N2010P, etc.) are declared in the EPD but were NOT extracted (see needs_review)."
+  ],
+  "extraction_meta": {
+    "method": "deterministic coordinate/order-bound table parse; contextual fields agent-verified",
+    "numbers_validated": "cross_validate.py (raw string present on cited page)",
+    "verified_by": "claude-opus-4-8 EPD extraction agent",
+    "checked_by": null,
+    "confidence": "high",
+    "warnings": [
+      "No GWP-total results table found deterministically.",
+      "Candidate JSON valid_until=2024-12-20 (page 36) appears stale/incorrect. Page 1 states DATE OF VALIDITY 2028-07-31 (valid from 2023-07-31, published 2026-05-04). Corrected to 2028-07-31.",
+      "Candidate JSON recorded C1-C4+D GWP from the GWP-GHG (IPCC AR5) additional indicator table, not the EN15804+A2 core GWPt table. Both are on page 35; core GWPt (Table 43) values differ."
+    ],
+    "needs_review": [
+      "S-series and special-class mixes at Dry Creek (page 11, second sub-table): S1020, S1520, S2520, S3220, S4020, S5010, S6510, S6520, S8010 with their PLC/LSLC/COL/SCP variants - NOT extracted (variant-column mapping ambiguous, product-code-only variant names).",
+      "Elizabeth plant A1-A3 (page 16), Mile End plant A1-A3 (pages 19-20, includes N2010P and additional S/CLSM/NOFINES mixes), McLaren Vale plant A1-A3 (page 29), Osborne plant A1-A3 (page 32): N-series GWPt confirmed to differ slightly per plant but only Dry Creek values were recorded. Per-plant N-series GWPt available if per-plant products are required.",
+      "Mile End special-class and CLSM/NOFINES products (per version 003 history, page 71) not extracted.",
+      "C1-C4 and D core GWP for mixes other than N3220P S50 are not printed (scaled by density per Annex page 70) - not extractable as raw printed cells."
+    ]
+  }
+}

@@ -1,0 +1,1123 @@
+{
+  "schema_version": "1.0",
+  "epd": {
+    "id": "EPD-IES-0014785:001",
+    "source_pdf": "EPD-IES-0014785_Heidelberg_Woolworths-GE322LPF2.pdf",
+    "pages": 24,
+    "program_operator": "EPD International AB",
+    "pcr": "CEN standard EN 15804:A2 (PCR 2019:14 Construction Products, Version 1.3.4) served as the core PCR; Environdec c-PCR-003 Concrete, concrete elements (EN 16757:2023) served as sub-PCR.",
+    "reference_standard": "EN 15804:A2 (in accordance with ISO 14025, EN 16757:2023, Environdec c-PCR-003)",
+    "en15804_version": "A2",
+    "characterisation": "EF 3.0",
+    "published": "2024-11-19",
+    "valid_until": "2029-11-19",
+    "provenance": {
+      "program_operator": {
+        "page": 1,
+        "snippet": "Programme Operator: EPD International AB"
+      },
+      "pcr": {
+        "page": 22,
+        "snippet": "Product Category Rules | CEN standard EN 15804:A2 (PCR 2019:14 Construction Products, Version  1.3.4) served as the core PCR."
+      },
+      "published": null,
+      "valid_until": null
+    }
+  },
+  "products": [
+    {
+      "name": "GE322LPF2 (Hutchinson Builders - Woolworths Doolandella)",
+      "manufacturer": "Heidelberg Materials Australia Pty Ltd",
+      "concrete_type": "Ready-mix concrete",
+      "compressive_strength": {
+        "value_mpa": 32,
+        "class": null,
+        "at_days": null,
+        "raw": "Compressive strength 32",
+        "status": "found",
+        "provenance": {
+          "page": 17,
+          "snippet": "Product identification GE322LPF2 ... Compressive strength 32 Density 2355.5 kg/m³"
+        }
+      },
+      "manufacturing_location": {
+        "site": "Brisbane",
+        "city": "Brisbane",
+        "region": "Queensland",
+        "country": "AU",
+        "raw": "Production site(s) Brisbane",
+        "provenance": {
+          "page": 17,
+          "snippet": "Production site(s) Brisbane"
+        },
+        "note": "Geographical Scope 'QUEENSLAND - BRISBANE' on page 1 and page 22. Concrete plants in the study: Jindalee, Coopers Plains, Ipswich (page 8). CANDIDATE CORRECTION: candidate manufacturing_location text ('Plant production waste based on a nationally calculated figure') was a mis-captured sentence fragment, not a location."
+      },
+      "declared_unit": {
+        "amount": 1,
+        "unit": "m3",
+        "description": "Declared Unit is 1m3 of Concrete",
+        "mass_kg": 2355.5,
+        "provenance": {
+          "page": 17,
+          "snippet": "Declared unit 1 m3 ... Density 2355.5 kg/m³"
+        }
+      },
+      "indicators": {
+        "GWP_GHG": {
+          "unit_raw": "kg CO₂e",
+          "unit_normalised": "kg CO2e",
+          "header_modules": [
+            "A1-A3",
+            "A4",
+            "A5",
+            "B1",
+            "B2",
+            "B3",
+            "B4",
+            "B5",
+            "B6",
+            "B7",
+            "C1",
+            "C2",
+            "C3",
+            "C4",
+            "D"
+          ],
+          "modules": {
+            "A1-A3": {
+              "value": 145.0,
+              "raw": "1.45E+02",
+              "status": "declared",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "A1-A3",
+                "unit_raw": "kg CO₂e"
+              }
+            },
+            "A4": {
+              "value": 3.41,
+              "raw": "3.41E+00",
+              "status": "declared",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "A4",
+                "unit_raw": "kg CO₂e"
+              }
+            },
+            "A5": {
+              "value": 10.1,
+              "raw": "1.01E+01",
+              "status": "declared",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "A5",
+                "unit_raw": "kg CO₂e"
+              }
+            },
+            "B1": {
+              "value": -3.17,
+              "raw": "-3.17E+00",
+              "status": "declared",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "B1",
+                "unit_raw": "kg CO₂e"
+              }
+            },
+            "B2": {
+              "value": 0.0,
+              "raw": "0.00E+00",
+              "status": "declared_zero",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "B2",
+                "unit_raw": "kg CO₂e"
+              }
+            },
+            "B3": {
+              "value": 0.0,
+              "raw": "0.00E+00",
+              "status": "declared_zero",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "B3",
+                "unit_raw": "kg CO₂e"
+              }
+            },
+            "B4": {
+              "value": 0.0,
+              "raw": "0.00E+00",
+              "status": "declared_zero",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "B4",
+                "unit_raw": "kg CO₂e"
+              }
+            },
+            "B5": {
+              "value": 0.0,
+              "raw": "0.00E+00",
+              "status": "declared_zero",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "B5",
+                "unit_raw": "kg CO₂e"
+              }
+            },
+            "B6": {
+              "value": 0.0,
+              "raw": "0.00E+00",
+              "status": "declared_zero",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "B6",
+                "unit_raw": "kg CO₂e"
+              }
+            },
+            "B7": {
+              "value": 0.0,
+              "raw": "0.00E+00",
+              "status": "declared_zero",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "B7",
+                "unit_raw": "kg CO₂e"
+              }
+            },
+            "C1": {
+              "value": 8.99,
+              "raw": "8.99E+00",
+              "status": "declared",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "C1",
+                "unit_raw": "kg CO₂e"
+              }
+            },
+            "C2": {
+              "value": 9.03,
+              "raw": "9.03E+00",
+              "status": "declared",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "C2",
+                "unit_raw": "kg CO₂e"
+              }
+            },
+            "C3": {
+              "value": 5.19,
+              "raw": "5.19E+00",
+              "status": "declared",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "C3",
+                "unit_raw": "kg CO₂e"
+              }
+            },
+            "C4": {
+              "value": 2.85,
+              "raw": "2.85E+00",
+              "status": "declared",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "C4",
+                "unit_raw": "kg CO₂e"
+              }
+            },
+            "D": {
+              "value": -14.1,
+              "raw": "-1.41E+01",
+              "status": "declared",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "D",
+                "unit_raw": "kg CO₂e"
+              }
+            }
+          }
+        },
+        "GWP_total": {
+          "unit_raw": "kg CO₂e",
+          "unit_normalised": "kg CO2e",
+          "header_modules": [
+            "A1-A3",
+            "A4",
+            "A5",
+            "B1",
+            "B2",
+            "B3",
+            "B4",
+            "B5",
+            "B6",
+            "B7",
+            "C1",
+            "C2",
+            "C3",
+            "C4",
+            "D"
+          ],
+          "modules": {
+            "A1-A3": {
+              "value": 145.0,
+              "raw": "1.45E+02",
+              "status": "declared",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "A1-A3",
+                "unit_raw": "kg CO₂e"
+              }
+            },
+            "A4": {
+              "value": 3.41,
+              "raw": "3.41E+00",
+              "status": "declared",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "A4",
+                "unit_raw": "kg CO₂e"
+              }
+            },
+            "A5": {
+              "value": 10.1,
+              "raw": "1.01E+01",
+              "status": "declared",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "A5",
+                "unit_raw": "kg CO₂e"
+              }
+            },
+            "B1": {
+              "value": -3.17,
+              "raw": "-3.17E+00",
+              "status": "declared",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "B1",
+                "unit_raw": "kg CO₂e"
+              }
+            },
+            "B2": {
+              "value": 0.0,
+              "raw": "0.00E+00",
+              "status": "declared_zero",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "B2",
+                "unit_raw": "kg CO₂e"
+              }
+            },
+            "B3": {
+              "value": 0.0,
+              "raw": "0.00E+00",
+              "status": "declared_zero",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "B3",
+                "unit_raw": "kg CO₂e"
+              }
+            },
+            "B4": {
+              "value": 0.0,
+              "raw": "0.00E+00",
+              "status": "declared_zero",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "B4",
+                "unit_raw": "kg CO₂e"
+              }
+            },
+            "B5": {
+              "value": 0.0,
+              "raw": "0.00E+00",
+              "status": "declared_zero",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "B5",
+                "unit_raw": "kg CO₂e"
+              }
+            },
+            "B6": {
+              "value": 0.0,
+              "raw": "0.00E+00",
+              "status": "declared_zero",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "B6",
+                "unit_raw": "kg CO₂e"
+              }
+            },
+            "B7": {
+              "value": 0.0,
+              "raw": "0.00E+00",
+              "status": "declared_zero",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "B7",
+                "unit_raw": "kg CO₂e"
+              }
+            },
+            "C1": {
+              "value": 8.99,
+              "raw": "8.99E+00",
+              "status": "declared",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "C1",
+                "unit_raw": "kg CO₂e"
+              }
+            },
+            "C2": {
+              "value": 9.03,
+              "raw": "9.03E+00",
+              "status": "declared",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "C2",
+                "unit_raw": "kg CO₂e"
+              }
+            },
+            "C3": {
+              "value": 5.19,
+              "raw": "5.19E+00",
+              "status": "declared",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "C3",
+                "unit_raw": "kg CO₂e"
+              }
+            },
+            "C4": {
+              "value": 2.85,
+              "raw": "2.85E+00",
+              "status": "declared",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "C4",
+                "unit_raw": "kg CO₂e"
+              }
+            },
+            "D": {
+              "value": -14.1,
+              "raw": "-1.41E+01",
+              "status": "declared",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "D",
+                "unit_raw": "kg CO₂e"
+              }
+            }
+          }
+        },
+        "GWP_fossil": {
+          "unit_raw": "kg CO₂e",
+          "unit_normalised": "kg CO2e",
+          "header_modules": [
+            "A1-A3",
+            "A4",
+            "A5",
+            "B1",
+            "B2",
+            "B3",
+            "B4",
+            "B5",
+            "B6",
+            "B7",
+            "C1",
+            "C2",
+            "C3",
+            "C4",
+            "D"
+          ],
+          "modules": {
+            "A1-A3": {
+              "value": 145.0,
+              "raw": "1.45E+02",
+              "status": "declared",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "A1-A3",
+                "unit_raw": "kg CO₂e"
+              }
+            },
+            "A4": {
+              "value": 3.41,
+              "raw": "3.41E+00",
+              "status": "declared",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "A4",
+                "unit_raw": "kg CO₂e"
+              }
+            },
+            "A5": {
+              "value": 10.1,
+              "raw": "1.01E+01",
+              "status": "declared",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "A5",
+                "unit_raw": "kg CO₂e"
+              }
+            },
+            "B1": {
+              "value": -3.17,
+              "raw": "-3.17E+00",
+              "status": "declared",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "B1",
+                "unit_raw": "kg CO₂e"
+              }
+            },
+            "B2": {
+              "value": 0.0,
+              "raw": "0.00E+00",
+              "status": "declared_zero",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "B2",
+                "unit_raw": "kg CO₂e"
+              }
+            },
+            "B3": {
+              "value": 0.0,
+              "raw": "0.00E+00",
+              "status": "declared_zero",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "B3",
+                "unit_raw": "kg CO₂e"
+              }
+            },
+            "B4": {
+              "value": 0.0,
+              "raw": "0.00E+00",
+              "status": "declared_zero",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "B4",
+                "unit_raw": "kg CO₂e"
+              }
+            },
+            "B5": {
+              "value": 0.0,
+              "raw": "0.00E+00",
+              "status": "declared_zero",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "B5",
+                "unit_raw": "kg CO₂e"
+              }
+            },
+            "B6": {
+              "value": 0.0,
+              "raw": "0.00E+00",
+              "status": "declared_zero",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "B6",
+                "unit_raw": "kg CO₂e"
+              }
+            },
+            "B7": {
+              "value": 0.0,
+              "raw": "0.00E+00",
+              "status": "declared_zero",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "B7",
+                "unit_raw": "kg CO₂e"
+              }
+            },
+            "C1": {
+              "value": 8.99,
+              "raw": "8.99E+00",
+              "status": "declared",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "C1",
+                "unit_raw": "kg CO₂e"
+              }
+            },
+            "C2": {
+              "value": 9.01,
+              "raw": "9.01E+00",
+              "status": "declared",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "C2",
+                "unit_raw": "kg CO₂e"
+              }
+            },
+            "C3": {
+              "value": 5.16,
+              "raw": "5.16E+00",
+              "status": "declared",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "C3",
+                "unit_raw": "kg CO₂e"
+              }
+            },
+            "C4": {
+              "value": 2.84,
+              "raw": "2.84E+00",
+              "status": "declared",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "C4",
+                "unit_raw": "kg CO₂e"
+              }
+            },
+            "D": {
+              "value": -14.0,
+              "raw": "-1.40E+01",
+              "status": "declared",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "D",
+                "unit_raw": "kg CO₂e"
+              }
+            }
+          }
+        },
+        "GWP_biogenic": {
+          "unit_raw": "kg CO₂e",
+          "unit_normalised": "kg CO2e",
+          "header_modules": [
+            "A1-A3",
+            "A4",
+            "A5",
+            "B1",
+            "B2",
+            "B3",
+            "B4",
+            "B5",
+            "B6",
+            "B7",
+            "C1",
+            "C2",
+            "C3",
+            "C4",
+            "D"
+          ],
+          "modules": {
+            "A1-A3": {
+              "value": 0.0483,
+              "raw": "4.83E-02",
+              "status": "declared",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "A1-A3",
+                "unit_raw": "kg CO₂e"
+              }
+            },
+            "A4": {
+              "value": 0.00133,
+              "raw": "1.33E-03",
+              "status": "declared",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "A4",
+                "unit_raw": "kg CO₂e"
+              }
+            },
+            "A5": {
+              "value": 0.00438,
+              "raw": "4.38E-03",
+              "status": "declared",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "A5",
+                "unit_raw": "kg CO₂e"
+              }
+            },
+            "B1": {
+              "value": 0.0,
+              "raw": "0.00E+00",
+              "status": "declared_zero",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "B1",
+                "unit_raw": "kg CO₂e"
+              }
+            },
+            "B2": {
+              "value": 0.0,
+              "raw": "0.00E+00",
+              "status": "declared_zero",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "B2",
+                "unit_raw": "kg CO₂e"
+              }
+            },
+            "B3": {
+              "value": 0.0,
+              "raw": "0.00E+00",
+              "status": "declared_zero",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "B3",
+                "unit_raw": "kg CO₂e"
+              }
+            },
+            "B4": {
+              "value": 0.0,
+              "raw": "0.00E+00",
+              "status": "declared_zero",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "B4",
+                "unit_raw": "kg CO₂e"
+              }
+            },
+            "B5": {
+              "value": 0.0,
+              "raw": "0.00E+00",
+              "status": "declared_zero",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "B5",
+                "unit_raw": "kg CO₂e"
+              }
+            },
+            "B6": {
+              "value": 0.0,
+              "raw": "0.00E+00",
+              "status": "declared_zero",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "B6",
+                "unit_raw": "kg CO₂e"
+              }
+            },
+            "B7": {
+              "value": 0.0,
+              "raw": "0.00E+00",
+              "status": "declared_zero",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "B7",
+                "unit_raw": "kg CO₂e"
+              }
+            },
+            "C1": {
+              "value": 0.0016,
+              "raw": "1.60E-03",
+              "status": "declared",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "C1",
+                "unit_raw": "kg CO₂e"
+              }
+            },
+            "C2": {
+              "value": 0.00645,
+              "raw": "6.45E-03",
+              "status": "declared",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "C2",
+                "unit_raw": "kg CO₂e"
+              }
+            },
+            "C3": {
+              "value": 0.0193,
+              "raw": "1.93E-02",
+              "status": "declared",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "C3",
+                "unit_raw": "kg CO₂e"
+              }
+            },
+            "C4": {
+              "value": 0.00188,
+              "raw": "1.88E-03",
+              "status": "declared",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "C4",
+                "unit_raw": "kg CO₂e"
+              }
+            },
+            "D": {
+              "value": -0.0565,
+              "raw": "-5.65E-02",
+              "status": "declared",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "D",
+                "unit_raw": "kg CO₂e"
+              }
+            }
+          }
+        },
+        "GWP_luluc": {
+          "unit_raw": "kg CO₂e",
+          "unit_normalised": "kg CO2e",
+          "header_modules": [
+            "A1-A3",
+            "A4",
+            "A5",
+            "B1",
+            "B2",
+            "B3",
+            "B4",
+            "B5",
+            "B6",
+            "B7",
+            "C1",
+            "C2",
+            "C3",
+            "C4",
+            "D"
+          ],
+          "modules": {
+            "A1-A3": {
+              "value": 0.0321,
+              "raw": "3.21E-02",
+              "status": "declared",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "A1-A3",
+                "unit_raw": "kg CO₂e"
+              }
+            },
+            "A4": {
+              "value": 0.00115,
+              "raw": "1.15E-03",
+              "status": "declared",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "A4",
+                "unit_raw": "kg CO₂e"
+              }
+            },
+            "A5": {
+              "value": 0.00334,
+              "raw": "3.34E-03",
+              "status": "declared",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "A5",
+                "unit_raw": "kg CO₂e"
+              }
+            },
+            "B1": {
+              "value": 0.0,
+              "raw": "0.00E+00",
+              "status": "declared_zero",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "B1",
+                "unit_raw": "kg CO₂e"
+              }
+            },
+            "B2": {
+              "value": 0.0,
+              "raw": "0.00E+00",
+              "status": "declared_zero",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "B2",
+                "unit_raw": "kg CO₂e"
+              }
+            },
+            "B3": {
+              "value": 0.0,
+              "raw": "0.00E+00",
+              "status": "declared_zero",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "B3",
+                "unit_raw": "kg CO₂e"
+              }
+            },
+            "B4": {
+              "value": 0.0,
+              "raw": "0.00E+00",
+              "status": "declared_zero",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "B4",
+                "unit_raw": "kg CO₂e"
+              }
+            },
+            "B5": {
+              "value": 0.0,
+              "raw": "0.00E+00",
+              "status": "declared_zero",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "B5",
+                "unit_raw": "kg CO₂e"
+              }
+            },
+            "B6": {
+              "value": 0.0,
+              "raw": "0.00E+00",
+              "status": "declared_zero",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "B6",
+                "unit_raw": "kg CO₂e"
+              }
+            },
+            "B7": {
+              "value": 0.0,
+              "raw": "0.00E+00",
+              "status": "declared_zero",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "B7",
+                "unit_raw": "kg CO₂e"
+              }
+            },
+            "C1": {
+              "value": 0.00113,
+              "raw": "1.13E-03",
+              "status": "declared",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "C1",
+                "unit_raw": "kg CO₂e"
+              }
+            },
+            "C2": {
+              "value": 0.00524,
+              "raw": "5.24E-03",
+              "status": "declared",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "C2",
+                "unit_raw": "kg CO₂e"
+              }
+            },
+            "C3": {
+              "value": 0.0147,
+              "raw": "1.47E-02",
+              "status": "declared",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "C3",
+                "unit_raw": "kg CO₂e"
+              }
+            },
+            "C4": {
+              "value": 0.00153,
+              "raw": "1.53E-03",
+              "status": "declared",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "C4",
+                "unit_raw": "kg CO₂e"
+              }
+            },
+            "D": {
+              "value": -0.0245,
+              "raw": "-2.45E-02",
+              "status": "declared",
+              "provenance": {
+                "page": 18,
+                "section": "",
+                "table": "",
+                "module": "D",
+                "unit_raw": "kg CO₂e"
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "system_boundary": {
+    "A1": "not_declared",
+    "A2": "not_declared",
+    "A3": "not_declared",
+    "A1-A3": "declared",
+    "A4": "declared",
+    "A5": "declared",
+    "B1": "declared",
+    "B2": "declared_zero",
+    "B3": "declared_zero",
+    "B4": "declared_zero",
+    "B5": "declared_zero",
+    "B6": "declared_zero",
+    "B7": "declared_zero",
+    "C1": "declared",
+    "C2": "declared",
+    "C3": "declared",
+    "C4": "declared",
+    "D": "declared"
+  },
+  "comparability_notes": [
+    "GCCA Industry EPD Tool for Cement and Concrete (v4.2), International version, used to model results (page 17).",
+    "Full cradle-to-grave scope A1-A3 + A4 + A5 + B1-B7 + C1-C4 + D — all modules declared; no ND/NR modules.",
+    "GWP reported as GWP-tot per the GCCA tool using EF3.0-based EN15804+A2 methodology (page 15); GWP-GHG and GWP-tot are numerically identical here (page 18).",
+    "Module D is negative (-14.1 kg CO2e), a net credit; page 15 discourages using A1-A3 results without also considering Module C.",
+    "Project-specific EPD (Hutchinson Builders - Woolworths Doolandella project); values indicative of local material performance at time of publishing (page 20).",
+    "EPDs from different programmes or that do not comply with EN 15804 may not be comparable (page 22)."
+  ],
+  "extraction_meta": {
+    "method": "deterministic coordinate/order-bound table parse; contextual fields agent-verified",
+    "numbers_validated": "cross_validate.py (raw string present on cited page)",
+    "verified_by": "epd-context-agent (Opus 4.8)",
+    "checked_by": null,
+    "confidence": "high",
+    "warnings": [
+      "Candidate compressive_strength.value_mpa was null with class='32'; corrected to value_mpa=32 (stated numerically on pages 17 and 20 as MPa, not inferred from the GE322 code). GWP numbers unchanged."
+    ],
+    "needs_review": []
+  }
+}

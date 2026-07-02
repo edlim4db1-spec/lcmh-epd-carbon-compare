@@ -1,0 +1,1339 @@
+{
+  "schema_version": "1.0",
+  "epd": {
+    "id": "EPD_HUB-5991",
+    "source_pdf": "EPD_HUB-5991_2026-06-27_en.pdf",
+    "pages": 13,
+    "program_operator": "EPD Hub, hub@epdhub.com",
+    "pcr": "EPD Hub Core PCR version 1.2, 24 Mar 2025",
+    "reference_standard": "EN 15804:2012+A2:2019/AC:2021",
+    "en15804_version": "A2",
+    "characterisation": "EF 3.1",
+    "published": "15.04.2026",
+    "valid_until": "14.04.2031",
+    "provenance": {
+      "program_operator": {
+        "page": 2,
+        "snippet": "Program operator | EPD Hub, hub@epdhub.com"
+      },
+      "pcr": {
+        "page": 2,
+        "snippet": "PCR | EPD Hub Core PCR version 1.2, 24 Mar 2025"
+      },
+      "published": {
+        "page": 1,
+        "snippet": "Published on 15.04.2026"
+      },
+      "valid_until": {
+        "page": 1,
+        "snippet": "valid until 14.04.2031"
+      }
+    }
+  },
+  "products": [
+    {
+      "name": "N40/20 Xencrete",
+      "manufacturer": "Entire Concrete",
+      "concrete_type": "Ready-mix concrete",
+      "compressive_strength": {
+        "value_mpa": 40,
+        "class": "N40",
+        "at_days": null,
+        "raw": null,
+        "status": "found",
+        "provenance": {
+          "page": 2,
+          "snippet": "characteristic strength of 40MPa"
+        }
+      },
+      "manufacturing_location": {
+        "site": "Hunter Valley, NSW",
+        "city": "Hunter Valley",
+        "region": "New South Wales",
+        "country": "AU",
+        "raw": "Hunter Valley, NSW",
+        "provenance": {
+          "page": 2,
+          "snippet": "Manufacturer Entire Concrete; Place of production Hunter Valley, NSW"
+        }
+      },
+      "declared_unit": {
+        "amount": 1,
+        "unit": "m3",
+        "description": "1 cubic meter",
+        "mass_kg": 2306.0,
+        "provenance": {
+          "page": 2,
+          "snippet": "Declared unit | 1 cubic meter"
+        }
+      },
+      "indicators": {
+        "GWP_total": {
+          "unit_raw": "kg CO2e",
+          "unit_normalised": "kg CO2e",
+          "header_modules": [
+            "A1",
+            "A2",
+            "A3",
+            "A1-A3",
+            "A4",
+            "A5",
+            "B1",
+            "B2",
+            "B3",
+            "B4",
+            "B5",
+            "B6",
+            "B7",
+            "C1",
+            "C2",
+            "C3",
+            "C4",
+            "D"
+          ],
+          "modules": {
+            "A1": {
+              "value": 235.0,
+              "raw": "2.35E+02",
+              "status": "declared",
+              "provenance": {
+                "page": 8,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "table": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "module": "A1",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "A2": {
+              "value": 34.2,
+              "raw": "3.42E+01",
+              "status": "declared",
+              "provenance": {
+                "page": 8,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "table": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "module": "A2",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "A3": {
+              "value": 3.71,
+              "raw": "3.71E+00",
+              "status": "declared",
+              "provenance": {
+                "page": 8,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "table": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "module": "A3",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "A1-A3": {
+              "value": 273.0,
+              "raw": "2.73E+02",
+              "status": "declared",
+              "provenance": {
+                "page": 8,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "table": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "A4": {
+              "value": 2.96,
+              "raw": "2.96E+00",
+              "status": "declared",
+              "provenance": {
+                "page": 8,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "table": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "module": "A4",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "A5": {
+              "value": 16.4,
+              "raw": "1.64E+01",
+              "status": "declared",
+              "provenance": {
+                "page": 8,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "table": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "module": "A5",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "B1": {
+              "value": null,
+              "raw": "ND",
+              "status": "not_declared",
+              "provenance": {
+                "page": 8,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "table": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "module": "B1",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "B2": {
+              "value": null,
+              "raw": "ND",
+              "status": "not_declared",
+              "provenance": {
+                "page": 8,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "table": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "module": "B2",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "B3": {
+              "value": null,
+              "raw": "ND",
+              "status": "not_declared",
+              "provenance": {
+                "page": 8,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "table": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "module": "B3",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "B4": {
+              "value": null,
+              "raw": "ND",
+              "status": "not_declared",
+              "provenance": {
+                "page": 8,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "table": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "module": "B4",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "B5": {
+              "value": null,
+              "raw": "ND",
+              "status": "not_declared",
+              "provenance": {
+                "page": 8,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "table": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "module": "B5",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "B6": {
+              "value": null,
+              "raw": "ND",
+              "status": "not_declared",
+              "provenance": {
+                "page": 8,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "table": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "module": "B6",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "B7": {
+              "value": null,
+              "raw": "ND",
+              "status": "not_declared",
+              "provenance": {
+                "page": 8,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "table": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "module": "B7",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "C1": {
+              "value": 4.39,
+              "raw": "4.39E+00",
+              "status": "declared",
+              "provenance": {
+                "page": 8,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "table": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "module": "C1",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "C2": {
+              "value": 12.4,
+              "raw": "1.24E+01",
+              "status": "declared",
+              "provenance": {
+                "page": 8,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "table": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "module": "C2",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "C3": {
+              "value": 7.06,
+              "raw": "7.06E+00",
+              "status": "declared",
+              "provenance": {
+                "page": 8,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "table": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "module": "C3",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "C4": {
+              "value": 4.32,
+              "raw": "4.32E+00",
+              "status": "declared",
+              "provenance": {
+                "page": 8,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "table": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "module": "C4",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "D": {
+              "value": -11.9,
+              "raw": "‐1.19E+01",
+              "status": "declared",
+              "provenance": {
+                "page": 8,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "table": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "module": "D",
+                "unit_raw": "kg CO2e"
+              }
+            }
+          }
+        },
+        "GWP_fossil": {
+          "unit_raw": "kg CO2e",
+          "unit_normalised": "kg CO2e",
+          "header_modules": [
+            "A1",
+            "A2",
+            "A3",
+            "A1-A3",
+            "A4",
+            "A5",
+            "B1",
+            "B2",
+            "B3",
+            "B4",
+            "B5",
+            "B6",
+            "B7",
+            "C1",
+            "C2",
+            "C3",
+            "C4",
+            "D"
+          ],
+          "modules": {
+            "A1": {
+              "value": 235.0,
+              "raw": "2.35E+02",
+              "status": "declared",
+              "provenance": {
+                "page": 8,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "table": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "module": "A1",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "A2": {
+              "value": 34.2,
+              "raw": "3.42E+01",
+              "status": "declared",
+              "provenance": {
+                "page": 8,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "table": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "module": "A2",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "A3": {
+              "value": 3.71,
+              "raw": "3.71E+00",
+              "status": "declared",
+              "provenance": {
+                "page": 8,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "table": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "module": "A3",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "A1-A3": {
+              "value": 273.0,
+              "raw": "2.73E+02",
+              "status": "declared",
+              "provenance": {
+                "page": 8,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "table": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "A4": {
+              "value": 2.95,
+              "raw": "2.95E+00",
+              "status": "declared",
+              "provenance": {
+                "page": 8,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "table": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "module": "A4",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "A5": {
+              "value": 16.4,
+              "raw": "1.64E+01",
+              "status": "declared",
+              "provenance": {
+                "page": 8,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "table": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "module": "A5",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "B1": {
+              "value": null,
+              "raw": "ND",
+              "status": "not_declared",
+              "provenance": {
+                "page": 8,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "table": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "module": "B1",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "B2": {
+              "value": null,
+              "raw": "ND",
+              "status": "not_declared",
+              "provenance": {
+                "page": 8,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "table": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "module": "B2",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "B3": {
+              "value": null,
+              "raw": "ND",
+              "status": "not_declared",
+              "provenance": {
+                "page": 8,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "table": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "module": "B3",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "B4": {
+              "value": null,
+              "raw": "ND",
+              "status": "not_declared",
+              "provenance": {
+                "page": 8,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "table": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "module": "B4",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "B5": {
+              "value": null,
+              "raw": "ND",
+              "status": "not_declared",
+              "provenance": {
+                "page": 8,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "table": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "module": "B5",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "B6": {
+              "value": null,
+              "raw": "ND",
+              "status": "not_declared",
+              "provenance": {
+                "page": 8,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "table": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "module": "B6",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "B7": {
+              "value": null,
+              "raw": "ND",
+              "status": "not_declared",
+              "provenance": {
+                "page": 8,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "table": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "module": "B7",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "C1": {
+              "value": 4.39,
+              "raw": "4.39E+00",
+              "status": "declared",
+              "provenance": {
+                "page": 8,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "table": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "module": "C1",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "C2": {
+              "value": 12.4,
+              "raw": "1.24E+01",
+              "status": "declared",
+              "provenance": {
+                "page": 8,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "table": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "module": "C2",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "C3": {
+              "value": 7.06,
+              "raw": "7.06E+00",
+              "status": "declared",
+              "provenance": {
+                "page": 8,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "table": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "module": "C3",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "C4": {
+              "value": 4.32,
+              "raw": "4.32E+00",
+              "status": "declared",
+              "provenance": {
+                "page": 8,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "table": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "module": "C4",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "D": {
+              "value": -11.8,
+              "raw": "‐1.18E+01",
+              "status": "declared",
+              "provenance": {
+                "page": 8,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "table": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "module": "D",
+                "unit_raw": "kg CO2e"
+              }
+            }
+          }
+        },
+        "GWP_biogenic": {
+          "unit_raw": "kg CO2e",
+          "unit_normalised": "kg CO2e",
+          "header_modules": [
+            "A1",
+            "A2",
+            "A3",
+            "A1-A3",
+            "A4",
+            "A5",
+            "B1",
+            "B2",
+            "B3",
+            "B4",
+            "B5",
+            "B6",
+            "B7",
+            "C1",
+            "C2",
+            "C3",
+            "C4",
+            "D"
+          ],
+          "modules": {
+            "A1": {
+              "value": 0.095,
+              "raw": "9.50E‐02",
+              "status": "declared",
+              "provenance": {
+                "page": 8,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "table": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "module": "A1",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "A2": {
+              "value": 0.00711,
+              "raw": "7.11E‐03",
+              "status": "declared",
+              "provenance": {
+                "page": 8,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "table": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "module": "A2",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "A3": {
+              "value": 0.000621,
+              "raw": "6.21E‐04",
+              "status": "declared",
+              "provenance": {
+                "page": 8,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "table": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "module": "A3",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "A1-A3": {
+              "value": 0.103,
+              "raw": "1.03E‐01",
+              "status": "declared",
+              "provenance": {
+                "page": 8,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "table": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "A4": {
+              "value": 0.000669,
+              "raw": "6.69E‐04",
+              "status": "declared",
+              "provenance": {
+                "page": 8,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "table": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "module": "A4",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "A5": {
+              "value": 0.00388,
+              "raw": "3.88E‐03",
+              "status": "declared",
+              "provenance": {
+                "page": 8,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "table": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "module": "A5",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "B1": {
+              "value": null,
+              "raw": "ND",
+              "status": "not_declared",
+              "provenance": {
+                "page": 8,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "table": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "module": "B1",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "B2": {
+              "value": null,
+              "raw": "ND",
+              "status": "not_declared",
+              "provenance": {
+                "page": 8,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "table": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "module": "B2",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "B3": {
+              "value": null,
+              "raw": "ND",
+              "status": "not_declared",
+              "provenance": {
+                "page": 8,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "table": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "module": "B3",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "B4": {
+              "value": null,
+              "raw": "ND",
+              "status": "not_declared",
+              "provenance": {
+                "page": 8,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "table": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "module": "B4",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "B5": {
+              "value": null,
+              "raw": "ND",
+              "status": "not_declared",
+              "provenance": {
+                "page": 8,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "table": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "module": "B5",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "B6": {
+              "value": null,
+              "raw": "ND",
+              "status": "not_declared",
+              "provenance": {
+                "page": 8,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "table": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "module": "B6",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "B7": {
+              "value": null,
+              "raw": "ND",
+              "status": "not_declared",
+              "provenance": {
+                "page": 8,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "table": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "module": "B7",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "C1": {
+              "value": 0.000448,
+              "raw": "4.48E‐04",
+              "status": "declared",
+              "provenance": {
+                "page": 8,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "table": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "module": "C1",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "C2": {
+              "value": 0.00281,
+              "raw": "2.81E‐03",
+              "status": "declared",
+              "provenance": {
+                "page": 8,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "table": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "module": "C2",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "C3": {
+              "value": -0.000721,
+              "raw": "‐7.21E‐04",
+              "status": "declared",
+              "provenance": {
+                "page": 8,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "table": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "module": "C3",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "C4": {
+              "value": -0.00137,
+              "raw": "‐1.37E‐03",
+              "status": "declared",
+              "provenance": {
+                "page": 8,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "table": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "module": "C4",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "D": {
+              "value": -0.0371,
+              "raw": "‐3.71E‐02",
+              "status": "declared",
+              "provenance": {
+                "page": 8,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "table": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "module": "D",
+                "unit_raw": "kg CO2e"
+              }
+            }
+          }
+        },
+        "GWP_luluc": {
+          "unit_raw": "kg CO2e",
+          "unit_normalised": "kg CO2e",
+          "header_modules": [
+            "A1",
+            "A2",
+            "A3",
+            "A1-A3",
+            "A4",
+            "A5",
+            "B1",
+            "B2",
+            "B3",
+            "B4",
+            "B5",
+            "B6",
+            "B7",
+            "C1",
+            "C2",
+            "C3",
+            "C4",
+            "D"
+          ],
+          "modules": {
+            "A1": {
+              "value": 0.0378,
+              "raw": "3.78E‐02",
+              "status": "declared",
+              "provenance": {
+                "page": 8,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "table": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "module": "A1",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "A2": {
+              "value": 0.0184,
+              "raw": "1.84E‐02",
+              "status": "declared",
+              "provenance": {
+                "page": 8,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "table": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "module": "A2",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "A3": {
+              "value": 0.0003,
+              "raw": "3.00E‐04",
+              "status": "declared",
+              "provenance": {
+                "page": 8,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "table": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "module": "A3",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "A1-A3": {
+              "value": 0.0565,
+              "raw": "5.65E‐02",
+              "status": "declared",
+              "provenance": {
+                "page": 8,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "table": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "A4": {
+              "value": 0.00132,
+              "raw": "1.32E‐03",
+              "status": "declared",
+              "provenance": {
+                "page": 8,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "table": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "module": "A4",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "A5": {
+              "value": 0.00275,
+              "raw": "2.75E‐03",
+              "status": "declared",
+              "provenance": {
+                "page": 8,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "table": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "module": "A5",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "B1": {
+              "value": null,
+              "raw": "ND",
+              "status": "not_declared",
+              "provenance": {
+                "page": 8,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "table": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "module": "B1",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "B2": {
+              "value": null,
+              "raw": "ND",
+              "status": "not_declared",
+              "provenance": {
+                "page": 8,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "table": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "module": "B2",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "B3": {
+              "value": null,
+              "raw": "ND",
+              "status": "not_declared",
+              "provenance": {
+                "page": 8,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "table": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "module": "B3",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "B4": {
+              "value": null,
+              "raw": "ND",
+              "status": "not_declared",
+              "provenance": {
+                "page": 8,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "table": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "module": "B4",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "B5": {
+              "value": null,
+              "raw": "ND",
+              "status": "not_declared",
+              "provenance": {
+                "page": 8,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "table": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "module": "B5",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "B6": {
+              "value": null,
+              "raw": "ND",
+              "status": "not_declared",
+              "provenance": {
+                "page": 8,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "table": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "module": "B6",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "B7": {
+              "value": null,
+              "raw": "ND",
+              "status": "not_declared",
+              "provenance": {
+                "page": 8,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "table": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "module": "B7",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "C1": {
+              "value": 0.000449,
+              "raw": "4.49E‐04",
+              "status": "declared",
+              "provenance": {
+                "page": 8,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "table": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "module": "C1",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "C2": {
+              "value": 0.00555,
+              "raw": "5.55E‐03",
+              "status": "declared",
+              "provenance": {
+                "page": 8,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "table": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "module": "C2",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "C3": {
+              "value": 0.000724,
+              "raw": "7.24E‐04",
+              "status": "declared",
+              "provenance": {
+                "page": 8,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "table": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "module": "C3",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "C4": {
+              "value": 0.00247,
+              "raw": "2.47E‐03",
+              "status": "declared",
+              "provenance": {
+                "page": 8,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "table": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "module": "C4",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "D": {
+              "value": -0.0164,
+              "raw": "‐1.64E‐02",
+              "status": "declared",
+              "provenance": {
+                "page": 8,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "table": "CORE ENVIRONMENTAL IMPACT INDICATORS – EN 15804+A2, EF 3.1",
+                "module": "D",
+                "unit_raw": "kg CO2e"
+              }
+            }
+          }
+        },
+        "GWP_total_CML": {
+          "unit_raw": "kg CO2e",
+          "unit_normalised": "kg CO2e",
+          "header_modules": [
+            "A1",
+            "A2",
+            "A3",
+            "A1-A3",
+            "A4",
+            "A5",
+            "B1",
+            "B2",
+            "B3",
+            "B4",
+            "B5",
+            "B6",
+            "B7",
+            "C1",
+            "C2",
+            "C3",
+            "C4",
+            "D"
+          ],
+          "modules": {}
+        },
+        "GWP_GHG": {
+          "unit_raw": "kg CO2e",
+          "unit_normalised": "kg CO2e",
+          "header_modules": [
+            "A1",
+            "A2",
+            "A3",
+            "A1-A3",
+            "A4",
+            "A5",
+            "B1",
+            "B2",
+            "B3",
+            "B4",
+            "B5",
+            "B6",
+            "B7",
+            "C1",
+            "C2",
+            "C3",
+            "C4",
+            "D"
+          ],
+          "modules": {
+            "A1": {
+              "value": 235.0,
+              "raw": "2.35E+02",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "ADDITIONAL INDICATOR – GWP-GHG",
+                "table": "ADDITIONAL INDICATOR – GWP-GHG",
+                "module": "A1",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "A2": {
+              "value": 34.2,
+              "raw": "3.42E+01",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "ADDITIONAL INDICATOR – GWP-GHG",
+                "table": "ADDITIONAL INDICATOR – GWP-GHG",
+                "module": "A2",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "A3": {
+              "value": 3.71,
+              "raw": "3.71E+00",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "ADDITIONAL INDICATOR – GWP-GHG",
+                "table": "ADDITIONAL INDICATOR – GWP-GHG",
+                "module": "A3",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "A1-A3": {
+              "value": 273.0,
+              "raw": "2.73E+02",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "ADDITIONAL INDICATOR – GWP-GHG",
+                "table": "ADDITIONAL INDICATOR – GWP-GHG",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "A4": {
+              "value": 2.95,
+              "raw": "2.95E+00",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "ADDITIONAL INDICATOR – GWP-GHG",
+                "table": "ADDITIONAL INDICATOR – GWP-GHG",
+                "module": "A4",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "A5": {
+              "value": 16.4,
+              "raw": "1.64E+01",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "ADDITIONAL INDICATOR – GWP-GHG",
+                "table": "ADDITIONAL INDICATOR – GWP-GHG",
+                "module": "A5",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "B1": {
+              "value": null,
+              "raw": "ND",
+              "status": "not_declared",
+              "provenance": {
+                "page": 11,
+                "section": "ADDITIONAL INDICATOR – GWP-GHG",
+                "table": "ADDITIONAL INDICATOR – GWP-GHG",
+                "module": "B1",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "B2": {
+              "value": null,
+              "raw": "ND",
+              "status": "not_declared",
+              "provenance": {
+                "page": 11,
+                "section": "ADDITIONAL INDICATOR – GWP-GHG",
+                "table": "ADDITIONAL INDICATOR – GWP-GHG",
+                "module": "B2",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "B3": {
+              "value": null,
+              "raw": "ND",
+              "status": "not_declared",
+              "provenance": {
+                "page": 11,
+                "section": "ADDITIONAL INDICATOR – GWP-GHG",
+                "table": "ADDITIONAL INDICATOR – GWP-GHG",
+                "module": "B3",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "B4": {
+              "value": null,
+              "raw": "ND",
+              "status": "not_declared",
+              "provenance": {
+                "page": 11,
+                "section": "ADDITIONAL INDICATOR – GWP-GHG",
+                "table": "ADDITIONAL INDICATOR – GWP-GHG",
+                "module": "B4",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "B5": {
+              "value": null,
+              "raw": "ND",
+              "status": "not_declared",
+              "provenance": {
+                "page": 11,
+                "section": "ADDITIONAL INDICATOR – GWP-GHG",
+                "table": "ADDITIONAL INDICATOR – GWP-GHG",
+                "module": "B5",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "B6": {
+              "value": null,
+              "raw": "ND",
+              "status": "not_declared",
+              "provenance": {
+                "page": 11,
+                "section": "ADDITIONAL INDICATOR – GWP-GHG",
+                "table": "ADDITIONAL INDICATOR – GWP-GHG",
+                "module": "B6",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "B7": {
+              "value": null,
+              "raw": "ND",
+              "status": "not_declared",
+              "provenance": {
+                "page": 11,
+                "section": "ADDITIONAL INDICATOR – GWP-GHG",
+                "table": "ADDITIONAL INDICATOR – GWP-GHG",
+                "module": "B7",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "C1": {
+              "value": 4.39,
+              "raw": "4.39E+00",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "ADDITIONAL INDICATOR – GWP-GHG",
+                "table": "ADDITIONAL INDICATOR – GWP-GHG",
+                "module": "C1",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "C2": {
+              "value": 12.4,
+              "raw": "1.24E+01",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "ADDITIONAL INDICATOR – GWP-GHG",
+                "table": "ADDITIONAL INDICATOR – GWP-GHG",
+                "module": "C2",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "C3": {
+              "value": 7.06,
+              "raw": "7.06E+00",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "ADDITIONAL INDICATOR – GWP-GHG",
+                "table": "ADDITIONAL INDICATOR – GWP-GHG",
+                "module": "C3",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "C4": {
+              "value": 4.32,
+              "raw": "4.32E+00",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "ADDITIONAL INDICATOR – GWP-GHG",
+                "table": "ADDITIONAL INDICATOR – GWP-GHG",
+                "module": "C4",
+                "unit_raw": "kg CO2e"
+              }
+            },
+            "D": {
+              "value": -11.8,
+              "raw": "‐1.18E+01",
+              "status": "declared",
+              "provenance": {
+                "page": 11,
+                "section": "ADDITIONAL INDICATOR – GWP-GHG",
+                "table": "ADDITIONAL INDICATOR – GWP-GHG",
+                "module": "D",
+                "unit_raw": "kg CO2e"
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "system_boundary": {
+    "A1": "declared",
+    "A2": "declared",
+    "A3": "declared",
+    "A1-A3": "declared",
+    "A4": "declared",
+    "A5": "declared",
+    "B1": "not_declared",
+    "B2": "not_declared",
+    "B3": "not_declared",
+    "B4": "not_declared",
+    "B5": "not_declared",
+    "B6": "not_declared",
+    "B7": "not_declared",
+    "C1": "declared",
+    "C2": "declared",
+    "C3": "declared",
+    "C4": "declared",
+    "D": "declared"
+  },
+  "comparability_notes": [],
+  "extraction_meta": {
+    "method": "deterministic coordinate/order-bound table parse; contextual fields agent-verified",
+    "numbers_validated": "cross_validate.py (raw string present on cited page)",
+    "verified_by": "main-agent source-read fix",
+    "checked_by": null,
+    "confidence": "high",
+    "warnings": [],
+    "needs_review": []
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "lcmh",
+      "runtimeExecutable": "/Users/edwardlim/Desktop/LCMH/.tools/node/bin/npm",
+      "runtimeArgs": ["run", "start", "--", "-p", "3200"],
+      "port": 3200
+    }
+  ]
+}

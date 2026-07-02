@@ -1,0 +1,274 @@
+{
+  "schema_version": "1.0",
+  "epd": {
+    "id": "EPD-IES-0021165",
+    "source_pdf": "epd-ies-0021165-sn252f100.pdf",
+    "pages": 40,
+    "program_operator": "EPD International AB (The International EPD System); Regional programme: EPD Australasia Ltd",
+    "pcr": "PCR 2019:14 Construction Products, Version 1.3.4; Complementary Product Category Rules (C-PCR) 003 to PCR 2019:14 Concrete and concrete elements (EN 16757), Version 2019-12-20",
+    "reference_standard": "EN 15804:2012+A2:2019 (ISO 14025:2006); BS EN 16757:2017",
+    "en15804_version": "A2",
+    "characterisation": "EF 3.1",
+    "published": "2025-03-13",
+    "valid_until": "2030-03-13",
+    "provenance": {
+      "program_operator": {
+        "page": 1,
+        "snippet": "Programme operator: EPD International AB"
+      },
+      "pcr": {
+        "page": 9,
+        "snippet": "Product category rules (PCR)"
+      },
+      "published": null,
+      "valid_until": null
+    }
+  },
+  "products": [
+    {
+      "name": "SN252F100 — Futurecrete Normal Class GL:Slag 25 MPa",
+      "manufacturer": "Adbri Limited (Adbri Concrete SA)",
+      "concrete_type": "Ready-mix normal class concrete (Futurecrete lower-carbon; GL cement + slag SCM)",
+      "compressive_strength": {
+        "value_mpa": 25,
+        "class": "GL:Slag 25 MPa",
+        "at_days": 28,
+        "raw": "SN252F100 | Futurecrete Normal Class GL:Slag 25 MPa",
+        "status": "found",
+        "provenance": {
+          "page": 32,
+          "snippet": "SN252F100  Futurecrete Normal Class GL:Slag 25 MPa"
+        }
+      },
+      "manufacturing_location": {
+        "site": "Adbri Concrete SA batching plants",
+        "region": "SA",
+        "country": "AU",
+        "raw": "Concrete produced at South Australia",
+        "provenance": {
+          "page": 32,
+          "snippet": "concrete produced in South Australia"
+        }
+      },
+      "declared_unit": {
+        "unit": "m3",
+        "description": "one cubic metre (1 m3) of manufactured concrete",
+        "mass_kg": null,
+        "provenance": {
+          "page": 17,
+          "snippet": "The declared unit adopted is one cubic metre (1m3) of manufactured concrete."
+        }
+      },
+      "indicators": {
+        "GWP_total": {
+          "unit_raw": "kg CO2 eq.",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 143.83,
+              "raw": "143.83",
+              "status": "declared",
+              "provenance": {
+                "page": 32,
+                "section": "Table 8 | Potential environmental impacts of Product stage (A1 – A3)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2 eq.",
+                "source_type": "image",
+                "verification": "rasterised table (p32); read visually at high zoom by extraction agent, cross-checked by checker"
+              }
+            },
+            "A4": {
+              "value": 9.64,
+              "raw": "9.64",
+              "status": "declared",
+              "provenance": {
+                "page": 34,
+                "section": "Table 13 | Potential environmental impacts of Distribution stage (A4)",
+                "module": "A4",
+                "unit_raw": "kg CO2 eq."
+              }
+            },
+            "A5": {
+              "value": null,
+              "raw": null,
+              "status": "not_declared",
+              "provenance": {
+                "page": 18,
+                "section": "Table 3 | Life Cycle of building products: stages and modules included in this EPD",
+                "module": "A5",
+                "unit_raw": "kg CO2 eq."
+              },
+              "note": "A5 is marked 'X' (declared in scope) in the boundary table (page 18), but NO A5 results table is published anywhere in the EPD. Only A1-A3 (page 32) and A4 (pages 34-35) results tables exist. Value genuinely not found — left null, not 0."
+            },
+            "C1": {
+              "value": null,
+              "raw": null,
+              "status": "not_declared",
+              "provenance": {
+                "page": 18,
+                "section": "Table 3 | Life Cycle of building products: stages and modules included in this EPD",
+                "module": "C1",
+                "unit_raw": "kg CO2 eq."
+              },
+              "note": "C1 marked 'X' in boundary table (page 18) but no C1 results table published. Not found — null, not 0."
+            },
+            "C2": {
+              "value": null,
+              "raw": null,
+              "status": "not_declared",
+              "provenance": {
+                "page": 18,
+                "section": "Table 3 | Life Cycle of building products: stages and modules included in this EPD",
+                "module": "C2",
+                "unit_raw": "kg CO2 eq."
+              },
+              "note": "C2 marked 'X' in boundary table (page 18) but no C2 results table published. Not found — null, not 0."
+            },
+            "C3": {
+              "value": null,
+              "raw": null,
+              "status": "not_declared",
+              "provenance": {
+                "page": 18,
+                "section": "Table 3 | Life Cycle of building products: stages and modules included in this EPD",
+                "module": "C3",
+                "unit_raw": "kg CO2 eq."
+              },
+              "note": "C3 marked 'X' in boundary table (page 18) but no C3 results table published. Not found — null, not 0."
+            },
+            "C4": {
+              "value": null,
+              "raw": null,
+              "status": "not_declared",
+              "provenance": {
+                "page": 18,
+                "section": "Table 3 | Life Cycle of building products: stages and modules included in this EPD",
+                "module": "C4",
+                "unit_raw": "kg CO2 eq."
+              },
+              "note": "C4 marked 'X' in boundary table (page 18) but no C4 results table published. Not found — null, not 0."
+            },
+            "D": {
+              "value": null,
+              "raw": null,
+              "status": "not_declared",
+              "provenance": {
+                "page": 18,
+                "section": "Table 3 | Life Cycle of building products: stages and modules included in this EPD",
+                "module": "D",
+                "unit_raw": "kg CO2 eq."
+              },
+              "note": "D (Benefits & loads beyond the system boundary) marked 'X' in boundary table (page 18) but no D results table published. Not found — null, not 0."
+            }
+          }
+        },
+        "GWP_fossil": {
+          "unit_raw": "kg CO2 eq.",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 143.73,
+              "raw": "143.73",
+              "status": "declared",
+              "provenance": {
+                "page": 32,
+                "section": "Table 8 | Potential environmental impacts of Product stage (A1 – A3) — GWP-fossil column",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2 eq.",
+                "source_type": "image",
+                "verification": "rasterised table (p32); read visually at high zoom by extraction agent, cross-checked by checker"
+              }
+            },
+            "A4": {
+              "value": 9.64,
+              "raw": "9.64",
+              "status": "declared",
+              "provenance": {
+                "page": 34,
+                "section": "Table 13 | Potential environmental impacts of Distribution stage (A4) — GWP-fossil column",
+                "module": "A4",
+                "unit_raw": "kg CO2 eq."
+              }
+            }
+          }
+        },
+        "GWP_biogenic": {
+          "unit_raw": "kg CO2 eq.",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 0.113,
+              "raw": "1.13E-01",
+              "status": "declared",
+              "provenance": {
+                "page": 32,
+                "section": "Table 8 | Potential environmental impacts of Product stage (A1 – A3) — GWP-biogenic column",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2 eq.",
+                "source_type": "image",
+                "verification": "rasterised table (p32); read visually at high zoom by extraction agent, cross-checked by checker"
+              }
+            },
+            "A4": {
+              "value": 0.0,
+              "raw": "0.00",
+              "status": "declared",
+              "provenance": {
+                "page": 34,
+                "section": "Table 13 | Potential environmental impacts of Distribution stage (A4) — GWP-biogenic column",
+                "module": "A4",
+                "unit_raw": "kg CO2 eq."
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "system_boundary": {
+    "A1": "declared",
+    "A2": "declared",
+    "A3": "declared",
+    "A1-A3": "declared",
+    "A4": "declared",
+    "A5": "declared",
+    "B1": "not_declared",
+    "B2": "not_declared",
+    "B3": "not_declared",
+    "B4": "not_declared",
+    "B5": "not_declared",
+    "B6": "not_declared",
+    "B7": "not_declared",
+    "C1": "declared",
+    "C2": "declared",
+    "C3": "declared",
+    "C4": "declared",
+    "D": "declared"
+  },
+  "comparability_notes": [
+    "SPECIAL FILE: the A1-A3 results table (page 32) is a rotated raster IMAGE embedded in the PDF, so its GWP values (fossil 143.73, biogenic 1.13E-01, luluc 1.77E-02, total 143.83) are not in the text layer and had to be read visually. The A4 table (page 34) IS native text (GWP-total 9.64).",
+    "TRANSPOSED / per-stage layout: indicators are columns (GWP-fossil, GWP-biogenic, GWP-luluc, GWP-total, ...) and there is ONE product row ('Concrete produced at South Australia'). Column order on both pages: GWP-fossil, GWP-biogenic, GWP-luluc, GWP-total.",
+    "Boundary table (page 18) declares A1-A3, A4, A5, C1, C2, C3, C4 and D as 'X' (in scope). HOWEVER the results section only publishes numeric tables for A1-A3 (page 32, Tables 8-11) and A4 (pages 34-35, Tables 13-16). NO results tables exist for A5, C1, C2, C3, C4 or D — those GWP cells are genuinely absent from the document and are left null (not_declared), never 0.",
+    "Interpretation guidance (page 37) tells users to take the 'Cradle to Gate (A1-A3) GWP total' and add the 'A4' transport GWP — i.e. the EPD is effectively used as A1-A3 + A4 only, consistent with only those two stages having published results.",
+    "Characterisation = EF 3.1 (page 29: 'aligned to and adopted from EN 15804+A2 version of Environmental Footprint 3.1'); GWP CFs use IPCC 2021 (AR6) 100-year baseline. Candidate's 'CML' referred only to the ADP-elements/fossil method (CML v4.8), not the overall set.",
+    "GWP-total(A1-A3) = 143.83 kg CO2 eq per m3; GWP-total(A4) = 9.64 kg CO2 eq per m3. Combined cradle-to-gate + transport = ~153.5 kg CO2 eq/m3.",
+    "Declared unit 1 m3 manufactured concrete; no density/mass conversion factor is provided in the EPD (mass_kg null).",
+    "Mix SN252F100 = Futurecrete Normal Class, Type GL (EvoCem) cement + slag SCM, 25 MPa, produced in South Australia."
+  ],
+  "extraction_meta": {
+    "method": "deterministic coordinate/order-bound table parse; contextual fields agent-verified",
+    "numbers_validated": "cross_validate.py (raw string present on cited page)",
+    "verified_by": "epd-extraction-agent (opus, special/transposed image-table file)",
+    "checked_by": null,
+    "confidence": "high",
+    "warnings": [
+      "No GWP-total results table found deterministically.",
+      "The candidate JSON had NO GWP values and many garbled context fields (manufacturer 'and supplier', declared_unit 'and', characterization 'CML', location 'EPD International AB', compressive_strength MPa null). All corrected here from the source pages. GWP values newly extracted: A1-A3 total 143.83 (page 32 image), A4 total 9.64 (page 34 text).",
+      "Modules A5, C1, C2, C3, C4, D are declared 'X' in the page-18 boundary table but their GWP results are NOT published anywhere in the 40-page PDF (verified: only Tables 8-16 exist; Table 12 is a caption gap; pages 28/36/38 are photos; no C/D/A5 results pages). These are reported as not_declared/null. This is a data-completeness gap in the source EPD, not an extraction miss.",
+      "Full-page thumbnail of page 32 can misread GWP-biogenic as '1.13E+01'; the high-zoom crop unambiguously shows '1.13E-01' (0.113), which is also consistent with total(143.83) = fossil(143.73) + biogenic(0.113) + luluc(0.0177)."
+    ],
+    "needs_review": [
+      "A5, C1, C2, C3, C4, D GWP not found in document despite being declared 'X' in the boundary table — confirm whether an appendix/tool sheet outside this PDF carries them, or whether the EPD is genuinely A1-A3 + A4 only."
+    ]
+  }
+}
