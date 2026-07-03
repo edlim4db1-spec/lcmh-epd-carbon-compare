@@ -7,9 +7,9 @@ function fmt(n: number): string {
 }
 
 export function statusBadge(status: CellStatus) {
-  if (status === "not_declared") return <span className="badge nd" title="Not declared in this EPD">ND</span>;
+  if (status === "not_declared") return <span className="badge nd" title="Not declared — this stage is outside the EPD's system boundary">ND</span>;
   if (status === "not_relevant") return <span className="badge nr" title="Module not relevant">NR</span>;
-  if (status === "not_reported") return <span className="badge nd" title="Not reported">—</span>;
+  if (status === "not_reported") return <span className="badge nrep" title="In scope per the EPD's system boundary, but no value was published for it — not zero">not reported</span>;
   if (status === "missing") return <span className="badge nd" title="Missing / could not extract">—</span>;
   if (status === "estimated") return <span className="badge zero" title="Estimated">est</span>;
   return null;

@@ -181,7 +181,31 @@ def build_final(cand, corr):
     # allow multi-product EPDs to replace products[] wholesale
     if c.get("products"):
         final["products"] = c["products"]
+    _normalize_not_reported(final)
     return final
+
+
+DISPLAY_MODS = ["A1-A3", "A4", "A5", "C1", "C2", "C3", "C4", "D"]
+
+
+def _normalize_not_reported(final):
+    """Make honesty explicit: for a headline module the boundary declares in scope but for
+    which this product publishes no value, add an explicit not_reported cell (never 0)."""
+    sb = final.get("system_boundary", {})
+    bpage = ((final["epd"].get("provenance") or {}).get("published") or {})
+    for prod in final.get("products", []):
+        gwp = prod.get("indicators", {}).get("GWP_total")
+        if not gwp:
+            continue
+        mods = gwp.setdefault("modules", {})
+        for m in DISPLAY_MODS:
+            if sb.get(m) == "declared" and m not in mods:
+                mods[m] = {
+                    "value": None, "raw": None, "status": "not_reported",
+                    "provenance": {"page": None, "module": m,
+                                   "note": "Declared in the EPD system boundary but no per-product "
+                                           "value published in this EPD; not zero."},
+                }
 
 
 def _guess_a2(std, pcr):

@@ -11,14 +11,9 @@ export const metadata: Metadata = {
 function Logo() {
   return (
     <span className="brand">
-      <svg width="26" height="26" viewBox="0 0 32 32" fill="none" aria-hidden>
-        <rect width="32" height="32" rx="8" fill="var(--teal-700)" />
-        <path
-          d="M8 21c0-5 3.6-9 8.4-9 2.2 0 3.9.8 5 2.1l-2.2 1.9c-.7-.8-1.6-1.2-2.8-1.2-2.7 0-4.6 2.3-4.6 6.2H8Z"
-          fill="#fff"
-        />
-        <circle cx="22" cy="21" r="2.3" fill="var(--teal-100)" />
-      </svg>
+      {/* LCMH's own logo mark (downloaded from lcmhub.com) */}
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img src="/lcmh-logo.svg" alt="Low Carbon Materials Hub" width={32} height={27} />
       <span>
         LCMH <span className="brand-sub">Carbon Compare</span>
       </span>

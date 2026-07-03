@@ -47,14 +47,14 @@
         }
       },
       "manufacturing_location": {
-        "site": "21 Mackay Slade Point Road, Mackay,",
+        "site": "21 Mackay Slade Point Road, Mackay, Australia",
         "city": "Mackay",
-        "region": null,
-        "country": null,
-        "raw": "21 Mackay Slade Point Road, Mackay,",
+        "region": "Queensland",
+        "country": "AU",
+        "raw": "21 Mackay Slade Point Road, Mackay, Australia",
         "provenance": {
           "page": 2,
-          "snippet": "Address | 21 Mackay Slade Point Road, Mackay,"
+          "snippet": "Place of production: 21 Mackay Slade Point Road, Mackay, Australia"
         }
       },
       "declared_unit": {

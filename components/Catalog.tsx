@@ -113,11 +113,11 @@ export default function Catalog({ cards }: { cards: CardData[] }) {
       </aside>
 
       <section>
-        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+        <div className="results-bar">
           <div className="result-count">
-            {filtered.length} product{filtered.length === 1 ? "" : "s"} · {selected.length} selected
+            {filtered.length} product{filtered.length === 1 ? "" : "s"} · {selected.length} selected to compare
           </div>
-          <div style={{ display: "flex", gap: 8 }}>
+          <div className="actions">
             {selected.length > 0 && (
               <button className="btn ghost" onClick={() => setSelected([])}>Clear</button>
             )}

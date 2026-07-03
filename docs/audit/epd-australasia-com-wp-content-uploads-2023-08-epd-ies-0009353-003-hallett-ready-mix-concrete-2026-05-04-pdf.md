@@ -27,6 +27,11 @@
 | Module | Value | Raw (verbatim) | Status | Page | Section |
 |---|---|---|---|---|---|
 | A1-A3 | 275.0 | `275` | declared | 11 | DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT  |
+| C1 | None | `None` | not_reported | None |  |
+| C2 | None | `None` | not_reported | None |  |
+| C3 | None | `None` | not_reported | None |  |
+| C4 | None | `None` | not_reported | None |  |
+| D | None | `None` | not_reported | None |  |
 
 ## Product 2: N2020P F30
 
@@ -40,6 +45,11 @@
 | Module | Value | Raw (verbatim) | Status | Page | Section |
 |---|---|---|---|---|---|
 | A1-A3 | 203.0 | `203` | declared | 11 | DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT  |
+| C1 | None | `None` | not_reported | None |  |
+| C2 | None | `None` | not_reported | None |  |
+| C3 | None | `None` | not_reported | None |  |
+| C4 | None | `None` | not_reported | None |  |
+| D | None | `None` | not_reported | None |  |
 
 ## Product 3: N2020P S30
 
@@ -53,6 +63,11 @@
 | Module | Value | Raw (verbatim) | Status | Page | Section |
 |---|---|---|---|---|---|
 | A1-A3 | 206.0 | `206` | declared | 11 | DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT  |
+| C1 | None | `None` | not_reported | None |  |
+| C2 | None | `None` | not_reported | None |  |
+| C3 | None | `None` | not_reported | None |  |
+| C4 | None | `None` | not_reported | None |  |
+| D | None | `None` | not_reported | None |  |
 
 ## Product 4: N2020P S50
 
@@ -66,6 +81,11 @@
 | Module | Value | Raw (verbatim) | Status | Page | Section |
 |---|---|---|---|---|---|
 | A1-A3 | 162.0 | `162` | declared | 11 | DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT  |
+| C1 | None | `None` | not_reported | None |  |
+| C2 | None | `None` | not_reported | None |  |
+| C3 | None | `None` | not_reported | None |  |
+| C4 | None | `None` | not_reported | None |  |
+| D | None | `None` | not_reported | None |  |
 
 ## Product 5: N2520P Ref
 
@@ -79,6 +99,11 @@
 | Module | Value | Raw (verbatim) | Status | Page | Section |
 |---|---|---|---|---|---|
 | A1-A3 | 301.0 | `301` | declared | 11 | DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT  |
+| C1 | None | `None` | not_reported | None |  |
+| C2 | None | `None` | not_reported | None |  |
+| C3 | None | `None` | not_reported | None |  |
+| C4 | None | `None` | not_reported | None |  |
+| D | None | `None` | not_reported | None |  |
 
 ## Product 6: N2520P F30
 
@@ -92,6 +117,11 @@
 | Module | Value | Raw (verbatim) | Status | Page | Section |
 |---|---|---|---|---|---|
 | A1-A3 | 221.0 | `221` | declared | 11 | DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT  |
+| C1 | None | `None` | not_reported | None |  |
+| C2 | None | `None` | not_reported | None |  |
+| C3 | None | `None` | not_reported | None |  |
+| C4 | None | `None` | not_reported | None |  |
+| D | None | `None` | not_reported | None |  |
 
 ## Product 7: N2520P S30
 
@@ -105,6 +135,11 @@
 | Module | Value | Raw (verbatim) | Status | Page | Section |
 |---|---|---|---|---|---|
 | A1-A3 | 225.0 | `225` | declared | 11 | DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT  |
+| C1 | None | `None` | not_reported | None |  |
+| C2 | None | `None` | not_reported | None |  |
+| C3 | None | `None` | not_reported | None |  |
+| C4 | None | `None` | not_reported | None |  |
+| D | None | `None` | not_reported | None |  |
 
 ## Product 8: N2520P T50
 
@@ -118,6 +153,11 @@
 | Module | Value | Raw (verbatim) | Status | Page | Section |
 |---|---|---|---|---|---|
 | A1-A3 | 171.0 | `171` | declared | 11 | DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT  |
+| C1 | None | `None` | not_reported | None |  |
+| C2 | None | `None` | not_reported | None |  |
+| C3 | None | `None` | not_reported | None |  |
+| C4 | None | `None` | not_reported | None |  |
+| D | None | `None` | not_reported | None |  |
 
 ## Product 9: N2520P S50
 
@@ -131,6 +171,11 @@
 | Module | Value | Raw (verbatim) | Status | Page | Section |
 |---|---|---|---|---|---|
 | A1-A3 | 176.0 | `176` | declared | 11 | DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT  |
+| C1 | None | `None` | not_reported | None |  |
+| C2 | None | `None` | not_reported | None |  |
+| C3 | None | `None` | not_reported | None |  |
+| C4 | None | `None` | not_reported | None |  |
+| D | None | `None` | not_reported | None |  |
 
 ## Product 10: N3220P Ref
 
@@ -144,6 +189,11 @@
 | Module | Value | Raw (verbatim) | Status | Page | Section |
 |---|---|---|---|---|---|
 | A1-A3 | 344.0 | `344` | declared | 11 | DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT  |
+| C1 | None | `None` | not_reported | None |  |
+| C2 | None | `None` | not_reported | None |  |
+| C3 | None | `None` | not_reported | None |  |
+| C4 | None | `None` | not_reported | None |  |
+| D | None | `None` | not_reported | None |  |
 
 ## Product 11: N3220P F30
 
@@ -157,6 +207,11 @@
 | Module | Value | Raw (verbatim) | Status | Page | Section |
 |---|---|---|---|---|---|
 | A1-A3 | 251.0 | `251` | declared | 11 | DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT  |
+| C1 | None | `None` | not_reported | None |  |
+| C2 | None | `None` | not_reported | None |  |
+| C3 | None | `None` | not_reported | None |  |
+| C4 | None | `None` | not_reported | None |  |
+| D | None | `None` | not_reported | None |  |
 
 ## Product 12: N3220P S30
 
@@ -170,6 +225,11 @@
 | Module | Value | Raw (verbatim) | Status | Page | Section |
 |---|---|---|---|---|---|
 | A1-A3 | 255.0 | `255` | declared | 11 | DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT  |
+| C1 | None | `None` | not_reported | None |  |
+| C2 | None | `None` | not_reported | None |  |
+| C3 | None | `None` | not_reported | None |  |
+| C4 | None | `None` | not_reported | None |  |
+| D | None | `None` | not_reported | None |  |
 
 ## Product 13: N3220P T50
 
@@ -183,6 +243,11 @@
 | Module | Value | Raw (verbatim) | Status | Page | Section |
 |---|---|---|---|---|---|
 | A1-A3 | 192.0 | `192` | declared | 11 | DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT  |
+| C1 | None | `None` | not_reported | None |  |
+| C2 | None | `None` | not_reported | None |  |
+| C3 | None | `None` | not_reported | None |  |
+| C4 | None | `None` | not_reported | None |  |
+| D | None | `None` | not_reported | None |  |
 
 ## Product 14: N3220P S50
 
@@ -214,6 +279,11 @@
 | Module | Value | Raw (verbatim) | Status | Page | Section |
 |---|---|---|---|---|---|
 | A1-A3 | 412.0 | `412` | declared | 11 | DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT  |
+| C1 | None | `None` | not_reported | None |  |
+| C2 | None | `None` | not_reported | None |  |
+| C3 | None | `None` | not_reported | None |  |
+| C4 | None | `None` | not_reported | None |  |
+| D | None | `None` | not_reported | None |  |
 
 ## Product 16: N4020P F30
 
@@ -227,6 +297,11 @@
 | Module | Value | Raw (verbatim) | Status | Page | Section |
 |---|---|---|---|---|---|
 | A1-A3 | 299.0 | `299` | declared | 11 | DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT  |
+| C1 | None | `None` | not_reported | None |  |
+| C2 | None | `None` | not_reported | None |  |
+| C3 | None | `None` | not_reported | None |  |
+| C4 | None | `None` | not_reported | None |  |
+| D | None | `None` | not_reported | None |  |
 
 ## Product 17: N4020P S30
 
@@ -240,6 +315,11 @@
 | Module | Value | Raw (verbatim) | Status | Page | Section |
 |---|---|---|---|---|---|
 | A1-A3 | 304.0 | `304` | declared | 11 | DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT  |
+| C1 | None | `None` | not_reported | None |  |
+| C2 | None | `None` | not_reported | None |  |
+| C3 | None | `None` | not_reported | None |  |
+| C4 | None | `None` | not_reported | None |  |
+| D | None | `None` | not_reported | None |  |
 
 ## Product 18: N4020P T50
 
@@ -253,6 +333,11 @@
 | Module | Value | Raw (verbatim) | Status | Page | Section |
 |---|---|---|---|---|---|
 | A1-A3 | 227.0 | `227` | declared | 11 | DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT  |
+| C1 | None | `None` | not_reported | None |  |
+| C2 | None | `None` | not_reported | None |  |
+| C3 | None | `None` | not_reported | None |  |
+| C4 | None | `None` | not_reported | None |  |
+| D | None | `None` | not_reported | None |  |
 
 ## Product 19: N4020P S50
 
@@ -266,6 +351,11 @@
 | Module | Value | Raw (verbatim) | Status | Page | Section |
 |---|---|---|---|---|---|
 | A1-A3 | 234.0 | `234` | declared | 11 | DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT  |
+| C1 | None | `None` | not_reported | None |  |
+| C2 | None | `None` | not_reported | None |  |
+| C3 | None | `None` | not_reported | None |  |
+| C4 | None | `None` | not_reported | None |  |
+| D | None | `None` | not_reported | None |  |
 
 ## Product 20: N5020P Ref
 
@@ -279,6 +369,11 @@
 | Module | Value | Raw (verbatim) | Status | Page | Section |
 |---|---|---|---|---|---|
 | A1-A3 | 506.0 | `506` | declared | 11 | DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT  |
+| C1 | None | `None` | not_reported | None |  |
+| C2 | None | `None` | not_reported | None |  |
+| C3 | None | `None` | not_reported | None |  |
+| C4 | None | `None` | not_reported | None |  |
+| D | None | `None` | not_reported | None |  |
 
 ## Product 21: N5020P F30
 
@@ -292,6 +387,11 @@
 | Module | Value | Raw (verbatim) | Status | Page | Section |
 |---|---|---|---|---|---|
 | A1-A3 | 365.0 | `365` | declared | 11 | DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT  |
+| C1 | None | `None` | not_reported | None |  |
+| C2 | None | `None` | not_reported | None |  |
+| C3 | None | `None` | not_reported | None |  |
+| C4 | None | `None` | not_reported | None |  |
+| D | None | `None` | not_reported | None |  |
 
 ## Product 22: N5020P S30
 
@@ -305,6 +405,11 @@
 | Module | Value | Raw (verbatim) | Status | Page | Section |
 |---|---|---|---|---|---|
 | A1-A3 | 370.0 | `370` | declared | 11 | DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT  |
+| C1 | None | `None` | not_reported | None |  |
+| C2 | None | `None` | not_reported | None |  |
+| C3 | None | `None` | not_reported | None |  |
+| C4 | None | `None` | not_reported | None |  |
+| D | None | `None` | not_reported | None |  |
 
 ## Product 23: N5020P T50
 
@@ -318,6 +423,11 @@
 | Module | Value | Raw (verbatim) | Status | Page | Section |
 |---|---|---|---|---|---|
 | A1-A3 | 274.0 | `274` | declared | 11 | DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT  |
+| C1 | None | `None` | not_reported | None |  |
+| C2 | None | `None` | not_reported | None |  |
+| C3 | None | `None` | not_reported | None |  |
+| C4 | None | `None` | not_reported | None |  |
+| D | None | `None` | not_reported | None |  |
 
 ## Product 24: N5020P S50
 
@@ -331,6 +441,11 @@
 | Module | Value | Raw (verbatim) | Status | Page | Section |
 |---|---|---|---|---|---|
 | A1-A3 | 282.0 | `282` | declared | 11 | DRY CREEK | A1-A3 | CORE ENVIRONMENTAL IMPACT  |
+| C1 | None | `None` | not_reported | None |  |
+| C2 | None | `None` | not_reported | None |  |
+| C3 | None | `None` | not_reported | None |  |
+| C4 | None | `None` | not_reported | None |  |
+| D | None | `None` | not_reported | None |  |
 
 ## Comparability notes
 - Cradle-to-gate (A1-A3) + end-of-life (C1-C4) + module D EPD. A4, A5 and all B (use-stage) modules are NOT declared.

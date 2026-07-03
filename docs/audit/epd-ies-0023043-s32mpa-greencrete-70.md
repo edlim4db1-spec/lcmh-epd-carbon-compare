@@ -2,8 +2,8 @@
 
 - **Source PDF:** `epd-ies-0023043-s32mpa-greencrete-70.pdf` (16 pp)
 - **Programme:** The international EPD® system, www.environdec.com
-- **PCR / standard:** 2019:14 Construction Products, Version 1.3.4, 2024-04- · None · EF 3.1
-- **Published / valid until:** None / 2025-06-20
+- **PCR / standard:** 2019:14 Construction Products, Version 1.3.4, 2024-04- · EN 15804:2012+A2:2019/AC:2021 · EF 3.1
+- **Published / valid until:** 2025-03-31 / 2030-03-31
 - **Extraction confidence:** high
 - **Verified by / checked by:** main-agent source-read fix / None
 
@@ -32,3 +32,6 @@
 | C3 | 12.5 | `1.25E+01` | declared | 11 | CORE ENVIRONMENTAL IMPACT INDICATORS – EN 1580 |
 | C4 | 2.29 | `2.29E+00` | declared | 11 | CORE ENVIRONMENTAL IMPACT INDICATORS – EN 1580 |
 | D | -1.61 | `‐1.61E+00` | declared | 11 | CORE ENVIRONMENTAL IMPACT INDICATORS – EN 1580 |
+
+## Comparability notes
+- Dates/standard corrected from p1: published 2025-03-31, valid until 2030-03-31 (earlier auto-parse caught a boilerplate '2025-06-20').

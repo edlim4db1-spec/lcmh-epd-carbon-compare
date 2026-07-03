@@ -76,6 +76,56 @@
                 "plant": "Dry Creek batch plant",
                 "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
               }
+            },
+            "C1": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C1",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C2": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C2",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C3": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C3",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C4": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C4",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "D": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "D",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
             }
           }
         },
@@ -169,6 +219,56 @@
                 "unit_raw": "kg CO2-eq",
                 "plant": "Dry Creek batch plant",
                 "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            },
+            "C1": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C1",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C2": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C2",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C3": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C3",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C4": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C4",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "D": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "D",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
               }
             }
           }
@@ -264,6 +364,56 @@
                 "plant": "Dry Creek batch plant",
                 "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
               }
+            },
+            "C1": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C1",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C2": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C2",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C3": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C3",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C4": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C4",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "D": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "D",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
             }
           }
         },
@@ -357,6 +507,56 @@
                 "unit_raw": "kg CO2-eq",
                 "plant": "Dry Creek batch plant",
                 "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            },
+            "C1": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C1",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C2": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C2",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C3": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C3",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C4": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C4",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "D": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "D",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
               }
             }
           }
@@ -452,6 +652,56 @@
                 "plant": "Dry Creek batch plant",
                 "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
               }
+            },
+            "C1": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C1",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C2": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C2",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C3": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C3",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C4": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C4",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "D": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "D",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
             }
           }
         },
@@ -545,6 +795,56 @@
                 "unit_raw": "kg CO2-eq",
                 "plant": "Dry Creek batch plant",
                 "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            },
+            "C1": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C1",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C2": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C2",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C3": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C3",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C4": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C4",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "D": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "D",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
               }
             }
           }
@@ -640,6 +940,56 @@
                 "plant": "Dry Creek batch plant",
                 "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
               }
+            },
+            "C1": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C1",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C2": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C2",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C3": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C3",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C4": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C4",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "D": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "D",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
             }
           }
         },
@@ -733,6 +1083,56 @@
                 "unit_raw": "kg CO2-eq",
                 "plant": "Dry Creek batch plant",
                 "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            },
+            "C1": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C1",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C2": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C2",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C3": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C3",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C4": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C4",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "D": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "D",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
               }
             }
           }
@@ -828,6 +1228,56 @@
                 "plant": "Dry Creek batch plant",
                 "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
               }
+            },
+            "C1": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C1",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C2": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C2",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C3": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C3",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C4": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C4",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "D": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "D",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
             }
           }
         },
@@ -921,6 +1371,56 @@
                 "unit_raw": "kg CO2-eq",
                 "plant": "Dry Creek batch plant",
                 "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            },
+            "C1": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C1",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C2": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C2",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C3": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C3",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C4": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C4",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "D": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "D",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
               }
             }
           }
@@ -1016,6 +1516,56 @@
                 "plant": "Dry Creek batch plant",
                 "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
               }
+            },
+            "C1": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C1",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C2": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C2",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C3": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C3",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C4": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C4",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "D": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "D",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
             }
           }
         },
@@ -1110,6 +1660,56 @@
                 "plant": "Dry Creek batch plant",
                 "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
               }
+            },
+            "C1": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C1",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C2": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C2",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C3": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C3",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C4": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C4",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "D": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "D",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
             }
           }
         },
@@ -1203,6 +1803,56 @@
                 "unit_raw": "kg CO2-eq",
                 "plant": "Dry Creek batch plant",
                 "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            },
+            "C1": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C1",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C2": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C2",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C3": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C3",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C4": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C4",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "D": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "D",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
               }
             }
           }
@@ -1457,6 +2107,56 @@
                 "plant": "Dry Creek batch plant",
                 "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
               }
+            },
+            "C1": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C1",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C2": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C2",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C3": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C3",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C4": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C4",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "D": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "D",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
             }
           }
         },
@@ -1550,6 +2250,56 @@
                 "unit_raw": "kg CO2-eq",
                 "plant": "Dry Creek batch plant",
                 "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            },
+            "C1": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C1",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C2": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C2",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C3": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C3",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C4": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C4",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "D": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "D",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
               }
             }
           }
@@ -1645,6 +2395,56 @@
                 "plant": "Dry Creek batch plant",
                 "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
               }
+            },
+            "C1": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C1",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C2": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C2",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C3": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C3",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C4": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C4",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "D": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "D",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
             }
           }
         },
@@ -1738,6 +2538,56 @@
                 "unit_raw": "kg CO2-eq",
                 "plant": "Dry Creek batch plant",
                 "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            },
+            "C1": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C1",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C2": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C2",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C3": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C3",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C4": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C4",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "D": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "D",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
               }
             }
           }
@@ -1833,6 +2683,56 @@
                 "plant": "Dry Creek batch plant",
                 "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
               }
+            },
+            "C1": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C1",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C2": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C2",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C3": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C3",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C4": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C4",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "D": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "D",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
             }
           }
         },
@@ -1926,6 +2826,56 @@
                 "unit_raw": "kg CO2-eq",
                 "plant": "Dry Creek batch plant",
                 "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            },
+            "C1": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C1",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C2": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C2",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C3": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C3",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C4": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C4",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "D": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "D",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
               }
             }
           }
@@ -2021,6 +2971,56 @@
                 "plant": "Dry Creek batch plant",
                 "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
               }
+            },
+            "C1": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C1",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C2": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C2",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C3": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C3",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C4": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C4",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "D": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "D",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
             }
           }
         },
@@ -2114,6 +3114,56 @@
                 "unit_raw": "kg CO2-eq",
                 "plant": "Dry Creek batch plant",
                 "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            },
+            "C1": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C1",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C2": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C2",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C3": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C3",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C4": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C4",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "D": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "D",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
               }
             }
           }
@@ -2209,6 +3259,56 @@
                 "plant": "Dry Creek batch plant",
                 "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
               }
+            },
+            "C1": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C1",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C2": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C2",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C3": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C3",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C4": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C4",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "D": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "D",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
             }
           }
         },
@@ -2302,6 +3402,56 @@
                 "unit_raw": "kg CO2-eq",
                 "plant": "Dry Creek batch plant",
                 "snippet": "Table 13. Module A1-A3 Core environmental impact indicator results for 1 m3 of product produced at Dry Creek batch plant"
+              }
+            },
+            "C1": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C1",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C2": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C2",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C3": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C3",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C4": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C4",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "D": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "D",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
               }
             }
           }

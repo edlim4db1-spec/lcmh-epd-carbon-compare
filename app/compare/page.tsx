@@ -157,8 +157,10 @@ export default function Compare({
 
       <div className="legend">
         <span><span className="badge nd">ND</span> not declared (≠ 0)</span>
+        <span><span className="badge nrep">not reported</span> in scope but unpublished (≠ 0)</span>
         <span><span className="badge nr">NR</span> not relevant</span>
         <span><span className="badge zero">0</span> declared as zero</span>
+        <span><span className="badge nd">img</span> read from rasterised table (verified visually ×2)</span>
         <span><span className="mono">p.N</span> → source EPD page</span>
       </div>
 

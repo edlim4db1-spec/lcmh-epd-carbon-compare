@@ -1,23 +1,23 @@
 :root {
-  /* LCMH-inspired palette: deep teal on clean white, data-first */
-  --teal-900: #0b3b39;
-  --teal-700: #0f766e;
-  --teal-600: #12897f;
-  --teal-500: #14b8a6;
-  --teal-100: #d5f2ee;
-  --teal-50: #eefbf9;
-  --ink: #0f1c1b;
-  --muted: #5b6b6a;
-  --line: #e2e8e7;
+  /* Palette sampled from lcmhub.com: LCMH green on clean white, data-first */
+  --teal-900: #044733;   /* deep green (headings) */
+  --teal-700: #00845a;   /* LCMH primary brand green */
+  --teal-600: #059669;   /* logo green / accents */
+  --teal-500: #10b981;
+  --teal-100: #cdeee0;
+  --teal-50: #f1f9f4;    /* soft green tint */
+  --ink: #212121;        /* lcmhub ink */
+  --muted: #5c6b63;
+  --line: #e6ebe7;
   --bg: #ffffff;
-  --bg-soft: #f6faf9;
+  --bg-soft: #fafbfa;    /* lcmhub off-white */
   --warn-bg: #fff7ed;
   --warn-ink: #9a3412;
   --warn-line: #fed7aa;
-  --nd-bg: #f1f4f4;
-  --nd-ink: #7a8a89;
-  --radius: 10px;
-  --shadow: 0 1px 2px rgba(11, 59, 57, 0.06), 0 4px 16px rgba(11, 59, 57, 0.05);
+  --nd-bg: #eef2ef;
+  --nd-ink: #77857c;
+  --radius: 12px;
+  --shadow: 0 1px 2px rgba(4, 71, 51, 0.05), 0 6px 20px rgba(4, 71, 51, 0.05);
   --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, Helvetica, Arial, sans-serif;
   --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
 }
@@ -98,7 +98,20 @@ select, input[type="number"], input[type="text"] {
 .card-actions { display: flex; gap: 8px; margin-top: 12px; }
 .card-actions label { display: flex; align-items: center; gap: 6px; font-size: 13px; cursor: pointer; }
 
-.result-count { color: var(--muted); font-size: 13px; margin: 4px 0 12px; }
+.result-count { color: var(--muted); font-size: 13px; margin: 0; }
+
+/* Sticky action bar for the results header — solid background so it never
+   visually collides with the product cards scrolling beneath it. */
+.results-bar {
+  display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  position: sticky; top: 62px; z-index: 12;
+  background: var(--bg); padding: 12px 0 12px; margin: 0 0 16px;
+  border-bottom: 1px solid var(--line);
+}
+.results-bar .actions { display: flex; gap: 8px; align-items: center; flex-shrink: 0; }
+@media (max-width: 560px) {
+  .results-bar { flex-wrap: wrap; }
+}
 
 /* Data table (compare) */
 .tablewrap { overflow-x: auto; border: 1px solid var(--line); border-radius: var(--radius); }
@@ -115,6 +128,7 @@ table.data .rowlabel { font-weight: 600; }
 .badge { display: inline-block; font-size: 11px; font-weight: 700; padding: 1px 7px; border-radius: 6px; letter-spacing: 0.02em; }
 .badge.nd { background: var(--nd-bg); color: var(--nd-ink); }
 .badge.nr { background: #eef2ff; color: #4f46e5; }
+.badge.nrep { background: var(--warn-bg); color: var(--warn-ink); border: 1px solid var(--warn-line); }
 .badge.zero { background: var(--teal-50); color: var(--teal-700); }
 
 /* callouts */

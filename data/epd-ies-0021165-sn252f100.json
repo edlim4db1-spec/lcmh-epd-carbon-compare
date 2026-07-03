@@ -91,72 +91,78 @@
             "A5": {
               "value": null,
               "raw": null,
-              "status": "not_declared",
+              "status": "not_reported",
               "provenance": {
                 "page": 18,
                 "section": "Table 3 | Life Cycle of building products: stages and modules included in this EPD",
                 "module": "A5",
-                "unit_raw": "kg CO2 eq."
+                "unit_raw": "kg CO2 eq.",
+                "note": "Declared in scope (boundary p18 marks X) but no results table published in the PDF"
               },
               "note": "A5 is marked 'X' (declared in scope) in the boundary table (page 18), but NO A5 results table is published anywhere in the EPD. Only A1-A3 (page 32) and A4 (pages 34-35) results tables exist. Value genuinely not found — left null, not 0."
             },
             "C1": {
               "value": null,
               "raw": null,
-              "status": "not_declared",
+              "status": "not_reported",
               "provenance": {
                 "page": 18,
                 "section": "Table 3 | Life Cycle of building products: stages and modules included in this EPD",
                 "module": "C1",
-                "unit_raw": "kg CO2 eq."
+                "unit_raw": "kg CO2 eq.",
+                "note": "Declared in scope (boundary p18 marks X) but no results table published in the PDF"
               },
               "note": "C1 marked 'X' in boundary table (page 18) but no C1 results table published. Not found — null, not 0."
             },
             "C2": {
               "value": null,
               "raw": null,
-              "status": "not_declared",
+              "status": "not_reported",
               "provenance": {
                 "page": 18,
                 "section": "Table 3 | Life Cycle of building products: stages and modules included in this EPD",
                 "module": "C2",
-                "unit_raw": "kg CO2 eq."
+                "unit_raw": "kg CO2 eq.",
+                "note": "Declared in scope (boundary p18 marks X) but no results table published in the PDF"
               },
               "note": "C2 marked 'X' in boundary table (page 18) but no C2 results table published. Not found — null, not 0."
             },
             "C3": {
               "value": null,
               "raw": null,
-              "status": "not_declared",
+              "status": "not_reported",
               "provenance": {
                 "page": 18,
                 "section": "Table 3 | Life Cycle of building products: stages and modules included in this EPD",
                 "module": "C3",
-                "unit_raw": "kg CO2 eq."
+                "unit_raw": "kg CO2 eq.",
+                "note": "Declared in scope (boundary p18 marks X) but no results table published in the PDF"
               },
               "note": "C3 marked 'X' in boundary table (page 18) but no C3 results table published. Not found — null, not 0."
             },
             "C4": {
               "value": null,
               "raw": null,
-              "status": "not_declared",
+              "status": "not_reported",
               "provenance": {
                 "page": 18,
                 "section": "Table 3 | Life Cycle of building products: stages and modules included in this EPD",
                 "module": "C4",
-                "unit_raw": "kg CO2 eq."
+                "unit_raw": "kg CO2 eq.",
+                "note": "Declared in scope (boundary p18 marks X) but no results table published in the PDF"
               },
               "note": "C4 marked 'X' in boundary table (page 18) but no C4 results table published. Not found — null, not 0."
             },
             "D": {
               "value": null,
               "raw": null,
-              "status": "not_declared",
+              "status": "not_reported",
               "provenance": {
                 "page": 18,
                 "section": "Table 3 | Life Cycle of building products: stages and modules included in this EPD",
                 "module": "D",
-                "unit_raw": "kg CO2 eq."
+                "unit_raw": "kg CO2 eq.",
+                "note": "Declared in scope (boundary p18 marks X) but no results table published in the PDF"
               },
               "note": "D (Benefits & loads beyond the system boundary) marked 'X' in boundary table (page 18) but no D results table published. Not found — null, not 0."
             }
@@ -253,7 +259,8 @@
     "Characterisation = EF 3.1 (page 29: 'aligned to and adopted from EN 15804+A2 version of Environmental Footprint 3.1'); GWP CFs use IPCC 2021 (AR6) 100-year baseline. Candidate's 'CML' referred only to the ADP-elements/fossil method (CML v4.8), not the overall set.",
     "GWP-total(A1-A3) = 143.83 kg CO2 eq per m3; GWP-total(A4) = 9.64 kg CO2 eq per m3. Combined cradle-to-gate + transport = ~153.5 kg CO2 eq/m3.",
     "Declared unit 1 m3 manufactured concrete; no density/mass conversion factor is provided in the EPD (mass_kg null).",
-    "Mix SN252F100 = Futurecrete Normal Class, Type GL (EvoCem) cement + slag SCM, 25 MPa, produced in South Australia."
+    "Mix SN252F100 = Futurecrete Normal Class, Type GL (EvoCem) cement + slag SCM, 25 MPa, produced in South Australia.",
+    "Boundary (p18) claims A5, C1-C4 and D in scope, but the EPD publishes no results tables for them — shown as 'not reported', not zero."
   ],
   "extraction_meta": {
     "method": "deterministic coordinate/order-bound table parse; contextual fields agent-verified",

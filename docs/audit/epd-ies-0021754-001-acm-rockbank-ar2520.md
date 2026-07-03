@@ -39,6 +39,7 @@
 - GWP-total uses EF 3.1 / IPCC AR6 CFs (higher numeric values than AR5). Document also reports a separate 'GWP-GHG (IPCC AR5)' row (A1-A3=139, C1=12.0, C2=14.5, C3=7.83, C4=0.861, D=-9.8) aligned to Australian GHG reporting.
 - Manufacturer Aurora uses GGBFS (treated as secondary material) and recycled aggregates — a lower-carbon 'ALTRA' style mix.
 - Declared unit 1 m3; density/mass 2270 kg/m3.
+- Version date 2025-08-15 / valid until 2030-08-15 confirmed from p1 (the 2030-04-07 seen elsewhere is the PCR's validity, not the EPD's).
 
 ## Warnings
 - Cell conflict across pages: GWP_GHG.A1-A3: '1.39E+02' vs '139'
