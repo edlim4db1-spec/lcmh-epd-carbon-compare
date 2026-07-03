@@ -165,9 +165,9 @@ export default function Catalog({ cards }: { cards: CardData[] }) {
               </div>
 
               <div className="meta-row">
-                <span>📍 {c.location}</span>
-                <span>🧱 {c.strengthClass || "—"}</span>
-                <span>📄 {c.declaredCount} stages declared</span>
+                <span>{c.location}</span>
+                <span>{c.strengthClass ? `class ${c.strengthClass}` : "class —"}</span>
+                <span>{c.declaredCount} stages declared</span>
               </div>
 
               <div className="card-actions">

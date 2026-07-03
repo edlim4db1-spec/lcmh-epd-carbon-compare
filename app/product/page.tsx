@@ -63,7 +63,7 @@ export default function ProductDetail({
         ) : (
           <span className="chip grey">strength not stated</span>
         )}
-        <span className="chip grey">📍 {locationLabel(row)}</span>
+        <span className="chip grey">{locationLabel(row)}</span>
         <span className="chip grey">unit: {p.declared_unit?.unit}{p.declared_unit?.mass_kg ? ` · ${p.declared_unit.mass_kg} kg` : ""}</span>
         <span className="chip grey">EPD: {row.epd.id}</span>
       </div>

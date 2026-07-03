@@ -60,6 +60,8 @@ export default function Compare({
   const differentModules = new Set(signatures).size > 1;
   const units = new Set(rows.map((r) => r.product.declared_unit?.unit || "m3"));
   const differentUnits = units.size > 1;
+  const mpas = rows.map((r) => r.product.compressive_strength?.value_mpa).filter((v) => v != null);
+  const differentStrengths = new Set(mpas).size > 1;
   const indicators = new Set(
     rows.map((r) => (r.product.indicators?.GWP_total?.unit_raw || "").replace(/\s/g, ""))
   );
@@ -96,6 +98,13 @@ export default function Compare({
           are not on the same basis — check mass per unit before comparing.
         </div>
       )}
+      {differentStrengths && (
+        <div className="callout">
+          <strong>Different strength classes</strong> ({Array.from(new Set(mpas)).join(" vs ")} MPa).
+          A stronger mix usually carries more cement and more carbon — comparing carbon across
+          strength classes is misleading unless the application allows either strength.
+        </div>
+      )}
 
       <div className="tablewrap" style={{ marginTop: 14 }}>
         <table className="data">
@@ -118,11 +127,13 @@ export default function Compare({
               <td className="rowlabel">Compressive strength</td>
               {rows.map((r) => (
                 <td key={r.key} className="num">
-                  {r.product.compressive_strength?.value_mpa != null
-                    ? `${r.product.compressive_strength.value_mpa} MPa`
-                    : statusBadge("missing")}
+                  {r.product.compressive_strength?.value_mpa != null ? (
+                    <span className="chip">{r.product.compressive_strength.value_mpa} MPa</span>
+                  ) : (
+                    <span className="chip grey" title="Strength not stated in the EPD text">MPa ?</span>
+                  )}
                   {r.product.compressive_strength?.class ? (
-                    <div className="small">{r.product.compressive_strength.class}</div>
+                    <div className="small">class {r.product.compressive_strength.class}</div>
                   ) : null}
                 </td>
               ))}
