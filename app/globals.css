@@ -119,7 +119,9 @@ select, input[type="number"], input[type="text"] {
 .tablewrap { overflow-x: auto; border: 1px solid var(--line); border-radius: var(--radius); }
 table.data { border-collapse: collapse; width: 100%; font-size: 14px; }
 table.data th, table.data td { padding: 10px 12px; text-align: left; border-bottom: 1px solid var(--line); vertical-align: top; }
-table.data thead th { background: var(--bg-soft); font-size: 12px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); position: sticky; top: 62px; }
+/* NOTE: no position:sticky here — sticky thead inside an overflow-x container
+   paints rows over the header in Safari (rows appear above the floating header). */
+table.data thead th { background: var(--bg-soft); font-size: 12px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); }
 table.data td.num, table.data th.num { text-align: right; font-variant-numeric: tabular-nums; font-family: var(--mono); }
 table.data tr.stage-total td { font-weight: 700; background: var(--teal-50); }
 table.data .rowlabel { font-weight: 600; }
