@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getRow, gwpCell, declaredTotal, pdfHref, locationLabel, hasDeclaredB, formatModuleList } from "@/lib/data";
+import { getRow, gwpCell, declaredTotal, pdfHref, locationLabel, formatModuleList } from "@/lib/data";
 import { DISPLAY_MODULES, B_MODULES } from "@/lib/types";
 import StageValue, { statusBadge } from "@/components/StageValue";
 
@@ -107,10 +107,9 @@ export default function ProductDetail({
             </tr>
           </thead>
           <tbody>
-            {(hasDeclaredB(row)
-              ? ["A1-A3", "A4", "A5", ...B_MODULES, "C1", "C2", "C3", "C4", "D"]
-              : [...DISPLAY_MODULES]
-            ).map((m) => {
+            {/* Audit view: always all 15 modules, mirroring the source table 1:1.
+                ND rows render as status badges (never numbers). */}
+            {["A1-A3", "A4", "A5", ...B_MODULES, "C1", "C2", "C3", "C4", "D"].map((m) => {
               const c = gwpCell(row, m);
               const prov = c?.provenance;
               return (
@@ -118,7 +117,15 @@ export default function ProductDetail({
                   <td className="rowlabel">{STAGE_LABEL[m] || m}</td>
                   <td className="num"><StageValue cell={c} href={pdfHref(row, prov?.page)} /></td>
                   <td className="mono small">{c?.raw ?? "—"}</td>
-                  <td>{c ? (c.status === "declared" ? "declared" : <>{statusBadge(c.status)}</>) : statusBadge("not_declared")}</td>
+                  <td>
+                    {!c
+                      ? statusBadge("not_declared")
+                      : c.status === "declared"
+                      ? "declared"
+                      : c.status === "declared_zero"
+                      ? "declared (zero)"
+                      : statusBadge(c.status)}
+                  </td>
                   <td className="small">
                     {prov?.page ? (
                       <a href={pdfHref(row, prov.page)} target="_blank" rel="noreferrer">

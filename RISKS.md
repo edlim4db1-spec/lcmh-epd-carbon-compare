@@ -52,6 +52,16 @@ A number without provenance is WORSE than no number.
 - H4. No claiming comparability across EPDs with different declared module sets.
 - H5. Schema must be deep enough to hold status + provenance per cell, not just a number.
 
+## UI DISPLAY TRAPS (found in review — check after every UI change)
+- D1. EVERY status enum value must render a visible label/badge in EVERY view that shows
+  status (declared, declared_zero, not_declared, not_relevant, not_reported, estimated,
+  missing). A blank cell is indistinguishable from a bug. (Caught live: declared_zero
+  rendered no STATUS label on the product page.)
+- D2. The product detail page is the AUDIT view: it must mirror the source table 1:1 —
+  all 15 modules always, ND shown as ND. Compare is the DECISION view: adaptive rows are
+  fine there, but exclusions must be stated on totals. (Caught live: PDF printed B1-B7 'ND'
+  columns; detail page hid the rows entirely.)
+
 ## COMPARABILITY TRAPS (app must surface)
 - C1. Different EPDs declare different modules → cradle-to-grave totals not directly comparable. Flag it.
 - C2. Different PCR / EN15804 version / EF version / geography / data period → note per EPD.
