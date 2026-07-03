@@ -101,7 +101,7 @@ select, input[type="number"], input[type="text"] {
 
 /* Product cards */
 .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 14px; }
-.card { border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 16px; background: var(--bg); box-shadow: var(--shadow); }
+.card { border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 16px; background: var(--bg); box-shadow: var(--shadow); display: flex; flex-direction: column; }
 .card:hover { border-color: var(--teal-100); }
 .card-top { display: flex; justify-content: space-between; gap: 10px; }
 .card h4 { margin: 0 0 2px; font-size: 15px; letter-spacing: -0.01em; }
@@ -114,7 +114,9 @@ select, input[type="number"], input[type="text"] {
 .headline .num { font-size: 24px; font-weight: 700; color: var(--teal-900); font-variant-numeric: tabular-nums; }
 .headline .unit { color: var(--muted); font-size: 12px; }
 .meta-row { display: flex; flex-wrap: wrap; gap: 6px 12px; color: var(--muted); font-size: 12px; margin-top: 8px; }
-.card-actions { display: flex; gap: 8px; margin-top: 12px; }
+/* margin-top:auto pins the action row to the card bottom so every card in a
+   grid row aligns, regardless of how long its name/content is. */
+.card-actions { display: flex; gap: 8px; margin-top: auto; padding-top: 12px; }
 .card-actions label { display: flex; align-items: center; gap: 6px; font-size: 13px; cursor: pointer; }
 
 .result-count { color: var(--muted); font-size: 13px; margin: 0; }
