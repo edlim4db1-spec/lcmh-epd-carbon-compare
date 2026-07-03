@@ -132,24 +132,47 @@ export default function Compare({
             {/* context rows */}
             <tr>
               <td className="rowlabel">Compressive strength</td>
-              {rows.map((r) => (
-                <td key={r.key} className="num">
-                  {r.product.compressive_strength?.value_mpa != null ? (
-                    <span className="chip">{r.product.compressive_strength.value_mpa} MPa</span>
-                  ) : (
-                    <span className="chip grey" title="Strength not stated in the EPD text">MPa ?</span>
-                  )}
-                  {r.product.compressive_strength?.class ? (
-                    <div className="small">class {r.product.compressive_strength.class}</div>
-                  ) : null}
-                </td>
-              ))}
+              {rows.map((r) => {
+                const cs = r.product.compressive_strength;
+                const pg = cs?.provenance?.page;
+                return (
+                  <td key={r.key} className="num">
+                    {cs?.value_mpa != null ? (
+                      <span className="chip">{cs.value_mpa} MPa</span>
+                    ) : (
+                      <span className="chip grey" title="Strength not stated in the EPD text">MPa ?</span>
+                    )}
+                    {pg ? (
+                      <>
+                        {" "}
+                        <a className="prov" href={pdfHref(r, pg)} target="_blank" rel="noreferrer" title={cs?.provenance?.snippet || "Source page"}>
+                          p.{pg}
+                        </a>
+                      </>
+                    ) : null}
+                    {cs?.class ? <div className="small">class {cs.class}</div> : null}
+                  </td>
+                );
+              })}
             </tr>
             <tr>
               <td className="rowlabel">Manufacturing location</td>
-              {rows.map((r) => (
-                <td key={r.key} className="num">{locationLabel(r)}</td>
-              ))}
+              {rows.map((r) => {
+                const pg = r.product.manufacturing_location?.provenance?.page;
+                return (
+                  <td key={r.key} className="num">
+                    {locationLabel(r)}
+                    {pg ? (
+                      <>
+                        {" "}
+                        <a className="prov" href={pdfHref(r, pg)} target="_blank" rel="noreferrer" title={r.product.manufacturing_location?.provenance?.snippet || "Source page"}>
+                          p.{pg}
+                        </a>
+                      </>
+                    ) : null}
+                  </td>
+                );
+              })}
             </tr>
             <tr>
               <td className="rowlabel">Declared unit</td>

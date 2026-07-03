@@ -66,12 +66,33 @@ export default function ProductDetail({
 
       <div className="meta-row" style={{ marginTop: 12, fontSize: 13 }}>
         {p.compressive_strength?.value_mpa != null ? (
-          <span className="chip">{p.compressive_strength.value_mpa} MPa{p.compressive_strength.class ? ` · ${p.compressive_strength.class}` : ""}</span>
+          <span className="chip">
+            {p.compressive_strength.value_mpa} MPa{p.compressive_strength.class ? ` · ${p.compressive_strength.class}` : ""}
+            {p.compressive_strength.provenance?.page ? (
+              <a className="prov" href={pdfHref(row, p.compressive_strength.provenance.page)} target="_blank" rel="noreferrer" title={p.compressive_strength.provenance?.snippet || "Source page"} style={{ marginLeft: 6 }}>
+                p.{p.compressive_strength.provenance.page}
+              </a>
+            ) : null}
+          </span>
         ) : (
           <span className="chip grey">strength not stated</span>
         )}
-        <span className="chip grey">{locationLabel(row)}</span>
-        <span className="chip grey">unit: {p.declared_unit?.unit}{p.declared_unit?.mass_kg ? ` · ${p.declared_unit.mass_kg} kg` : ""}</span>
+        <span className="chip grey">
+          {locationLabel(row)}
+          {p.manufacturing_location?.provenance?.page ? (
+            <a className="prov" href={pdfHref(row, p.manufacturing_location.provenance.page)} target="_blank" rel="noreferrer" title={p.manufacturing_location.provenance?.snippet || "Source page"} style={{ marginLeft: 6 }}>
+              p.{p.manufacturing_location.provenance.page}
+            </a>
+          ) : null}
+        </span>
+        <span className="chip grey">
+          unit: {p.declared_unit?.unit}{p.declared_unit?.mass_kg ? ` · ${p.declared_unit.mass_kg} kg` : ""}
+          {p.declared_unit?.provenance?.page ? (
+            <a className="prov" href={pdfHref(row, p.declared_unit.provenance.page)} target="_blank" rel="noreferrer" title="Source page" style={{ marginLeft: 6 }}>
+              p.{p.declared_unit.provenance.page}
+            </a>
+          ) : null}
+        </span>
         <span className="chip grey">EPD: {row.epd.id}</span>
       </div>
 
