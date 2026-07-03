@@ -16,3 +16,4 @@ extract_work/
 epds_raw/
 
 # NOTE: /data (final JSON) and /epds (source PDFs for provenance) ARE committed.
+.vercel
