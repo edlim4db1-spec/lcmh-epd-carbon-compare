@@ -21,6 +21,8 @@ type CardData = {
   declaredModules: string[];
   declaredCount: number;
   confidence: string;
+  epdOrdinal: number;
+  epdSiblings: number;
 };
 
 export default function Catalog({ cards }: { cards: CardData[] }) {
@@ -168,6 +170,11 @@ export default function Catalog({ cards }: { cards: CardData[] }) {
                 <span>{c.location}</span>
                 <span>{c.strengthClass ? `class ${c.strengthClass}` : "class —"}</span>
                 <span>{c.declaredCount} stages declared</span>
+                {c.epdSiblings > 1 && (
+                  <span title="This EPD declares a range of mixes; all share the same plant, PCR and data period — comparisons within it are especially robust.">
+                    {c.epdOrdinal} of {c.epdSiblings} in this EPD
+                  </span>
+                )}
               </div>
 
               <div className="card-actions">

@@ -6,8 +6,16 @@ export const dynamic = "force-static";
 
 export default function Home() {
   const rows = loadRows();
+  // sibling count per EPD: multi-product declarations (e.g. a 24-mix range EPD)
+  // get a "N of M in this EPD" marker for provenance transparency.
+  const perEpd = new Map<string, number>();
+  rows.forEach((r) => perEpd.set(r.epd.source_pdf, (perEpd.get(r.epd.source_pdf) || 0) + 1));
+  const seenInEpd = new Map<string, number>();
   const cards = rows.map((r) => {
     const a13 = gwpCell(r, "A1-A3");
+    const siblingTotal = perEpd.get(r.epd.source_pdf) || 1;
+    const ordinal = (seenInEpd.get(r.epd.source_pdf) || 0) + 1;
+    seenInEpd.set(r.epd.source_pdf, ordinal);
     const declared = DISPLAY_MODULES.filter((m) => {
       const c = gwpCell(r, m);
       return c && (c.status === "declared" || c.status === "declared_zero");
@@ -29,6 +37,8 @@ export default function Home() {
       declaredModules: declared as string[],
       declaredCount: declared.length,
       confidence: r.confidence,
+      epdOrdinal: ordinal,
+      epdSiblings: siblingTotal,
     };
   });
 
