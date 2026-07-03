@@ -180,14 +180,9 @@ export default function Catalog({ cards }: { cards: CardData[] }) {
                   />
                   Add to compare
                 </label>
-                <span style={{ marginLeft: "auto", display: "inline-flex", gap: 10 }}>
-                  <Link className="prov" href={`/product?key=${encodeURIComponent(c.key)}`}>
-                    details
-                  </Link>
-                  <a className="prov" href={`/epds/${encodeURIComponent(c.pdf)}${c.a13Page ? `#page=${c.a13Page}` : ""}`} target="_blank" rel="noreferrer">
-                    source EPD ↗
-                  </a>
-                </span>
+                <a className="prov" href={`/epds/${encodeURIComponent(c.pdf)}${c.a13Page ? `#page=${c.a13Page}` : ""}`} target="_blank" rel="noreferrer" style={{ marginLeft: "auto" }}>
+                  source EPD ↗
+                </a>
               </div>
             </div>
           ))}
