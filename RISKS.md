@@ -52,6 +52,17 @@ A number without provenance is WORSE than no number.
 - H4. No claiming comparability across EPDs with different declared module sets.
 - H5. Schema must be deep enough to hold status + provenance per cell, not just a number.
 
+## MULTI-TABLE DOCUMENT TRAP (root-cause rule)
+- M1. **Inventory before extraction.** For any EPD with more than one result table (multi-plant,
+  multi-mix, +A1/+A2 dual, split/CONT'D tables), enumerate EVERY table FIRST and give each an
+  explicit disposition: EXTRACT (+A2 carbon) / DERIVE (EPD-provided method, mark `estimated`) /
+  EXCLUDE:+A1 (not comparable per EN 15804) / EXCLUDE:noncarbon. Commit the inventory
+  (see docs/hallett_table_inventory.md). Completeness must be PROVABLE from the inventory,
+  never discovered page-by-page as a reviewer surfaces gaps.
+- M2. **CONT'D tables are one logical table** — merge sheet pairs before parsing columns.
+- M3. **Per-mix values the EPD derives by a stated method** (e.g. C1-C4+D by density scaling)
+  are `estimated` with provenance to the method table — not `not_reported`, not `0`.
+
 ## UI DISPLAY TRAPS (found in review — check after every UI change)
 - D1. EVERY status enum value must render a visible label/badge in EVERY view that shows
   status (declared, declared_zero, not_declared, not_relevant, not_reported, estimated,
