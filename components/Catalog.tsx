@@ -137,7 +137,11 @@ export default function Catalog({ cards }: { cards: CardData[] }) {
             <div className="card" key={c.key}>
               <div className="card-top">
                 <div>
-                  <h4>{c.name}</h4>
+                  <h4>
+                    <Link href={`/product?key=${encodeURIComponent(c.key)}`} title="View full extraction — every stage with provenance">
+                      {c.name}
+                    </Link>
+                  </h4>
                   <div className="maker">{c.manufacturer || "—"}</div>
                 </div>
                 <div style={{ textAlign: "right" }}>
@@ -176,9 +180,14 @@ export default function Catalog({ cards }: { cards: CardData[] }) {
                   />
                   Add to compare
                 </label>
-                <a className="prov" href={`/epds/${encodeURIComponent(c.pdf)}${c.a13Page ? `#page=${c.a13Page}` : ""}`} target="_blank" rel="noreferrer" style={{ marginLeft: "auto" }}>
-                  source EPD ↗
-                </a>
+                <span style={{ marginLeft: "auto", display: "inline-flex", gap: 10 }}>
+                  <Link className="prov" href={`/product?key=${encodeURIComponent(c.key)}`}>
+                    details
+                  </Link>
+                  <a className="prov" href={`/epds/${encodeURIComponent(c.pdf)}${c.a13Page ? `#page=${c.a13Page}` : ""}`} target="_blank" rel="noreferrer">
+                    source EPD ↗
+                  </a>
+                </span>
               </div>
             </div>
           ))}
