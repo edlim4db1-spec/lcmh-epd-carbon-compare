@@ -18,7 +18,9 @@
   --nd-ink: #77857c;
   --radius: 12px;
   --shadow: 0 1px 2px rgba(4, 71, 51, 0.05), 0 6px 20px rgba(4, 71, 51, 0.05);
-  --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, Helvetica, Arial, sans-serif;
+  /* lcmhub.com pairing: Inter body, Montserrat display (loaded via next/font) */
+  --font: var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-display: var(--font-mont), var(--font);
   --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
 }
 
@@ -47,15 +49,30 @@ a:hover { text-decoration: underline; }
   display: flex; align-items: center; justify-content: space-between;
   height: 62px;
 }
-.brand { display: flex; align-items: center; gap: 10px; font-weight: 700; color: var(--teal-900); letter-spacing: -0.01em; }
-.brand-sub { color: var(--muted); font-weight: 500; font-size: 13px; }
+.brand { display: flex; align-items: center; gap: 10px; }
+/* Official lockup: stacked all-caps Montserrat extra-bold in ink (as on lcmhub.com) */
+.brand-words {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 13px;
+  line-height: 1.15;
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+.brand-app {
+  color: var(--muted); font-weight: 500; font-size: 13px;
+  border-left: 1px solid var(--line); padding-left: 10px; margin-left: 2px;
+}
+@media (max-width: 640px) { .brand-app { display: none; } }
 .nav { display: flex; gap: 20px; align-items: center; }
 .nav a { color: var(--muted); font-weight: 500; font-size: 14px; }
 .nav a.active, .nav a:hover { color: var(--teal-700); text-decoration: none; }
 
 /* Hero */
 .hero { padding: 34px 0 10px; }
-.hero h1 { font-size: 26px; margin: 0 0 6px; letter-spacing: -0.02em; }
+h1 { font-family: var(--font-display); font-weight: 800; letter-spacing: -0.01em; }
+.hero h1 { font-size: 26px; margin: 0 0 6px; }
 .hero p { color: var(--muted); margin: 0; max-width: 720px; }
 
 /* Layout */
