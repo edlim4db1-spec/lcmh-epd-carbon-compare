@@ -89,7 +89,7 @@ select, input[type="number"], input[type="text"] {
 .card-top { display: flex; justify-content: space-between; gap: 10px; }
 .card h4 { margin: 0 0 2px; font-size: 15px; letter-spacing: -0.01em; }
 .card .maker { color: var(--muted); font-size: 13px; }
-.chip { display: inline-flex; align-items: center; gap: 4px; font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 999px; background: var(--teal-50); color: var(--teal-700); border: 1px solid var(--teal-100); }
+.chip { display: inline-flex; align-items: center; gap: 4px; font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 999px; background: var(--teal-50); color: var(--teal-700); border: 1px solid var(--teal-100); white-space: nowrap; flex-shrink: 0; }
 .chip.grey { background: var(--nd-bg); color: var(--nd-ink); border-color: var(--line); }
 .headline { display: flex; align-items: baseline; gap: 6px; margin: 12px 0 4px; }
 .headline .num { font-size: 24px; font-weight: 700; color: var(--teal-900); font-variant-numeric: tabular-nums; }
