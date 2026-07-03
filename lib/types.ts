@@ -85,6 +85,9 @@ export interface Epd {
   id: string;
   source_pdf: string;
   pages: number;
+  // physical PDF page -> printed folio label, only for documents where they differ
+  // (booklet spreads print two folios per sheet; some docs have unnumbered front matter)
+  page_labels?: Record<string, string> | null;
   program_operator?: string | null;
   pcr?: string | null;
   reference_standard?: string | null;

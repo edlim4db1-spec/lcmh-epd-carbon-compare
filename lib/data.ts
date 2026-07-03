@@ -110,6 +110,13 @@ export function pdfHref(row: ProductRow, page?: number | null): string {
   return page ? `${base}#page=${page}` : base;
 }
 
+// Printed folio label for a physical page, when the document numbers them differently
+// (booklet spreads, unnumbered front matter). null when printed == physical.
+export function printedLabel(row: ProductRow, page?: number | null): string | null {
+  if (!page || !row.epd.page_labels) return null;
+  return row.epd.page_labels[String(page)] ?? null;
+}
+
 // Distinct declared-module signature, to flag comparability differences.
 export function moduleSignature(row: ProductRow): string {
   return DISPLAY_MODULES.filter((m) => {

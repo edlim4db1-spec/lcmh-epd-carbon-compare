@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getRow, gwpCell, declaredTotal, pdfHref, locationLabel, formatModuleList } from "@/lib/data";
+import { getRow, gwpCell, declaredTotal, pdfHref, locationLabel, formatModuleList, printedLabel } from "@/lib/data";
 import { DISPLAY_MODULES, B_MODULES } from "@/lib/types";
 import StageValue, { statusBadge } from "@/components/StageValue";
 
@@ -71,6 +71,7 @@ export default function ProductDetail({
             {p.compressive_strength.provenance?.page ? (
               <a className="prov" href={pdfHref(row, p.compressive_strength.provenance.page)} target="_blank" rel="noreferrer" title={p.compressive_strength.provenance?.snippet || "Source page"} style={{ marginLeft: 6 }}>
                 p.{p.compressive_strength.provenance.page}
+                {printedLabel(row, p.compressive_strength.provenance.page) ? ` (${printedLabel(row, p.compressive_strength.provenance.page)})` : ""}
               </a>
             ) : null}
           </span>
@@ -82,6 +83,7 @@ export default function ProductDetail({
           {p.manufacturing_location?.provenance?.page ? (
             <a className="prov" href={pdfHref(row, p.manufacturing_location.provenance.page)} target="_blank" rel="noreferrer" title={p.manufacturing_location.provenance?.snippet || "Source page"} style={{ marginLeft: 6 }}>
               p.{p.manufacturing_location.provenance.page}
+              {printedLabel(row, p.manufacturing_location.provenance.page) ? ` (${printedLabel(row, p.manufacturing_location.provenance.page)})` : ""}
             </a>
           ) : null}
         </span>
@@ -90,6 +92,7 @@ export default function ProductDetail({
           {p.declared_unit?.provenance?.page ? (
             <a className="prov" href={pdfHref(row, p.declared_unit.provenance.page)} target="_blank" rel="noreferrer" title="Source page" style={{ marginLeft: 6 }}>
               p.{p.declared_unit.provenance.page}
+              {printedLabel(row, p.declared_unit.provenance.page) ? ` (${printedLabel(row, p.declared_unit.provenance.page)})` : ""}
             </a>
           ) : null}
         </span>
@@ -141,7 +144,7 @@ export default function ProductDetail({
               return (
                 <tr key={m}>
                   <td className="rowlabel">{STAGE_LABEL[m] || m}</td>
-                  <td className="num"><StageValue cell={c} href={pdfHref(row, prov?.page)} /></td>
+                  <td className="num"><StageValue cell={c} href={pdfHref(row, prov?.page)} printed={printedLabel(row, prov?.page)} /></td>
                   <td className="mono small">{c?.raw ?? "—"}</td>
                   <td>
                     {!c
@@ -155,7 +158,9 @@ export default function ProductDetail({
                   <td className="small">
                     {prov?.page ? (
                       <a href={pdfHref(row, prov.page)} target="_blank" rel="noreferrer">
-                        p.{prov.page}{prov.section ? ` · ${String(prov.section).slice(0, 42)}` : ""}
+                        p.{prov.page}
+                        {printedLabel(row, prov.page) ? ` · printed ${printedLabel(row, prov.page)}` : ""}
+                        {prov.section ? ` · ${String(prov.section).slice(0, 42)}` : ""}
                       </a>
                     ) : (prov as any)?.note ? (
                       <span title={(prov as any).note}>see boundary note</span>
@@ -190,7 +195,7 @@ export default function ProductDetail({
                       const c = p.indicators[k]?.modules?.[m];
                       return (
                         <td key={m} className="num">
-                          <StageValue cell={c} href={pdfHref(row, c?.provenance?.page)} />
+                          <StageValue cell={c} href={pdfHref(row, c?.provenance?.page)} printed={printedLabel(row, c?.provenance?.page)} />
                         </td>
                       );
                     })}

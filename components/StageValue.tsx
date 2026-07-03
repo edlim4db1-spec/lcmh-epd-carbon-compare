@@ -18,9 +18,11 @@ export function statusBadge(status: CellStatus) {
 export default function StageValue({
   cell,
   href,
+  printed,
 }: {
   cell?: Cell;
   href?: string;
+  printed?: string | null;
 }) {
   if (!cell || (cell.status !== "declared" && cell.status !== "declared_zero")) {
     return <span>{statusBadge(cell?.status ?? "not_declared")}</span>;
@@ -40,8 +42,14 @@ export default function StageValue({
       {href && page ? (
         <>
           {" "}
-          <a className="prov" href={href} target="_blank" rel="noreferrer" title={`Source: ${cell.provenance?.section || "results table"} — raw ${cell.raw}`}>
-            p.{page}
+          <a
+            className="prov"
+            href={href}
+            target="_blank"
+            rel="noreferrer"
+            title={`Source: ${cell.provenance?.section || "results table"} — raw ${cell.raw}${printed ? ` — printed page ${printed} on PDF sheet ${page}` : ""}`}
+          >
+            p.{page}{printed ? <span className="small">&thinsp;({printed})</span> : null}
           </a>
         </>
       ) : null}

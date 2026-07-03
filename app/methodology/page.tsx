@@ -23,6 +23,15 @@ export default function Methodology() {
         figure can never be a transcription invented by a model.
       </p>
 
+      <h3>Page citations</h3>
+      <p>
+        Cited pages (<span className="mono">p.N</span>) are <em>physical PDF sheets</em> — what your
+        PDF viewer and our links target. Two documents number their printed pages differently
+        (a booklet spread printing two folios per sheet, and one with unnumbered front matter);
+        for those, citations also show the printed folio, e.g.{" "}
+        <span className="mono">p.11 (20–21)</span>. The link always lands on the right sheet.
+      </p>
+
       <h3>A not-declared stage is not zero</h3>
       <p>
         EPDs declare different life-cycle modules. Where a module (e.g. A4 transport, A5

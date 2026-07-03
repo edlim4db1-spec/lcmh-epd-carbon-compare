@@ -12,6 +12,13 @@ ROOT = os.path.join(os.path.dirname(__file__), "..")
 CAND = os.path.join(ROOT, "extract_work", "candidates")
 CORR = os.path.join(ROOT, "extract_work", "corrections")
 DATA = os.path.join(ROOT, "data")
+PAGE_LABELS = os.path.join(ROOT, "extract_work", "page_labels_map.json")
+
+# physical->printed folio maps for booklet/offset documents (scripts/page_labels.py)
+try:
+    _PAGE_LABELS = json.load(open(PAGE_LABELS))
+except Exception:
+    _PAGE_LABELS = {}
 
 UNIT_NORM = [(r"cubic met|m3|m³|m3 of|1m3", "m3"), (r"tonne|1000 ?kg", "tonne")]
 
@@ -156,6 +163,9 @@ def build_final(cand, corr):
             "published": c.get("published") or pub,
             "valid_until": c.get("valid_until") or val,
             "provenance": {"program_operator": prog_p, "pcr": pcr_p, "published": pub_p, "valid_until": val_p},
+            # physical PDF page -> printed folio label, for documents where they differ
+            # (booklet spreads / unnumbered front matter). Links always target physical.
+            "page_labels": _PAGE_LABELS.get(ep["source_pdf"]) or None,
         },
         "products": [{
             "name": c.get("name") or name,

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getRow, gwpCell, declaredTotal, pdfHref, moduleStatus, locationLabel, loadRows, hasDeclaredB, formatModuleList } from "@/lib/data";
+import { getRow, gwpCell, declaredTotal, pdfHref, moduleStatus, locationLabel, loadRows, hasDeclaredB, formatModuleList, printedLabel } from "@/lib/data";
 import { DISPLAY_MODULES, B_MODULES, FULL_LIFECYCLE, type ProductRow } from "@/lib/types";
 import StageValue, { statusBadge } from "@/components/StageValue";
 
@@ -146,7 +146,7 @@ export default function Compare({
                       <>
                         {" "}
                         <a className="prov" href={pdfHref(r, pg)} target="_blank" rel="noreferrer" title={cs?.provenance?.snippet || "Source page"}>
-                          p.{pg}
+                          p.{pg}{printedLabel(r, pg) ? ` (${printedLabel(r, pg)})` : ""}
                         </a>
                       </>
                     ) : null}
@@ -166,7 +166,7 @@ export default function Compare({
                       <>
                         {" "}
                         <a className="prov" href={pdfHref(r, pg)} target="_blank" rel="noreferrer" title={r.product.manufacturing_location?.provenance?.snippet || "Source page"}>
-                          p.{pg}
+                          p.{pg}{printedLabel(r, pg) ? ` (${printedLabel(r, pg)})` : ""}
                         </a>
                       </>
                     ) : null}
@@ -195,7 +195,11 @@ export default function Compare({
                 <td className="rowlabel">{STAGE_LABEL[m] || m}</td>
                 {rows.map((r) => (
                   <td key={r.key} className="num">
-                    <StageValue cell={gwpCell(r, m)} href={pdfHref(r, gwpCell(r, m)?.provenance?.page)} />
+                    <StageValue
+                      cell={gwpCell(r, m)}
+                      href={pdfHref(r, gwpCell(r, m)?.provenance?.page)}
+                      printed={printedLabel(r, gwpCell(r, m)?.provenance?.page)}
+                    />
                   </td>
                 ))}
               </tr>
