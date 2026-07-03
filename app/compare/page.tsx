@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getRow, gwpCell, declaredTotal, pdfHref, moduleStatus, locationLabel } from "@/lib/data";
+import { getRow, gwpCell, declaredTotal, pdfHref, moduleStatus, locationLabel, loadRows } from "@/lib/data";
 import { DISPLAY_MODULES, type ProductRow } from "@/lib/types";
 import StageValue, { statusBadge } from "@/components/StageValue";
 
@@ -23,15 +23,34 @@ export default function Compare({
   searchParams: { keys?: string };
 }) {
   const keys = (searchParams.keys || "").split(",").map((k) => decodeURIComponent(k)).filter(Boolean);
-  const rows = keys.map((k) => getRow(k)).filter(Boolean) as ProductRow[];
+  let rows = keys.map((k) => getRow(k)).filter(Boolean) as ProductRow[];
 
+  // Nothing selected (e.g. "Compare" clicked straight from the nav): show a curated
+  // example instead of a dead end — three 32 MPa products from different suppliers,
+  // clearly labelled as an example. Same strength class = a fair comparison basis.
+  let isExample = false;
   if (rows.length < 1) {
-    return (
-      <div className="container" style={{ padding: "40px 0" }}>
-        <h1>Compare</h1>
-        <p className="small">No products selected. Go to <Link href="/">Products</Link> and add 2–4 to compare.</p>
-      </div>
-    );
+    const all = loadRows();
+    const seen = new Set<string>();
+    const candidates = all
+      .filter((r) => r.product.compressive_strength?.value_mpa === 32)
+      .filter((r) => {
+        const id = r.epd.source_pdf;
+        if (seen.has(id)) return false;
+        seen.add(id);
+        return true;
+      })
+      .sort((a, b) => (gwpCell(a, "A1-A3")?.value ?? Infinity) - (gwpCell(b, "A1-A3")?.value ?? Infinity));
+    rows = candidates.slice(0, 3);
+    isExample = rows.length >= 2;
+    if (!isExample) {
+      return (
+        <div className="container" style={{ padding: "40px 0" }}>
+          <h1>Compare</h1>
+          <p className="small">No products selected. Go to <Link href="/">Products</Link> and add 2–4 to compare.</p>
+        </div>
+      );
+    }
   }
 
   // Comparability signals
@@ -54,6 +73,15 @@ export default function Compare({
       <p className="small" style={{ marginTop: 6 }}>
         GWP-total, kg CO₂e per declared unit. Click <span className="mono">p.N</span> on any figure to open the source EPD at that page.
       </p>
+
+      {isExample && (
+        <div className="callout info">
+          <strong>Example comparison.</strong> You haven&apos;t selected anything yet, so we&apos;re
+          showing three 32&nbsp;MPa products from different suppliers — the same strength class,
+          so the comparison basis is fair. Go to <Link href="/">Products</Link> to filter and
+          pick your own (2–4 products).
+        </div>
+      )}
 
       {differentModules && (
         <div className="callout">
