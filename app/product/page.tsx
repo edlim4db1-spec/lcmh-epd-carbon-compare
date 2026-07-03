@@ -107,9 +107,14 @@ export default function ProductDetail({
             </tr>
           </thead>
           <tbody>
-            {/* Audit view: always all 15 modules, mirroring the source table 1:1.
-                ND rows render as status badges (never numbers). */}
-            {["A1-A3", "A4", "A5", ...B_MODULES, "C1", "C2", "C3", "C4", "D"].map((m) => {
+            {/* Audit view mirrors the source RESULTS table exactly: a stage row renders
+                iff the PDF's results table addressed that module (a number, a printed 0,
+                a printed ND, or an explicit not-reported caution). Modules whose columns
+                the PDF omits appear only in the System boundary strip below — same
+                structure as the EPD document itself. */}
+            {["A1-A3", "A4", "A5", ...B_MODULES, "C1", "C2", "C3", "C4", "D"]
+              .filter((m) => !!gwpCell(row, m))
+              .map((m) => {
               const c = gwpCell(row, m);
               const prov = c?.provenance;
               return (
