@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { getRow, gwpCell, declaredTotal, pdfHref, locationLabel } from "@/lib/data";
-import { DISPLAY_MODULES } from "@/lib/types";
+import { getRow, gwpCell, declaredTotal, pdfHref, locationLabel, hasDeclaredB, formatModuleList } from "@/lib/data";
+import { DISPLAY_MODULES, B_MODULES } from "@/lib/types";
 import StageValue, { statusBadge } from "@/components/StageValue";
 
 // Depends on ?key= selection, so must render per-request.
@@ -10,6 +10,13 @@ const STAGE_LABEL: Record<string, string> = {
   "A1-A3": "A1–A3 Product (cradle-to-gate)",
   A4: "A4 Transport to site",
   A5: "A5 Installation",
+  B1: "B1 Use (incl. carbonation)",
+  B2: "B2 Maintenance",
+  B3: "B3 Repair",
+  B4: "B4 Replacement",
+  B5: "B5 Refurbishment",
+  B6: "B6 Operational energy",
+  B7: "B7 Operational water",
   C1: "C1 Deconstruction",
   C2: "C2 Transport (EoL)",
   C3: "C3 Waste processing",
@@ -81,7 +88,7 @@ export default function ProductDetail({
         {total.total != null && (
           <span className="unit" style={{ marginLeft: 14 }}>
             declared total {total.total.toLocaleString()} over {total.included.length} stage{total.included.length === 1 ? "" : "s"}
-            {total.excluded.length ? ` (excl. ${total.excluded.join(", ")})` : ""}
+            {total.excluded.length ? ` (excl. ${formatModuleList(total.excluded)})` : ""}
           </span>
         )}
       </div>
@@ -100,7 +107,10 @@ export default function ProductDetail({
             </tr>
           </thead>
           <tbody>
-            {DISPLAY_MODULES.map((m) => {
+            {(hasDeclaredB(row)
+              ? ["A1-A3", "A4", "A5", ...B_MODULES, "C1", "C2", "C3", "C4", "D"]
+              : [...DISPLAY_MODULES]
+            ).map((m) => {
               const c = gwpCell(row, m);
               const prov = c?.provenance;
               return (

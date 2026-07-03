@@ -8,6 +8,15 @@ export type FieldStatus = "declared" | "found" | "missing" | "not_declared" | "u
 export const DISPLAY_MODULES = [
   "A1-A3", "A4", "A5", "C1", "C2", "C3", "C4", "D",
 ] as const;
+
+// Use-stage modules: most concrete EPDs leave these ND, so the UI only shows them
+// for products whose EPD actually declares them (e.g. GCCA EPDs declare B1 recarbonation).
+export const B_MODULES = ["B1", "B2", "B3", "B4", "B5", "B6", "B7"] as const;
+
+// Full lifecycle order used for totals and for tables when B stages are declared.
+export const FULL_LIFECYCLE = [
+  "A1-A3", "A4", "A5", ...B_MODULES, "C1", "C2", "C3", "C4", "D",
+] as const;
 export type Module = (typeof DISPLAY_MODULES)[number] | "A1" | "A2" | "A3"
   | "B1" | "B2" | "B3" | "B4" | "B5" | "B6" | "B7";
 

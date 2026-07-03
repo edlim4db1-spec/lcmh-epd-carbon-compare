@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 import type { EpdDoc, ProductRow, Cell, CellStatus } from "./types";
-import { DISPLAY_MODULES } from "./types";
+import { DISPLAY_MODULES, FULL_LIFECYCLE, B_MODULES } from "./types";
 
 const DATA_DIR = path.join(process.cwd(), "data");
 
@@ -61,8 +61,9 @@ export function moduleStatus(row: ProductRow, module: string): CellStatus {
   return row.systemBoundary?.[module] ?? "not_declared";
 }
 
-// Sum only DECLARED modules; report which were included so we never imply
-// completeness. A not-declared stage is excluded, not treated as zero.
+// Sum only DECLARED modules across the FULL lifecycle (incl. B-stages where an EPD
+// declares them); report which were included so we never imply completeness.
+// A not-declared stage is excluded, not treated as zero.
 export function declaredTotal(row: ProductRow): {
   total: number | null;
   included: string[];
@@ -72,10 +73,10 @@ export function declaredTotal(row: ProductRow): {
   const excluded: string[] = [];
   let total = 0;
   let any = false;
-  for (const m of DISPLAY_MODULES) {
+  for (const m of FULL_LIFECYCLE) {
     const c = gwpCell(row, m);
     if (c && (c.status === "declared" || c.status === "declared_zero") && typeof c.value === "number") {
-      // avoid double counting: A1-A3 is the aggregate; individual A1/A2/A3 not in DISPLAY_MODULES
+      // avoid double counting: A1-A3 is the aggregate; individual A1/A2/A3 not in FULL_LIFECYCLE
       total += c.value;
       included.push(m);
       any = true;
@@ -84,6 +85,24 @@ export function declaredTotal(row: ProductRow): {
     }
   }
   return { total: any ? Math.round(total * 100) / 100 : null, included, excluded };
+}
+
+// Compact a module list for display: collapse a full B1..B7 run into "B1–B7".
+export function formatModuleList(mods: string[]): string {
+  const allB = B_MODULES.every((b) => mods.includes(b));
+  if (!allB) return mods.join(", ");
+  const i = mods.indexOf("B1");
+  const before = mods.slice(0, i).filter((m) => !m.startsWith("B"));
+  const after = mods.slice(i).filter((m) => !m.startsWith("B"));
+  return [...before, "B1–B7", ...after].join(", ");
+}
+
+// True when this product's EPD declares any use-stage (B) module.
+export function hasDeclaredB(row: ProductRow): boolean {
+  return B_MODULES.some((m) => {
+    const c = gwpCell(row, m);
+    return !!c && (c.status === "declared" || c.status === "declared_zero");
+  });
 }
 
 export function pdfHref(row: ProductRow, page?: number | null): string {

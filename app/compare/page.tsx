@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { getRow, gwpCell, declaredTotal, pdfHref, moduleStatus, locationLabel, loadRows } from "@/lib/data";
-import { DISPLAY_MODULES, type ProductRow } from "@/lib/types";
+import { getRow, gwpCell, declaredTotal, pdfHref, moduleStatus, locationLabel, loadRows, hasDeclaredB, formatModuleList } from "@/lib/data";
+import { DISPLAY_MODULES, B_MODULES, FULL_LIFECYCLE, type ProductRow } from "@/lib/types";
 import StageValue, { statusBadge } from "@/components/StageValue";
 
 // Depends on ?keys= selection, so must render per-request (not statically cached).
@@ -10,6 +10,13 @@ const STAGE_LABEL: Record<string, string> = {
   "A1-A3": "A1–A3 Product (cradle-to-gate)",
   A4: "A4 Transport to site",
   A5: "A5 Installation",
+  B1: "B1 Use (incl. carbonation)",
+  B2: "B2 Maintenance",
+  B3: "B3 Repair",
+  B4: "B4 Replacement",
+  B5: "B5 Refurbishment",
+  B6: "B6 Operational energy",
+  B7: "B7 Operational water",
   C1: "C1 Deconstruction",
   C2: "C2 Transport (EoL)",
   C3: "C3 Waste processing",
@@ -53,9 +60,9 @@ export default function Compare({
     }
   }
 
-  // Comparability signals
+  // Comparability signals (full lifecycle incl. B stages)
   const signatures = rows.map((r) =>
-    DISPLAY_MODULES.filter((m) => ["declared", "declared_zero"].includes(moduleStatus(r, m))).join(",")
+    FULL_LIFECYCLE.filter((m) => ["declared", "declared_zero"].includes(moduleStatus(r, m))).join(",")
   );
   const differentModules = new Set(signatures).size > 1;
   const units = new Set(rows.map((r) => r.product.declared_unit?.unit || "m3"));
@@ -156,8 +163,11 @@ export default function Compare({
               ))}
             </tr>
 
-            {/* stage rows */}
-            {DISPLAY_MODULES.map((m) => (
+            {/* stage rows — B stages appear only when a selected product declares them */}
+            {(rows.some(hasDeclaredB)
+              ? ["A1-A3", "A4", "A5", ...B_MODULES, "C1", "C2", "C3", "C4", "D"]
+              : [...DISPLAY_MODULES]
+            ).map((m) => (
               <tr key={m}>
                 <td className="rowlabel">{STAGE_LABEL[m] || m}</td>
                 {rows.map((r) => (
@@ -180,7 +190,7 @@ export default function Compare({
                         <span className="mono">{t.total.toLocaleString()}</span>
                         <div className="small" style={{ fontWeight: 400 }}>
                           {t.included.length} stage{t.included.length === 1 ? "" : "s"}
-                          {t.excluded.length ? ` · excl. ${t.excluded.join(", ")}` : ""}
+                          {t.excluded.length ? ` · excl. ${formatModuleList(t.excluded)}` : ""}
                         </div>
                       </>
                     ) : (
