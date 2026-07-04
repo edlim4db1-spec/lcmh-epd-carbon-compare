@@ -121,6 +121,24 @@ select, input[type="number"], input[type="text"] {
 
 .result-count { color: var(--muted); font-size: 13px; margin: 0; }
 
+/* Multi-product EPD grouping */
+.group-card { cursor: pointer; border-style: dashed; }
+.group-card:hover { border-color: var(--teal-500); background: var(--teal-50); }
+.group-card h4 { color: var(--teal-900); }
+.group-expanded {
+  border: 1px solid var(--teal-100); border-radius: var(--radius);
+  background: var(--bg-soft); padding: 14px 16px; margin: 2px 0;
+}
+.group-head {
+  display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  margin-bottom: 12px; font-size: 14px; color: var(--teal-900);
+}
+.plant-subhead {
+  font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;
+  color: var(--teal-700); margin: 14px 0 8px; padding-top: 8px; border-top: 1px solid var(--line);
+}
+.group-expanded .grid { margin-bottom: 4px; }
+
 /* Sticky action bar for the results header — solid background so it never
    visually collides with the product cards scrolling beneath it. */
 .results-bar {

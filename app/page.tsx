@@ -22,6 +22,7 @@ export default function Home() {
     });
     return {
       key: r.key,
+      epdId: r.epd.id,
       name: r.product.name,
       manufacturer: r.product.manufacturer || "",
       mpa: r.product.compressive_strength?.value_mpa ?? null,

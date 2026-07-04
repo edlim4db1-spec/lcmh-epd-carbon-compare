@@ -2,10 +2,10 @@
 
 import { useMemo, useState } from "react";
 import Link from "next/link";
-import type { ProductRow } from "@/lib/types";
 
 type CardData = {
   key: string;
+  epdId: string;
   name: string;
   manufacturer: string;
   mpa: number | null;
@@ -26,21 +26,18 @@ type CardData = {
 };
 
 export default function Catalog({ cards }: { cards: CardData[] }) {
-  const [minMpa, setMinMpa] = useState<string>("");
-  const [maxMpa, setMaxMpa] = useState<string>("");
-  const [loc, setLoc] = useState<string>("all");
-  const [program, setProgram] = useState<string>("all");
+  const [minMpa, setMinMpa] = useState("");
+  const [maxMpa, setMaxMpa] = useState("");
+  const [loc, setLoc] = useState("all");
+  const [program, setProgram] = useState("all");
   const [selected, setSelected] = useState<string[]>([]);
-  const [sort, setSort] = useState<string>("a13");
+  const [sort, setSort] = useState("a13");
+  const [expanded, setExpanded] = useState<Set<string>>(new Set());
 
-  const locations = useMemo(
-    () => Array.from(new Set(cards.map((c) => c.location).filter(Boolean))).sort(),
-    [cards]
-  );
-  const programs = useMemo(
-    () => Array.from(new Set(cards.map((c) => c.program).filter(Boolean))).sort(),
-    [cards]
-  );
+  const locations = useMemo(() => Array.from(new Set(cards.map((c) => c.location).filter(Boolean))).sort(), [cards]);
+  const programs = useMemo(() => Array.from(new Set(cards.map((c) => c.program).filter(Boolean))).sort(), [cards]);
+
+  const filterActive = loc !== "all" || program !== "all" || minMpa !== "" || maxMpa !== "";
 
   const filtered = useMemo(() => {
     let out = cards.filter((c) => {
@@ -51,24 +48,140 @@ export default function Catalog({ cards }: { cards: CardData[] }) {
       return true;
     });
     out = [...out].sort((a, b) => {
-      if (sort === "a13") {
-        if (a.a13 == null) return 1;
-        if (b.a13 == null) return -1;
-        return a.a13 - b.a13;
-      }
+      if (sort === "a13") return (a.a13 ?? Infinity) - (b.a13 ?? Infinity);
       if (sort === "mpa") return (a.mpa ?? 0) - (b.mpa ?? 0);
       return a.name.localeCompare(b.name);
     });
     return out;
   }, [cards, loc, program, minMpa, maxMpa, sort]);
 
+  // group filtered products by EPD, preserving sorted order (first appearance)
+  const groups = useMemo(() => {
+    const m = new Map<string, CardData[]>();
+    for (const c of filtered) (m.get(c.pdf) ?? m.set(c.pdf, []).get(c.pdf)!).push(c);
+    return Array.from(m.entries()).map(([pdf, cs]) => ({ pdf, cards: cs }));
+  }, [filtered]);
+
   function toggle(key: string) {
-    setSelected((s) =>
-      s.includes(key) ? s.filter((k) => k !== key) : s.length < 4 ? [...s, key] : s
-    );
+    setSelected((s) => (s.includes(key) ? s.filter((k) => k !== key) : s.length < 4 ? [...s, key] : s));
+  }
+  function toggleExpand(pdf: string) {
+    setExpanded((s) => {
+      const n = new Set(s);
+      n.has(pdf) ? n.delete(pdf) : n.add(pdf);
+      return n;
+    });
   }
 
   const compareHref = `/compare?keys=${encodeURIComponent(selected.join(","))}`;
+  const fmt = (n: number) => n.toLocaleString(undefined, { maximumFractionDigits: 0 });
+
+  function ProductCard({ c }: { c: CardData }) {
+    return (
+      <div className="card" key={c.key}>
+        <div className="card-top">
+          <div>
+            <h4>
+              <Link href={`/product?key=${encodeURIComponent(c.key)}`} title="View full extraction — every stage with provenance">
+                {c.name}
+              </Link>
+            </h4>
+            <div className="maker">{c.manufacturer || "—"}</div>
+          </div>
+          <div style={{ textAlign: "right" }}>
+            {c.mpa != null ? <span className="chip">{c.mpa} MPa</span> : <span className="chip grey" title="Strength not stated in text">MPa ?</span>}
+          </div>
+        </div>
+        <div className="headline">
+          {c.a13 != null ? (
+            <>
+              <span className="num">{c.a13.toLocaleString(undefined, { maximumFractionDigits: 1 })}</span>
+              <span className="unit">{c.unit} · A1–A3</span>
+            </>
+          ) : (
+            <span className="unit">A1–A3 not available</span>
+          )}
+        </div>
+        <div className="meta-row">
+          <span>{c.location}</span>
+          <span>{c.strengthClass ? `class ${c.strengthClass}` : "class —"}</span>
+          <span>{c.declaredCount} stages declared</span>
+        </div>
+        <div className="card-actions">
+          <label>
+            <input type="checkbox" checked={selected.includes(c.key)} onChange={() => toggle(c.key)}
+              disabled={!selected.includes(c.key) && selected.length >= 4} />
+            Add to compare
+          </label>
+          <a className="prov" href={`/epds/${encodeURIComponent(c.pdf)}${c.a13Page ? `#page=${c.a13Page}` : ""}`} target="_blank" rel="noreferrer" style={{ marginLeft: "auto" }}>
+            source EPD ↗
+          </a>
+        </div>
+      </div>
+    );
+  }
+
+  function GroupBlock({ pdf, cs }: { pdf: string; cs: CardData[] }) {
+    const isOpen = expanded.has(pdf) || filterActive;
+    const mpas = cs.map((c) => c.mpa).filter((v): v is number => v != null);
+    const a13s = cs.map((c) => c.a13).filter((v): v is number => v != null);
+    const plants = Array.from(new Set(cs.map((c) => c.location)));
+    const title = cs[0].manufacturer || cs[0].epdId;
+
+    if (!isOpen) {
+      return (
+        <div className="card group-card" onClick={() => toggleExpand(pdf)} role="button" tabIndex={0}>
+          <div className="card-top">
+            <div>
+              <h4>{title}</h4>
+              <div className="maker">{cs.length} products · {plants.length} plant{plants.length === 1 ? "" : "s"} · one EPD</div>
+            </div>
+            {mpas.length ? <span className="chip">{Math.min(...mpas)}–{Math.max(...mpas)} MPa</span> : null}
+          </div>
+          <div className="headline">
+            {a13s.length ? (
+              <>
+                <span className="num">{fmt(Math.min(...a13s))}–{fmt(Math.max(...a13s))}</span>
+                <span className="unit">kg CO₂e / m³ · A1–A3 range</span>
+              </>
+            ) : null}
+          </div>
+          <div className="meta-row"><span>{plants.join(" · ")}</span></div>
+          <div className="card-actions">
+            <button className="btn secondary" onClick={(e) => { e.stopPropagation(); toggleExpand(pdf); }}>
+              Expand {cs.length} products ▾
+            </button>
+          </div>
+        </div>
+      );
+    }
+
+    // expanded: full-width, products sub-grouped by plant
+    const byPlant = new Map<string, CardData[]>();
+    for (const c of cs) (byPlant.get(c.location) ?? byPlant.set(c.location, []).get(c.location)!).push(c);
+    return (
+      <div className="group-expanded" style={{ gridColumn: "1 / -1" }}>
+        <div className="group-head">
+          <div>
+            <strong>{title}</strong> · {cs.length} products across {plants.length} plant{plants.length === 1 ? "" : "s"} · one EPD
+          </div>
+          {!filterActive && (
+            <button className="btn ghost" onClick={() => toggleExpand(pdf)}>Collapse ▴</button>
+          )}
+        </div>
+        {Array.from(byPlant.entries()).map(([plant, pcs]) => (
+          <div key={plant}>
+            {plants.length > 1 && <div className="plant-subhead">{plant} <span className="small">({pcs.length})</span></div>}
+            <div className="grid">
+              {pcs.map((c) => <ProductCard c={c} key={c.key} />)}
+            </div>
+          </div>
+        ))}
+      </div>
+    );
+  }
+
+  const totalProducts = filtered.length;
 
   return (
     <div className="layout">
@@ -86,18 +199,14 @@ export default function Catalog({ cards }: { cards: CardData[] }) {
           <label>Manufacturing location</label>
           <select value={loc} onChange={(e) => setLoc(e.target.value)}>
             <option value="all">All locations</option>
-            {locations.map((l) => (
-              <option key={l} value={l}>{l}</option>
-            ))}
+            {locations.map((l) => <option key={l} value={l}>{l}</option>)}
           </select>
         </div>
         <div className="filter-group">
           <label>EPD programme</label>
           <select value={program} onChange={(e) => setProgram(e.target.value)}>
             <option value="all">All programmes</option>
-            {programs.map((p) => (
-              <option key={p} value={p}>{p}</option>
-            ))}
+            {programs.map((p) => <option key={p} value={p}>{p}</option>)}
           </select>
         </div>
         <div className="filter-group">
@@ -117,82 +226,24 @@ export default function Catalog({ cards }: { cards: CardData[] }) {
       <section>
         <div className="results-bar">
           <div className="result-count">
-            {filtered.length} product{filtered.length === 1 ? "" : "s"} · {selected.length} selected to compare
+            {groups.length} EPD{groups.length === 1 ? "" : "s"} · {totalProducts} product{totalProducts === 1 ? "" : "s"} · {selected.length} selected
           </div>
           <div className="actions">
-            {selected.length > 0 && (
-              <button className="btn ghost" onClick={() => setSelected([])}>Clear</button>
-            )}
-            <Link
-              href={compareHref}
-              className="btn"
+            {selected.length > 0 && <button className="btn ghost" onClick={() => setSelected([])}>Clear</button>}
+            <Link href={compareHref} className="btn"
               aria-disabled={selected.length < 2}
-              style={selected.length < 2 ? { pointerEvents: "none", opacity: 0.5 } : {}}
-            >
+              style={selected.length < 2 ? { pointerEvents: "none", opacity: 0.5 } : {}}>
               Compare {selected.length > 1 ? `(${selected.length})` : ""}
             </Link>
           </div>
         </div>
 
         <div className="grid">
-          {filtered.map((c) => (
-            <div className="card" key={c.key}>
-              <div className="card-top">
-                <div>
-                  <h4>
-                    <Link href={`/product?key=${encodeURIComponent(c.key)}`} title="View full extraction — every stage with provenance">
-                      {c.name}
-                    </Link>
-                  </h4>
-                  <div className="maker">{c.manufacturer || "—"}</div>
-                </div>
-                <div style={{ textAlign: "right" }}>
-                  {c.mpa != null ? (
-                    <span className="chip">{c.mpa} MPa</span>
-                  ) : (
-                    <span className="chip grey" title="Strength not stated in text">MPa ?</span>
-                  )}
-                </div>
-              </div>
-
-              <div className="headline">
-                {c.a13 != null ? (
-                  <>
-                    <span className="num">{c.a13.toLocaleString(undefined, { maximumFractionDigits: 1 })}</span>
-                    <span className="unit">{c.unit} · A1–A3</span>
-                  </>
-                ) : (
-                  <span className="unit">A1–A3 not available</span>
-                )}
-              </div>
-
-              <div className="meta-row">
-                <span>{c.location}</span>
-                <span>{c.strengthClass ? `class ${c.strengthClass}` : "class —"}</span>
-                <span>{c.declaredCount} stages declared</span>
-                {c.epdSiblings > 1 && (
-                  <span title="This EPD declares a range of mixes; all share the same plant, PCR and data period — comparisons within it are especially robust.">
-                    {c.epdOrdinal} of {c.epdSiblings} in this EPD
-                  </span>
-                )}
-              </div>
-
-              <div className="card-actions">
-                <label>
-                  <input
-                    type="checkbox"
-                    checked={selected.includes(c.key)}
-                    onChange={() => toggle(c.key)}
-                    disabled={!selected.includes(c.key) && selected.length >= 4}
-                  />
-                  Add to compare
-                </label>
-                <a className="prov" href={`/epds/${encodeURIComponent(c.pdf)}${c.a13Page ? `#page=${c.a13Page}` : ""}`} target="_blank" rel="noreferrer" style={{ marginLeft: "auto" }}>
-                  source EPD ↗
-                </a>
-              </div>
-            </div>
-          ))}
+          {groups.map((g) =>
+            g.cards.length === 1
+              ? <ProductCard c={g.cards[0]} key={g.pdf} />
+              : <GroupBlock pdf={g.pdf} cs={g.cards} key={g.pdf} />
+          )}
         </div>
       </section>
     </div>
