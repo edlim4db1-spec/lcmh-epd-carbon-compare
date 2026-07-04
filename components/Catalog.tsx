@@ -81,6 +81,10 @@ export default function Catalog({ cards }: { cards: CardData[] }) {
 
   const compareHref = `/compare?keys=${encodeURIComponent(selected.join(","))}`;
   const fmt = (n: number) => n.toLocaleString(undefined, { maximumFractionDigits: 0 });
+  // fill materials (CLSM / no-fines) have no compressive-strength grade — the EPD prints N/A
+  const isFill = (c: CardData) => c.name.startsWith("CLSM") || c.name.startsWith("NO FINES");
+  const famOf = (c: CardData) => (c.name.startsWith("NO FINES") ? "NO FINES" : c.name.split(" ")[0]);
+  const strengthText = (c: CardData) => (c.mpa != null ? `${c.mpa} MPa` : isFill(c) ? "N/A" : "MPa ?");
 
   function ProductCard({ c }: { c: CardData }) {
     return (
@@ -95,7 +99,13 @@ export default function Catalog({ cards }: { cards: CardData[] }) {
             <div className="maker">{c.manufacturer || "—"}</div>
           </div>
           <div style={{ textAlign: "right" }}>
-            {c.mpa != null ? <span className="chip">{c.mpa} MPa</span> : <span className="chip grey" title="Strength not stated in text">MPa ?</span>}
+            {c.mpa != null ? (
+              <span className="chip">{c.mpa} MPa</span>
+            ) : (
+              <span className="chip grey" title={isFill(c) ? "Fill material — no compressive-strength grade (N/A in the EPD)" : "Strength not stated in text"}>
+                {strengthText(c)}
+              </span>
+            )}
           </div>
         </div>
         <div className="headline">
@@ -182,7 +192,7 @@ export default function Catalog({ cards }: { cards: CardData[] }) {
           // within each plant, group variants under their mix family (first name token)
           const byFamily = new Map<string, CardData[]>();
           for (const c of pcs) {
-            const fam = c.name.split(" ")[0];
+            const fam = famOf(c);
             (byFamily.get(fam) ?? byFamily.set(fam, []).get(fam)!).push(c);
           }
           const mixCount = byFamily.size;
@@ -198,7 +208,7 @@ export default function Catalog({ cards }: { cards: CardData[] }) {
                   <div className="mix-subhead">
                     {fam}
                     <span className="small">
-                      {fcs[0].mpa != null ? ` · ${fcs[0].mpa} MPa` : ""} · {fcs.length} variant{fcs.length === 1 ? "" : "s"}
+                      {fcs[0].mpa != null ? ` · ${fcs[0].mpa} MPa` : isFill(fcs[0]) ? " · N/A" : ""} · {fcs.length} variant{fcs.length === 1 ? "" : "s"}
                     </span>
                   </div>
                   <div className="grid">

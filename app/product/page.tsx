@@ -75,6 +75,8 @@ export default function ProductDetail({
               </a>
             ) : null}
           </span>
+        ) : (p.name.startsWith("CLSM") || p.name.startsWith("NO FINES")) ? (
+          <span className="chip grey" title="Fill material — no compressive-strength grade (N/A in the EPD)">N/A</span>
         ) : (
           <span className="chip grey">strength not stated</span>
         )}
