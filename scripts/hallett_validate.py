@@ -14,7 +14,7 @@ DATA = os.path.join(ROOT, "data",
     "epd-australasia-com-wp-content-uploads-2023-08-epd-ies-0009353-003-hallett-ready-mix-concrete-2026-05-04-pdf.json")
 
 VARTOK = re.compile(r'^(PLC\d+|LSLC\d+|PLC\dXYP|PTLC\d+|COLLC\d+|SCPLC\d+|SCPEC\d+|LC\d+|'
-                    r'COLSCLC\d+|SCPH|DW\d+[A-Z]?\d?|E\d+[A-Z]?|Ref|F30|S30|T50|S50|100|120|200|-)$')
+                    r'COLSCLC\d+|SCPH|METALDIT|DW\d+[A-Z]?\d?|E\d+[A-Z]?|Ref|F30|S30|T50|S50|100|120|200|-)$')
 FAMTOK = re.compile(r'^([NS]\d{4})P?$')
 
 

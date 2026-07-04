@@ -17589,7 +17589,7 @@
       }
     },
     {
-      "name": "N2010P -",
+      "name": "N2010P",
       "manufacturer": "Hallett Group",
       "concrete_type": "Ready-mix concrete",
       "compressive_strength": {
@@ -26517,6 +26517,2156 @@
           }
         }
       }
+    },
+    {
+      "name": "S5020 E1200",
+      "manufacturer": "Hallett Group",
+      "concrete_type": "Ready-mix concrete",
+      "compressive_strength": {
+        "value_mpa": 50,
+        "class": "S5020",
+        "at_days": 28,
+        "raw": "50",
+        "status": "found",
+        "provenance": {
+          "page": 5,
+          "snippet": "Table 1 grades ... S5020 ... 50"
+        }
+      },
+      "manufacturing_location": {
+        "site": "Mile End batch plant",
+        "city": "Mile End",
+        "region": "South Australia",
+        "country": "AU",
+        "raw": "Mile End, SA",
+        "provenance": {
+          "page": 20,
+          "snippet": "MILE END | A1-A3 (printed 38-39)"
+        }
+      },
+      "declared_unit": {
+        "amount": 1,
+        "unit": "m3",
+        "description": "1 m3 of product produced at Mile End batch plant",
+        "mass_kg": null,
+        "provenance": {
+          "page": 5,
+          "snippet": "Table 1 density"
+        }
+      },
+      "indicators": {
+        "GWP_total": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 292.0,
+              "raw": "292",
+              "status": "declared",
+              "provenance": {
+                "page": 20,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 | MILE END | A1-A3 (printed 38-39)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq"
+              }
+            },
+            "C1": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C1",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C2": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C2",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C3": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C3",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C4": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C4",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "D": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "D",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            }
+          }
+        },
+        "GWP_fossil": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 288.0,
+              "raw": "288",
+              "status": "declared",
+              "provenance": {
+                "page": 20,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 | MILE END | A1-A3 (printed 38-39)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq"
+              }
+            }
+          }
+        },
+        "GWP_biogenic": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 4.18,
+              "raw": "4.18",
+              "status": "declared",
+              "provenance": {
+                "page": 20,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 | MILE END | A1-A3 (printed 38-39)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "S5020 METALDIT",
+      "manufacturer": "Hallett Group",
+      "concrete_type": "Ready-mix concrete",
+      "compressive_strength": {
+        "value_mpa": 50,
+        "class": "S5020",
+        "at_days": 28,
+        "raw": "50",
+        "status": "found",
+        "provenance": {
+          "page": 5,
+          "snippet": "Table 1 grades ... S5020 ... 50"
+        }
+      },
+      "manufacturing_location": {
+        "site": "Mile End batch plant",
+        "city": "Mile End",
+        "region": "South Australia",
+        "country": "AU",
+        "raw": "Mile End, SA",
+        "provenance": {
+          "page": 20,
+          "snippet": "MILE END | A1-A3 (printed 38-39)"
+        }
+      },
+      "declared_unit": {
+        "amount": 1,
+        "unit": "m3",
+        "description": "1 m3 of product produced at Mile End batch plant",
+        "mass_kg": null,
+        "provenance": {
+          "page": 5,
+          "snippet": "Table 1 density"
+        }
+      },
+      "indicators": {
+        "GWP_total": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 288.0,
+              "raw": "288",
+              "status": "declared",
+              "provenance": {
+                "page": 20,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 | MILE END | A1-A3 (printed 38-39)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq"
+              }
+            },
+            "C1": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C1",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C2": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C2",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C3": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C3",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C4": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C4",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "D": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "D",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            }
+          }
+        },
+        "GWP_fossil": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 284.0,
+              "raw": "284",
+              "status": "declared",
+              "provenance": {
+                "page": 20,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 | MILE END | A1-A3 (printed 38-39)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq"
+              }
+            }
+          }
+        },
+        "GWP_biogenic": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 4.31,
+              "raw": "4.31",
+              "status": "declared",
+              "provenance": {
+                "page": 20,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 | MILE END | A1-A3 (printed 38-39)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "S6510 SCPLC2",
+      "manufacturer": "Hallett Group",
+      "concrete_type": "Ready-mix concrete",
+      "compressive_strength": {
+        "value_mpa": 65,
+        "class": "S6510",
+        "at_days": 28,
+        "raw": "65",
+        "status": "found",
+        "provenance": {
+          "page": 5,
+          "snippet": "Table 1 grades ... S6510 ... 65"
+        }
+      },
+      "manufacturing_location": {
+        "site": "Mile End batch plant",
+        "city": "Mile End",
+        "region": "South Australia",
+        "country": "AU",
+        "raw": "Mile End, SA",
+        "provenance": {
+          "page": 20,
+          "snippet": "MILE END | A1-A3 (printed 38-39)"
+        }
+      },
+      "declared_unit": {
+        "amount": 1,
+        "unit": "m3",
+        "description": "1 m3 of product produced at Mile End batch plant",
+        "mass_kg": 2410,
+        "provenance": {
+          "page": 5,
+          "snippet": "Table 1 density"
+        }
+      },
+      "indicators": {
+        "GWP_total": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 245.0,
+              "raw": "245",
+              "status": "declared",
+              "provenance": {
+                "page": 20,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 | MILE END | A1-A3 (printed 38-39)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq"
+              }
+            },
+            "C1": {
+              "value": 15.1376,
+              "raw": null,
+              "status": "estimated",
+              "provenance": {
+                "page": 35,
+                "section": "Density-scaled from representative mix (Table 43, printed 68-69) by the EPD's stated method (Table 48/annex, printed 70): value x density/2332",
+                "module": "C1",
+                "unit_raw": "kg CO2-eq",
+                "note": "estimate = 14.6477 x 1.0334; density from Table 1 p.5 (density 2410)"
+              }
+            },
+            "C2": {
+              "value": 6.096,
+              "raw": null,
+              "status": "estimated",
+              "provenance": {
+                "page": 35,
+                "section": "Density-scaled from representative mix (Table 43, printed 68-69) by the EPD's stated method (Table 48/annex, printed 70): value x density/2332",
+                "module": "C2",
+                "unit_raw": "kg CO2-eq",
+                "note": "estimate = 5.8987 x 1.0334; density from Table 1 p.5 (density 2410)"
+              }
+            },
+            "C3": {
+              "value": 5.1345,
+              "raw": null,
+              "status": "estimated",
+              "provenance": {
+                "page": 35,
+                "section": "Density-scaled from representative mix (Table 43, printed 68-69) by the EPD's stated method (Table 48/annex, printed 70): value x density/2332",
+                "module": "C3",
+                "unit_raw": "kg CO2-eq",
+                "note": "estimate = 4.9683 x 1.0334; density from Table 1 p.5 (density 2410)"
+              }
+            },
+            "C4": {
+              "value": 8.6427,
+              "raw": null,
+              "status": "estimated",
+              "provenance": {
+                "page": 35,
+                "section": "Density-scaled from representative mix (Table 43, printed 68-69) by the EPD's stated method (Table 48/annex, printed 70): value x density/2332",
+                "module": "C4",
+                "unit_raw": "kg CO2-eq",
+                "note": "estimate = 8.363 x 1.0334; density from Table 1 p.5 (density 2410)"
+              }
+            },
+            "D": {
+              "value": -11.8646,
+              "raw": null,
+              "status": "estimated",
+              "provenance": {
+                "page": 35,
+                "section": "Density-scaled from representative mix (Table 43, printed 68-69) by the EPD's stated method (Table 48/annex, printed 70): value x density/2332",
+                "module": "D",
+                "unit_raw": "kg CO2-eq",
+                "note": "estimate = -11.4806 x 1.0334; density from Table 1 p.5 (density 2410)"
+              }
+            }
+          }
+        },
+        "GWP_fossil": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 242.0,
+              "raw": "242",
+              "status": "declared",
+              "provenance": {
+                "page": 20,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 | MILE END | A1-A3 (printed 38-39)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq"
+              }
+            }
+          }
+        },
+        "GWP_biogenic": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 2.31,
+              "raw": "2.31",
+              "status": "declared",
+              "provenance": {
+                "page": 20,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 | MILE END | A1-A3 (printed 38-39)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "S6510 SCPEC2",
+      "manufacturer": "Hallett Group",
+      "concrete_type": "Ready-mix concrete",
+      "compressive_strength": {
+        "value_mpa": 65,
+        "class": "S6510",
+        "at_days": 28,
+        "raw": "65",
+        "status": "found",
+        "provenance": {
+          "page": 5,
+          "snippet": "Table 1 grades ... S6510 ... 65"
+        }
+      },
+      "manufacturing_location": {
+        "site": "Mile End batch plant",
+        "city": "Mile End",
+        "region": "South Australia",
+        "country": "AU",
+        "raw": "Mile End, SA",
+        "provenance": {
+          "page": 20,
+          "snippet": "MILE END | A1-A3 (printed 38-39)"
+        }
+      },
+      "declared_unit": {
+        "amount": 1,
+        "unit": "m3",
+        "description": "1 m3 of product produced at Mile End batch plant",
+        "mass_kg": 2400,
+        "provenance": {
+          "page": 5,
+          "snippet": "Table 1 density"
+        }
+      },
+      "indicators": {
+        "GWP_total": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 307.0,
+              "raw": "307",
+              "status": "declared",
+              "provenance": {
+                "page": 20,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 | MILE END | A1-A3 (printed 38-39)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq"
+              }
+            },
+            "C1": {
+              "value": 15.0748,
+              "raw": null,
+              "status": "estimated",
+              "provenance": {
+                "page": 35,
+                "section": "Density-scaled from representative mix (Table 43, printed 68-69) by the EPD's stated method (Table 48/annex, printed 70): value x density/2332",
+                "module": "C1",
+                "unit_raw": "kg CO2-eq",
+                "note": "estimate = 14.6477 x 1.0292; density from Table 1 p.5 (density 2400)"
+              }
+            },
+            "C2": {
+              "value": 6.0707,
+              "raw": null,
+              "status": "estimated",
+              "provenance": {
+                "page": 35,
+                "section": "Density-scaled from representative mix (Table 43, printed 68-69) by the EPD's stated method (Table 48/annex, printed 70): value x density/2332",
+                "module": "C2",
+                "unit_raw": "kg CO2-eq",
+                "note": "estimate = 5.8987 x 1.0292; density from Table 1 p.5 (density 2400)"
+              }
+            },
+            "C3": {
+              "value": 5.1132,
+              "raw": null,
+              "status": "estimated",
+              "provenance": {
+                "page": 35,
+                "section": "Density-scaled from representative mix (Table 43, printed 68-69) by the EPD's stated method (Table 48/annex, printed 70): value x density/2332",
+                "module": "C3",
+                "unit_raw": "kg CO2-eq",
+                "note": "estimate = 4.9683 x 1.0292; density from Table 1 p.5 (density 2400)"
+              }
+            },
+            "C4": {
+              "value": 8.6069,
+              "raw": null,
+              "status": "estimated",
+              "provenance": {
+                "page": 35,
+                "section": "Density-scaled from representative mix (Table 43, printed 68-69) by the EPD's stated method (Table 48/annex, printed 70): value x density/2332",
+                "module": "C4",
+                "unit_raw": "kg CO2-eq",
+                "note": "estimate = 8.363 x 1.0292; density from Table 1 p.5 (density 2400)"
+              }
+            },
+            "D": {
+              "value": -11.8154,
+              "raw": null,
+              "status": "estimated",
+              "provenance": {
+                "page": 35,
+                "section": "Density-scaled from representative mix (Table 43, printed 68-69) by the EPD's stated method (Table 48/annex, printed 70): value x density/2332",
+                "module": "D",
+                "unit_raw": "kg CO2-eq",
+                "note": "estimate = -11.4806 x 1.0292; density from Table 1 p.5 (density 2400)"
+              }
+            }
+          }
+        },
+        "GWP_fossil": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 304.0,
+              "raw": "304",
+              "status": "declared",
+              "provenance": {
+                "page": 20,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 | MILE END | A1-A3 (printed 38-39)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq"
+              }
+            }
+          }
+        },
+        "GWP_biogenic": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 2.8,
+              "raw": "2.80",
+              "status": "declared",
+              "provenance": {
+                "page": 20,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 | MILE END | A1-A3 (printed 38-39)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "S6520 PLC2120",
+      "manufacturer": "Hallett Group",
+      "concrete_type": "Ready-mix concrete",
+      "compressive_strength": {
+        "value_mpa": 65,
+        "class": "S6520",
+        "at_days": 28,
+        "raw": "65",
+        "status": "found",
+        "provenance": {
+          "page": 5,
+          "snippet": "Table 1 grades ... S6520 ... 65"
+        }
+      },
+      "manufacturing_location": {
+        "site": "Mile End batch plant",
+        "city": "Mile End",
+        "region": "South Australia",
+        "country": "AU",
+        "raw": "Mile End, SA",
+        "provenance": {
+          "page": 20,
+          "snippet": "MILE END | A1-A3 (printed 38-39)"
+        }
+      },
+      "declared_unit": {
+        "amount": 1,
+        "unit": "m3",
+        "description": "1 m3 of product produced at Mile End batch plant",
+        "mass_kg": 2480,
+        "provenance": {
+          "page": 5,
+          "snippet": "Table 1 density"
+        }
+      },
+      "indicators": {
+        "GWP_total": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 257.0,
+              "raw": "257",
+              "status": "declared",
+              "provenance": {
+                "page": 20,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 | MILE END | A1-A3 (printed 38-39)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq"
+              }
+            },
+            "C1": {
+              "value": 15.5773,
+              "raw": null,
+              "status": "estimated",
+              "provenance": {
+                "page": 35,
+                "section": "Density-scaled from representative mix (Table 43, printed 68-69) by the EPD's stated method (Table 48/annex, printed 70): value x density/2332",
+                "module": "C1",
+                "unit_raw": "kg CO2-eq",
+                "note": "estimate = 14.6477 x 1.0635; density from Table 1 p.5 (density 2480)"
+              }
+            },
+            "C2": {
+              "value": 6.2731,
+              "raw": null,
+              "status": "estimated",
+              "provenance": {
+                "page": 35,
+                "section": "Density-scaled from representative mix (Table 43, printed 68-69) by the EPD's stated method (Table 48/annex, printed 70): value x density/2332",
+                "module": "C2",
+                "unit_raw": "kg CO2-eq",
+                "note": "estimate = 5.8987 x 1.0635; density from Table 1 p.5 (density 2480)"
+              }
+            },
+            "C3": {
+              "value": 5.2836,
+              "raw": null,
+              "status": "estimated",
+              "provenance": {
+                "page": 35,
+                "section": "Density-scaled from representative mix (Table 43, printed 68-69) by the EPD's stated method (Table 48/annex, printed 70): value x density/2332",
+                "module": "C3",
+                "unit_raw": "kg CO2-eq",
+                "note": "estimate = 4.9683 x 1.0635; density from Table 1 p.5 (density 2480)"
+              }
+            },
+            "C4": {
+              "value": 8.8938,
+              "raw": null,
+              "status": "estimated",
+              "provenance": {
+                "page": 35,
+                "section": "Density-scaled from representative mix (Table 43, printed 68-69) by the EPD's stated method (Table 48/annex, printed 70): value x density/2332",
+                "module": "C4",
+                "unit_raw": "kg CO2-eq",
+                "note": "estimate = 8.363 x 1.0635; density from Table 1 p.5 (density 2480)"
+              }
+            },
+            "D": {
+              "value": -12.2092,
+              "raw": null,
+              "status": "estimated",
+              "provenance": {
+                "page": 35,
+                "section": "Density-scaled from representative mix (Table 43, printed 68-69) by the EPD's stated method (Table 48/annex, printed 70): value x density/2332",
+                "module": "D",
+                "unit_raw": "kg CO2-eq",
+                "note": "estimate = -11.4806 x 1.0635; density from Table 1 p.5 (density 2480)"
+              }
+            }
+          }
+        },
+        "GWP_fossil": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 255.0,
+              "raw": "255",
+              "status": "declared",
+              "provenance": {
+                "page": 20,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 | MILE END | A1-A3 (printed 38-39)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq"
+              }
+            }
+          }
+        },
+        "GWP_biogenic": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 2.4,
+              "raw": "2.40",
+              "status": "declared",
+              "provenance": {
+                "page": 20,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 | MILE END | A1-A3 (printed 38-39)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "S6520 E2150",
+      "manufacturer": "Hallett Group",
+      "concrete_type": "Ready-mix concrete",
+      "compressive_strength": {
+        "value_mpa": 65,
+        "class": "S6520",
+        "at_days": 28,
+        "raw": "65",
+        "status": "found",
+        "provenance": {
+          "page": 5,
+          "snippet": "Table 1 grades ... S6520 ... 65"
+        }
+      },
+      "manufacturing_location": {
+        "site": "Mile End batch plant",
+        "city": "Mile End",
+        "region": "South Australia",
+        "country": "AU",
+        "raw": "Mile End, SA",
+        "provenance": {
+          "page": 20,
+          "snippet": "MILE END | A1-A3 (printed 38-39)"
+        }
+      },
+      "declared_unit": {
+        "amount": 1,
+        "unit": "m3",
+        "description": "1 m3 of product produced at Mile End batch plant",
+        "mass_kg": null,
+        "provenance": {
+          "page": 5,
+          "snippet": "Table 1 density"
+        }
+      },
+      "indicators": {
+        "GWP_total": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 326.0,
+              "raw": "326",
+              "status": "declared",
+              "provenance": {
+                "page": 20,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 | MILE END | A1-A3 (printed 38-39)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq"
+              }
+            },
+            "C1": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C1",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C2": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C2",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C3": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C3",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C4": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C4",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "D": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "D",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            }
+          }
+        },
+        "GWP_fossil": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 322.0,
+              "raw": "322",
+              "status": "declared",
+              "provenance": {
+                "page": 20,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 | MILE END | A1-A3 (printed 38-39)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq"
+              }
+            }
+          }
+        },
+        "GWP_biogenic": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 4.5,
+              "raw": "4.50",
+              "status": "declared",
+              "provenance": {
+                "page": 20,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 | MILE END | A1-A3 (printed 38-39)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "S8010 COLSCLC2",
+      "manufacturer": "Hallett Group",
+      "concrete_type": "Ready-mix concrete",
+      "compressive_strength": {
+        "value_mpa": 80,
+        "class": "S8010",
+        "at_days": 28,
+        "raw": "80",
+        "status": "found",
+        "provenance": {
+          "page": 5,
+          "snippet": "Table 1 grades ... S8010 ... 80"
+        }
+      },
+      "manufacturing_location": {
+        "site": "Mile End batch plant",
+        "city": "Mile End",
+        "region": "South Australia",
+        "country": "AU",
+        "raw": "Mile End, SA",
+        "provenance": {
+          "page": 20,
+          "snippet": "MILE END | A1-A3 (printed 38-39)"
+        }
+      },
+      "declared_unit": {
+        "amount": 1,
+        "unit": "m3",
+        "description": "1 m3 of product produced at Mile End batch plant",
+        "mass_kg": 2500,
+        "provenance": {
+          "page": 5,
+          "snippet": "Table 1 density"
+        }
+      },
+      "indicators": {
+        "GWP_total": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 282.0,
+              "raw": "282",
+              "status": "declared",
+              "provenance": {
+                "page": 20,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 | MILE END | A1-A3 (printed 38-39)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq"
+              }
+            },
+            "C1": {
+              "value": 15.7029,
+              "raw": null,
+              "status": "estimated",
+              "provenance": {
+                "page": 35,
+                "section": "Density-scaled from representative mix (Table 43, printed 68-69) by the EPD's stated method (Table 48/annex, printed 70): value x density/2332",
+                "module": "C1",
+                "unit_raw": "kg CO2-eq",
+                "note": "estimate = 14.6477 x 1.0720; density from Table 1 p.5 (density 2500)"
+              }
+            },
+            "C2": {
+              "value": 6.3236,
+              "raw": null,
+              "status": "estimated",
+              "provenance": {
+                "page": 35,
+                "section": "Density-scaled from representative mix (Table 43, printed 68-69) by the EPD's stated method (Table 48/annex, printed 70): value x density/2332",
+                "module": "C2",
+                "unit_raw": "kg CO2-eq",
+                "note": "estimate = 5.8987 x 1.0720; density from Table 1 p.5 (density 2500)"
+              }
+            },
+            "C3": {
+              "value": 5.3262,
+              "raw": null,
+              "status": "estimated",
+              "provenance": {
+                "page": 35,
+                "section": "Density-scaled from representative mix (Table 43, printed 68-69) by the EPD's stated method (Table 48/annex, printed 70): value x density/2332",
+                "module": "C3",
+                "unit_raw": "kg CO2-eq",
+                "note": "estimate = 4.9683 x 1.0720; density from Table 1 p.5 (density 2500)"
+              }
+            },
+            "C4": {
+              "value": 8.9655,
+              "raw": null,
+              "status": "estimated",
+              "provenance": {
+                "page": 35,
+                "section": "Density-scaled from representative mix (Table 43, printed 68-69) by the EPD's stated method (Table 48/annex, printed 70): value x density/2332",
+                "module": "C4",
+                "unit_raw": "kg CO2-eq",
+                "note": "estimate = 8.363 x 1.0720; density from Table 1 p.5 (density 2500)"
+              }
+            },
+            "D": {
+              "value": -12.3077,
+              "raw": null,
+              "status": "estimated",
+              "provenance": {
+                "page": 35,
+                "section": "Density-scaled from representative mix (Table 43, printed 68-69) by the EPD's stated method (Table 48/annex, printed 70): value x density/2332",
+                "module": "D",
+                "unit_raw": "kg CO2-eq",
+                "note": "estimate = -11.4806 x 1.0720; density from Table 1 p.5 (density 2500)"
+              }
+            }
+          }
+        },
+        "GWP_fossil": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 279.0,
+              "raw": "279",
+              "status": "declared",
+              "provenance": {
+                "page": 20,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 | MILE END | A1-A3 (printed 38-39)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq"
+              }
+            }
+          }
+        },
+        "GWP_biogenic": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 2.45,
+              "raw": "2.45",
+              "status": "declared",
+              "provenance": {
+                "page": 20,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 | MILE END | A1-A3 (printed 38-39)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "S8010 SCPEC2",
+      "manufacturer": "Hallett Group",
+      "concrete_type": "Ready-mix concrete",
+      "compressive_strength": {
+        "value_mpa": 80,
+        "class": "S8010",
+        "at_days": 28,
+        "raw": "80",
+        "status": "found",
+        "provenance": {
+          "page": 5,
+          "snippet": "Table 1 grades ... S8010 ... 80"
+        }
+      },
+      "manufacturing_location": {
+        "site": "Mile End batch plant",
+        "city": "Mile End",
+        "region": "South Australia",
+        "country": "AU",
+        "raw": "Mile End, SA",
+        "provenance": {
+          "page": 20,
+          "snippet": "MILE END | A1-A3 (printed 38-39)"
+        }
+      },
+      "declared_unit": {
+        "amount": 1,
+        "unit": "m3",
+        "description": "1 m3 of product produced at Mile End batch plant",
+        "mass_kg": 2420,
+        "provenance": {
+          "page": 5,
+          "snippet": "Table 1 density"
+        }
+      },
+      "indicators": {
+        "GWP_total": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 339.0,
+              "raw": "339",
+              "status": "declared",
+              "provenance": {
+                "page": 20,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 | MILE END | A1-A3 (printed 38-39)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq"
+              }
+            },
+            "C1": {
+              "value": 15.2004,
+              "raw": null,
+              "status": "estimated",
+              "provenance": {
+                "page": 35,
+                "section": "Density-scaled from representative mix (Table 43, printed 68-69) by the EPD's stated method (Table 48/annex, printed 70): value x density/2332",
+                "module": "C1",
+                "unit_raw": "kg CO2-eq",
+                "note": "estimate = 14.6477 x 1.0377; density from Table 1 p.5 (density 2420)"
+              }
+            },
+            "C2": {
+              "value": 6.1213,
+              "raw": null,
+              "status": "estimated",
+              "provenance": {
+                "page": 35,
+                "section": "Density-scaled from representative mix (Table 43, printed 68-69) by the EPD's stated method (Table 48/annex, printed 70): value x density/2332",
+                "module": "C2",
+                "unit_raw": "kg CO2-eq",
+                "note": "estimate = 5.8987 x 1.0377; density from Table 1 p.5 (density 2420)"
+              }
+            },
+            "C3": {
+              "value": 5.1558,
+              "raw": null,
+              "status": "estimated",
+              "provenance": {
+                "page": 35,
+                "section": "Density-scaled from representative mix (Table 43, printed 68-69) by the EPD's stated method (Table 48/annex, printed 70): value x density/2332",
+                "module": "C3",
+                "unit_raw": "kg CO2-eq",
+                "note": "estimate = 4.9683 x 1.0377; density from Table 1 p.5 (density 2420)"
+              }
+            },
+            "C4": {
+              "value": 8.6786,
+              "raw": null,
+              "status": "estimated",
+              "provenance": {
+                "page": 35,
+                "section": "Density-scaled from representative mix (Table 43, printed 68-69) by the EPD's stated method (Table 48/annex, printed 70): value x density/2332",
+                "module": "C4",
+                "unit_raw": "kg CO2-eq",
+                "note": "estimate = 8.363 x 1.0377; density from Table 1 p.5 (density 2420)"
+              }
+            },
+            "D": {
+              "value": -11.9138,
+              "raw": null,
+              "status": "estimated",
+              "provenance": {
+                "page": 35,
+                "section": "Density-scaled from representative mix (Table 43, printed 68-69) by the EPD's stated method (Table 48/annex, printed 70): value x density/2332",
+                "module": "D",
+                "unit_raw": "kg CO2-eq",
+                "note": "estimate = -11.4806 x 1.0377; density from Table 1 p.5 (density 2420)"
+              }
+            }
+          }
+        },
+        "GWP_fossil": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 336.0,
+              "raw": "336",
+              "status": "declared",
+              "provenance": {
+                "page": 20,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 | MILE END | A1-A3 (printed 38-39)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq"
+              }
+            }
+          }
+        },
+        "GWP_biogenic": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 3.02,
+              "raw": "3.02",
+              "status": "declared",
+              "provenance": {
+                "page": 20,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 | MILE END | A1-A3 (printed 38-39)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "CLSM PEB",
+      "manufacturer": "Hallett Group",
+      "concrete_type": "Controlled low-strength material (CLSM / fill)",
+      "compressive_strength": {
+        "value_mpa": null,
+        "class": "CLSM",
+        "at_days": 28,
+        "raw": null,
+        "status": "uncertain",
+        "provenance": {
+          "page": 5,
+          "snippet": "CLSM is non-structural fill — no MPa grade"
+        }
+      },
+      "manufacturing_location": {
+        "site": "Mile End batch plant",
+        "city": "Mile End",
+        "region": "South Australia",
+        "country": "AU",
+        "raw": "Mile End, SA",
+        "provenance": {
+          "page": 20,
+          "snippet": "MILE END | A1-A3 (printed 38-39)"
+        }
+      },
+      "declared_unit": {
+        "amount": 1,
+        "unit": "m3",
+        "description": "1 m3 of product produced at Mile End batch plant",
+        "mass_kg": null,
+        "provenance": {
+          "page": 5,
+          "snippet": "Table 1 density"
+        }
+      },
+      "indicators": {
+        "GWP_total": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 88.9,
+              "raw": "88.9",
+              "status": "declared",
+              "provenance": {
+                "page": 20,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 | MILE END | A1-A3 (printed 38-39)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq"
+              }
+            },
+            "C1": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C1",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C2": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C2",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C3": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C3",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C4": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C4",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "D": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "D",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            }
+          }
+        },
+        "GWP_fossil": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 87.3,
+              "raw": "87.3",
+              "status": "declared",
+              "provenance": {
+                "page": 20,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 | MILE END | A1-A3 (printed 38-39)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq"
+              }
+            }
+          }
+        },
+        "GWP_biogenic": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 1.58,
+              "raw": "1.58",
+              "status": "declared",
+              "provenance": {
+                "page": 20,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 | MILE END | A1-A3 (printed 38-39)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "CLSM SB",
+      "manufacturer": "Hallett Group",
+      "concrete_type": "Controlled low-strength material (CLSM / fill)",
+      "compressive_strength": {
+        "value_mpa": null,
+        "class": "CLSM",
+        "at_days": 28,
+        "raw": null,
+        "status": "uncertain",
+        "provenance": {
+          "page": 5,
+          "snippet": "CLSM is non-structural fill — no MPa grade"
+        }
+      },
+      "manufacturing_location": {
+        "site": "Mile End batch plant",
+        "city": "Mile End",
+        "region": "South Australia",
+        "country": "AU",
+        "raw": "Mile End, SA",
+        "provenance": {
+          "page": 20,
+          "snippet": "MILE END | A1-A3 (printed 38-39)"
+        }
+      },
+      "declared_unit": {
+        "amount": 1,
+        "unit": "m3",
+        "description": "1 m3 of product produced at Mile End batch plant",
+        "mass_kg": null,
+        "provenance": {
+          "page": 5,
+          "snippet": "Table 1 density"
+        }
+      },
+      "indicators": {
+        "GWP_total": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 142.0,
+              "raw": "142",
+              "status": "declared",
+              "provenance": {
+                "page": 20,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 | MILE END | A1-A3 (printed 38-39)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq"
+              }
+            },
+            "C1": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C1",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C2": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C2",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C3": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C3",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C4": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C4",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "D": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "D",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            }
+          }
+        },
+        "GWP_fossil": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 139.0,
+              "raw": "139",
+              "status": "declared",
+              "provenance": {
+                "page": 20,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 | MILE END | A1-A3 (printed 38-39)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq"
+              }
+            }
+          }
+        },
+        "GWP_biogenic": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 2.5,
+              "raw": "2.50",
+              "status": "declared",
+              "provenance": {
+                "page": 20,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 | MILE END | A1-A3 (printed 38-39)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "CLSM 3",
+      "manufacturer": "Hallett Group",
+      "concrete_type": "Controlled low-strength material (CLSM / fill)",
+      "compressive_strength": {
+        "value_mpa": null,
+        "class": "CLSM",
+        "at_days": 28,
+        "raw": null,
+        "status": "uncertain",
+        "provenance": {
+          "page": 5,
+          "snippet": "CLSM is non-structural fill — no MPa grade"
+        }
+      },
+      "manufacturing_location": {
+        "site": "Mile End batch plant",
+        "city": "Mile End",
+        "region": "South Australia",
+        "country": "AU",
+        "raw": "Mile End, SA",
+        "provenance": {
+          "page": 20,
+          "snippet": "MILE END | A1-A3 (printed 38-39)"
+        }
+      },
+      "declared_unit": {
+        "amount": 1,
+        "unit": "m3",
+        "description": "1 m3 of product produced at Mile End batch plant",
+        "mass_kg": null,
+        "provenance": {
+          "page": 5,
+          "snippet": "Table 1 density"
+        }
+      },
+      "indicators": {
+        "GWP_total": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 72.7,
+              "raw": "72.7",
+              "status": "declared",
+              "provenance": {
+                "page": 20,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 | MILE END | A1-A3 (printed 38-39)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq"
+              }
+            },
+            "C1": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C1",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C2": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C2",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C3": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C3",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C4": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C4",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "D": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "D",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            }
+          }
+        },
+        "GWP_fossil": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 71.3,
+              "raw": "71.3",
+              "status": "declared",
+              "provenance": {
+                "page": 20,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 | MILE END | A1-A3 (printed 38-39)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq"
+              }
+            }
+          }
+        },
+        "GWP_biogenic": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 1.37,
+              "raw": "1.37",
+              "status": "declared",
+              "provenance": {
+                "page": 20,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 | MILE END | A1-A3 (printed 38-39)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "CLSM 4",
+      "manufacturer": "Hallett Group",
+      "concrete_type": "Controlled low-strength material (CLSM / fill)",
+      "compressive_strength": {
+        "value_mpa": null,
+        "class": "CLSM",
+        "at_days": 28,
+        "raw": null,
+        "status": "uncertain",
+        "provenance": {
+          "page": 5,
+          "snippet": "CLSM is non-structural fill — no MPa grade"
+        }
+      },
+      "manufacturing_location": {
+        "site": "Mile End batch plant",
+        "city": "Mile End",
+        "region": "South Australia",
+        "country": "AU",
+        "raw": "Mile End, SA",
+        "provenance": {
+          "page": 20,
+          "snippet": "MILE END | A1-A3 (printed 38-39)"
+        }
+      },
+      "declared_unit": {
+        "amount": 1,
+        "unit": "m3",
+        "description": "1 m3 of product produced at Mile End batch plant",
+        "mass_kg": null,
+        "provenance": {
+          "page": 5,
+          "snippet": "Table 1 density"
+        }
+      },
+      "indicators": {
+        "GWP_total": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 85.1,
+              "raw": "85.1",
+              "status": "declared",
+              "provenance": {
+                "page": 20,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 | MILE END | A1-A3 (printed 38-39)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq"
+              }
+            },
+            "C1": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C1",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C2": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C2",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C3": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C3",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C4": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C4",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "D": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "D",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            }
+          }
+        },
+        "GWP_fossil": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 83.6,
+              "raw": "83.6",
+              "status": "declared",
+              "provenance": {
+                "page": 20,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 | MILE END | A1-A3 (printed 38-39)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq"
+              }
+            }
+          }
+        },
+        "GWP_biogenic": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 1.53,
+              "raw": "1.53",
+              "status": "declared",
+              "provenance": {
+                "page": 20,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 | MILE END | A1-A3 (printed 38-39)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "CLSM 5",
+      "manufacturer": "Hallett Group",
+      "concrete_type": "Controlled low-strength material (CLSM / fill)",
+      "compressive_strength": {
+        "value_mpa": null,
+        "class": "CLSM",
+        "at_days": 28,
+        "raw": null,
+        "status": "uncertain",
+        "provenance": {
+          "page": 5,
+          "snippet": "CLSM is non-structural fill — no MPa grade"
+        }
+      },
+      "manufacturing_location": {
+        "site": "Mile End batch plant",
+        "city": "Mile End",
+        "region": "South Australia",
+        "country": "AU",
+        "raw": "Mile End, SA",
+        "provenance": {
+          "page": 20,
+          "snippet": "MILE END | A1-A3 (printed 38-39)"
+        }
+      },
+      "declared_unit": {
+        "amount": 1,
+        "unit": "m3",
+        "description": "1 m3 of product produced at Mile End batch plant",
+        "mass_kg": null,
+        "provenance": {
+          "page": 5,
+          "snippet": "Table 1 density"
+        }
+      },
+      "indicators": {
+        "GWP_total": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 97.5,
+              "raw": "97.5",
+              "status": "declared",
+              "provenance": {
+                "page": 20,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 | MILE END | A1-A3 (printed 38-39)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq"
+              }
+            },
+            "C1": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C1",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C2": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C2",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C3": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C3",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C4": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C4",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "D": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "D",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            }
+          }
+        },
+        "GWP_fossil": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 95.9,
+              "raw": "95.9",
+              "status": "declared",
+              "provenance": {
+                "page": 20,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 | MILE END | A1-A3 (printed 38-39)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq"
+              }
+            }
+          }
+        },
+        "GWP_biogenic": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 1.69,
+              "raw": "1.69",
+              "status": "declared",
+              "provenance": {
+                "page": 20,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 | MILE END | A1-A3 (printed 38-39)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "CLSM 15",
+      "manufacturer": "Hallett Group",
+      "concrete_type": "Controlled low-strength material (CLSM / fill)",
+      "compressive_strength": {
+        "value_mpa": null,
+        "class": "CLSM",
+        "at_days": 28,
+        "raw": null,
+        "status": "uncertain",
+        "provenance": {
+          "page": 5,
+          "snippet": "CLSM is non-structural fill — no MPa grade"
+        }
+      },
+      "manufacturing_location": {
+        "site": "Mile End batch plant",
+        "city": "Mile End",
+        "region": "South Australia",
+        "country": "AU",
+        "raw": "Mile End, SA",
+        "provenance": {
+          "page": 20,
+          "snippet": "MILE END | A1-A3 (printed 38-39)"
+        }
+      },
+      "declared_unit": {
+        "amount": 1,
+        "unit": "m3",
+        "description": "1 m3 of product produced at Mile End batch plant",
+        "mass_kg": null,
+        "provenance": {
+          "page": 5,
+          "snippet": "Table 1 density"
+        }
+      },
+      "indicators": {
+        "GWP_total": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 167.0,
+              "raw": "167",
+              "status": "declared",
+              "provenance": {
+                "page": 20,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 | MILE END | A1-A3 (printed 38-39)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq"
+              }
+            },
+            "C1": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C1",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C2": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C2",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C3": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C3",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C4": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C4",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "D": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "D",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            }
+          }
+        },
+        "GWP_fossil": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 164.0,
+              "raw": "164",
+              "status": "declared",
+              "provenance": {
+                "page": 20,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 | MILE END | A1-A3 (printed 38-39)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq"
+              }
+            }
+          }
+        },
+        "GWP_biogenic": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 2.58,
+              "raw": "2.58",
+              "status": "declared",
+              "provenance": {
+                "page": 20,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 | MILE END | A1-A3 (printed 38-39)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "NO FINES",
+      "manufacturer": "Hallett Group",
+      "concrete_type": "No-fines concrete",
+      "compressive_strength": {
+        "value_mpa": null,
+        "class": "NO FINES",
+        "at_days": 28,
+        "raw": null,
+        "status": "uncertain",
+        "provenance": {
+          "page": 5,
+          "snippet": "NO FINES is non-structural fill — no MPa grade"
+        }
+      },
+      "manufacturing_location": {
+        "site": "Mile End batch plant",
+        "city": "Mile End",
+        "region": "South Australia",
+        "country": "AU",
+        "raw": "Mile End, SA",
+        "provenance": {
+          "page": 20,
+          "snippet": "MILE END | A1-A3 (printed 38-39)"
+        }
+      },
+      "declared_unit": {
+        "amount": 1,
+        "unit": "m3",
+        "description": "1 m3 of product produced at Mile End batch plant",
+        "mass_kg": null,
+        "provenance": {
+          "page": 5,
+          "snippet": "Table 1 density"
+        }
+      },
+      "indicators": {
+        "GWP_total": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 167.0,
+              "raw": "167",
+              "status": "declared",
+              "provenance": {
+                "page": 20,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 | MILE END | A1-A3 (printed 38-39)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq"
+              }
+            },
+            "C1": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C1",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C2": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C2",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C3": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C3",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "C4": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "C4",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            },
+            "D": {
+              "value": null,
+              "raw": null,
+              "status": "not_reported",
+              "provenance": {
+                "page": null,
+                "module": "D",
+                "note": "Declared in the EPD system boundary but no per-product value published in this EPD; not zero."
+              }
+            }
+          }
+        },
+        "GWP_fossil": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 165.0,
+              "raw": "165",
+              "status": "declared",
+              "provenance": {
+                "page": 20,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 | MILE END | A1-A3 (printed 38-39)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq"
+              }
+            }
+          }
+        },
+        "GWP_biogenic": {
+          "unit_raw": "kg CO2-eq",
+          "unit_normalised": "kg CO2e",
+          "modules": {
+            "A1-A3": {
+              "value": 2.64,
+              "raw": "2.64",
+              "status": "declared",
+              "provenance": {
+                "page": 20,
+                "section": "CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 | MILE END | A1-A3 (printed 38-39)",
+                "module": "A1-A3",
+                "unit_raw": "kg CO2-eq"
+              }
+            }
+          }
+        }
+      }
     }
   ],
   "system_boundary": {
@@ -26564,8 +28714,7 @@
       "Elizabeth plant A1-A3 (page 16), Mile End plant A1-A3 (pages 19-20, includes N2010P and additional S/CLSM/NOFINES mixes), McLaren Vale plant A1-A3 (page 29), Osborne plant A1-A3 (page 32): N-series GWPt confirmed to differ slightly per plant but only Dry Creek values were recorded. Per-plant N-series GWPt available if per-plant products are required.",
       "Mile End special-class and CLSM/NOFINES products (per version 003 history, page 71) not extracted.",
       "C1-C4 and D core GWP for mixes other than N3220P S50 are not printed (scaled by density per Annex page 70) - not extractable as raw printed cells.",
-      "Other 4 plants (Elizabeth, Mile End, McLaren Vale, Osborne) declare the same mixes with per-plant A1-A3 (±1-2%); documented in docs/hallett_table_inventory.md, not loaded.",
-      "Mile End sheet 20 Table B (printed 38-39): S5020/S6510/S6520/S8010 (METALDIT variant ambiguity) + CLSM & NO-FINES fill materials (~15 cols) not loaded — CLSM/NO-FINES are non-structural fill (R13), out of scope for structural carbon comparison; documented in hallett_table_inventory.md."
+      "Other 4 plants (Elizabeth, Mile End, McLaren Vale, Osborne) declare the same mixes with per-plant A1-A3 (±1-2%); documented in docs/hallett_table_inventory.md, not loaded."
     ]
   }
 }

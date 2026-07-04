@@ -81,6 +81,15 @@ multi-table inventory), `docs/VERIFICATION.md` (gate results), `scripts/` (the t
 - **R12 Compressive strength.** Detect: strength encoded in a product code (N32, AR2520, S32).
   Tackle: take the MPa from stated text only (caught P252080: code implied 40, text said 25).
   Verify: the MPa appears verbatim near "strength/grade" in the source.
+- **R15 Multiple tables per sheet (caught TWICE — hard rule).** One PDF sheet often holds
+  **more than one result table** stacked top+bottom under a single heading (e.g. Mile End
+  printed 38-39: S4020+S5010 on top, S5020/S6510/S6520/S8010+CLSM+NO-FINES below — both
+  EN15804+A2). There is no new page heading between them, so it's easy to grab only the top.
+  Detect: **count the GWPt rows on the sheet** — each result table has exactly one. Tackle:
+  extract EVERY table on the sheet (never a `first_only` shortcut). Verify (completeness gate):
+  Σ(values across all GWPt rows on the sheet) == Σ(mixes mapped from that sheet). A shortcut
+  that skips the bottom table passes value-verification on what it *did* take, so this count
+  gate is the only thing that catches under-extraction.
 - **R13 Non-structural products.** Detect: CLSM (controlled low-strength fill), NO FINES, flowable
   fill. Tackle: extract if completeness requires, but label `concrete_type` clearly and keep them
   out of default structural comparisons. Verify: flagged, not silently mixed with structural mixes.

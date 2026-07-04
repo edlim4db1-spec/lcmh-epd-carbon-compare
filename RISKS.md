@@ -69,6 +69,10 @@ A number without provenance is WORSE than no number.
   (see docs/hallett_table_inventory.md). Completeness must be PROVABLE from the inventory,
   never discovered page-by-page as a reviewer surfaces gaps.
 - M2. **CONT'D tables are one logical table** — merge sheet pairs before parsing columns.
+- M2b. **MULTIPLE TABLES PER SHEET (caught twice — never again).** A sheet can stack two+ result
+  tables top/bottom under one heading with no divider (Mile End printed 38-39). Count the GWPt
+  rows on the sheet and extract ALL of them; completeness gate = Σ values on sheet == Σ mixes
+  mapped from sheet. A `first_only`-style shortcut is banned. (See field guide R15.)
 - M3. **Per-mix values the EPD derives by a stated method** (e.g. C1-C4+D by density scaling)
   are `estimated` with provenance to the method table — not `not_reported`, not `0`.
 

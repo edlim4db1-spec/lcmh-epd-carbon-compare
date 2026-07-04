@@ -29,53 +29,60 @@ ORDER = [("N2010P", "-"), ("N2010P", "100"),
 ORDER_S20A = [("S4020", v) for v in ("E1100", "E1150H", "E2", "E2100", "E2120", "E2150", "E2150F",
     "E2200", "E3150", "E3150F", "PTLC2", "COLLC1", "COLLC2", "PLC1120", "PLC2120", "PLC2XYP")] + \
     [("S5010", v) for v in ("DW500D", "DW500D3", "E1150H", "SCPLC2", "SCPH")]
-GRADE_S20 = {"S4020": 40, "S5010": 50}
+# Sheet 20 Table B (BOTTOM table on the same sheet, same +A2 CONT'D heading — must NOT be
+# skipped). Structure from the source (visible family borders). CLSM / NO-FINES are
+# non-structural FILL materials (R13): no MPa grade, distinct concrete_type.
+ORDER_S20B = [("S5020", "E1200"), ("S5020", "METALDIT"), ("S6510", "SCPLC2"), ("S6510", "SCPEC2"),
+    ("S6520", "PLC2120"), ("S6520", "E2150"), ("S8010", "COLSCLC2"), ("S8010", "SCPEC2"),
+    ("CLSM", "PEB"), ("CLSM", "SB"), ("CLSM", "3"), ("CLSM", "4"), ("CLSM", "5"), ("CLSM", "15"),
+    ("NO FINES", "-")]
+GRADE_S20 = {"S4020": 40, "S5010": 50, "S5020": 50, "S6510": 65, "S6520": 65, "S8010": 80}
+FILL_TYPE = {"CLSM": "Controlled low-strength material (CLSM / fill)", "NO FINES": "No-fines concrete"}
 GRADE = {"N2010P": 20, "N2020P": 20, "N2520P": 25, "N3220P": 32, "N4020P": 40, "N5020P": 50,
          "S1020": 10, "S1520": 15, "S2020P": 20, "S2520": 25, "S3220": 32, "S4010": 40}
 
 
-def gwp_rows(page, first_only=False):
-    """All GWPt/GWPf/GWPb values on a page (in y-order). first_only keeps just the first
-    table's row for each indicator (used for sheet 20 Table A)."""
-    rows = {"GWPt": [], "GWPf": [], "GWPb": []}
-    seen = set()
+def gwp_rows_by_table(page):
+    """Return {indicator: [[table-1 values], [table-2 values], ...]} — ONE list per table on
+    the sheet (a sheet often holds multiple result tables under one heading; take them all)."""
+    out = {"GWPt": [], "GWPf": [], "GWPb": []}
     for ln in lines_of(page):
         lab = ln["w"][0][4]
-        if lab in rows:
-            if first_only and lab in seen:
-                continue
-            rows[lab] += [w[4] for w in ln["w"] if re.match(r"^-?\d+(\.\d+)?$", w[4])]
-            seen.add(lab)
-    return rows
+        if lab in out:
+            out[lab].append([w[4] for w in ln["w"] if re.match(r"^-?\d+(\.\d+)?$", w[4])])
+    return out
 
 
 def main():
     write = "--write" in sys.argv
     doc = fitz.open(PDF)
-    r = gwp_rows(doc[18])
     dens = extract_densities(doc)
-    for k in r:
-        assert len(r[k]) == len(ORDER), f"{k}: {len(r[k])} != {len(ORDER)}"
     corr = json.load(open(CORR))
-    # idempotent: drop any previously-added Mile End products before re-adding
     corr["products"] = [p for p in corr["products"]
                         if (p.get("manufacturing_location") or {}).get("city") != "Mile End"]
     corr["needs_review"] = [n for n in corr.get("needs_review", []) if "Mile End sheet 20" not in n]
     rep = next(p for p in corr["products"] if p["indicators"]["GWP_total"]["modules"].get("C1", {}).get("value") is not None)
     rep_cd = {m: rep["indicators"]["GWP_total"]["modules"][m] for m in ("C1", "C2", "C3", "C4", "D")}
-    r20 = gwp_rows(doc[19], first_only=True)  # sheet 20 Table A (S4020 + S5010) = 21
-    for k in r20:
-        assert len(r20[k]) == len(ORDER_S20A), f"s20 {k}: {len(r20[k])} != {len(ORDER_S20A)}"
 
-    def build(order, rows, sheet, printed, grade_map):
-        n = 0
+    # Sheet 19: two tables (23 + 17) -> concat = ORDER(40). Sheet 20: two tables (21 + 15).
+    s19 = gwp_rows_by_table(doc[18])
+    s20 = gwp_rows_by_table(doc[19])
+    # RULE (R15): every table on a sheet must be consumed. Assert value count == mapped keys.
+    assert sum(len(t) for t in s19["GWPt"]) == len(ORDER), "sheet19 GWPt count != ORDER"
+    assert len(s20["GWPt"][0]) == len(ORDER_S20A) and len(s20["GWPt"][1]) == len(ORDER_S20B), \
+        f"sheet20 tables {[len(t) for t in s20['GWPt']]} != {len(ORDER_S20A)}+{len(ORDER_S20B)}"
+
+    def build(order, rows_by_ind, sheet, printed, grade_map):
         for i, (fam, var) in enumerate(order):
             dv = dens.get((fam, var))
-            g = grade_map[fam]
+            g = grade_map.get(fam)
+            ctype = FILL_TYPE.get(fam, "Ready-mix concrete")
             prod = {
-                "name": f"{fam} {var}", "manufacturer": rep["manufacturer"], "concrete_type": "Ready-mix concrete",
-                "compressive_strength": {"value_mpa": g, "class": fam, "at_days": 28, "raw": str(g),
-                    "status": "found", "provenance": {"page": 5, "snippet": f"Table 1 grades ... {fam} ... {g}"}},
+                "name": f"{fam} {var}".rstrip(" -"), "manufacturer": rep["manufacturer"], "concrete_type": ctype,
+                "compressive_strength": {"value_mpa": g, "class": fam, "at_days": 28,
+                    "raw": (str(g) if g else None), "status": ("found" if g else "uncertain"),
+                    "provenance": {"page": 5, "snippet": (f"Table 1 grades ... {fam} ... {g}" if g
+                                   else f"{fam} is non-structural fill — no MPa grade")}},
                 "manufacturing_location": {"site": "Mile End batch plant", "city": "Mile End", "region": "South Australia",
                     "country": "AU", "raw": "Mile End, SA", "provenance": {"page": sheet, "snippet": f"MILE END | A1-A3 (printed {printed})"}},
                 "declared_unit": {"amount": 1, "unit": "m3", "description": "1 m3 of product produced at Mile End batch plant",
@@ -83,7 +90,7 @@ def main():
                 "indicators": {},
             }
             for ind, key in (("GWP_total", "GWPt"), ("GWP_fossil", "GWPf"), ("GWP_biogenic", "GWPb")):
-                raw = rows[key][i]
+                raw = rows_by_ind[key][i]
                 prod["indicators"][ind] = {"unit_raw": "kg CO2-eq", "unit_normalised": "kg CO2e",
                     "modules": {"A1-A3": {"value": float(raw), "raw": raw, "status": "declared",
                         "provenance": {"page": sheet, "section": f"CORE ENVIRONMENTAL IMPACT INDICATORS | EN15804+A2 | MILE END | A1-A3 (printed {printed})",
@@ -91,18 +98,14 @@ def main():
             if dv:
                 prod["indicators"]["GWP_total"]["modules"].update(scale_cd({k: rep_cd[k] for k in rep_cd}, dv / REP_DENSITY, sheet, f"density {int(dv)}"))
             corr["products"].append(prod)
-            n += 1
-        return n
 
-    gmap = {**GRADE}
-    added = build(ORDER, r, 19, "36-37", gmap)
-    added += build(ORDER_S20A, r20, 20, "38-39", GRADE_S20)
+    before = len(corr["products"])
+    build(ORDER, {k: s19[k][0] + s19[k][1] for k in s19}, 19, "36-37", GRADE)         # sheet 19 both tables
+    build(ORDER_S20A, {k: s20[k][0] for k in s20}, 20, "38-39", GRADE_S20)            # sheet 20 top
+    build(ORDER_S20B, {k: s20[k][1] for k in s20}, 20, "38-39", GRADE_S20)            # sheet 20 bottom (FIX)
+    added = len(corr["products"]) - before
     doc.close()
-    corr.setdefault("needs_review", []).append(
-        "Mile End sheet 20 Table B (printed 38-39): S5020/S6510/S6520/S8010 (METALDIT variant ambiguity) "
-        "+ CLSM & NO-FINES fill materials (~15 cols) not loaded — CLSM/NO-FINES are non-structural fill "
-        "(R13), out of scope for structural carbon comparison; documented in hallett_table_inventory.md.")
-    print(f"added {added} Mile End products (sheet 19 + sheet 20 Table A); total {len(corr['products'])}")
+    print(f"added {added} Mile End products (sheet19 x2 + sheet20 x2 tables); total {len(corr['products'])}")
     if write:
         json.dump(corr, open(CORR, "w"), indent=2, ensure_ascii=False)
         print("WROTE.")
