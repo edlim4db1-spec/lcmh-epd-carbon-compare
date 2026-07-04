@@ -20,7 +20,8 @@ here with an explicit disposition **before** extraction. Citations show `sheet (
 | 11 | 20–21 | Dry Creek | A1–A3 | T13 (2nd block) | ~20 | EXTRACT | ⛔ S-series pending |
 | 16 | 30–31 | Elizabeth | A1–A3 | T19 | 24 (N-series) | EXTRACT | ✅ done |
 | 19 | 36–37 | Mile End | A1–A3 | T25 (2 sub-tables) | 40 | EXTRACT | ✅ done (two-engine verified) |
-| 20 | 38–39 | Mile End | A1–A3 | T25 CONT'D | ~36 | EXTRACT | ⏸ remainder — see note |
+| 20 | 38–39 | Mile End | A1–A3 | T25 CONT'D Table A | 21 | EXTRACT | ✅ done (S4020+S5010, two-engine verified) |
+| 20 | 38–39 | Mile End | A1–A3 | T25 CONT'D Table B | ~15 | EXTRACT/EXCLUDE | ⏸ S5020/6510/6520/8010 remainder; CLSM & NO-FINES = non-structural fill (R13) |
 | 29 | 56–57 | McLaren Vale | A1–A3 | T31 | 24 (N-series) | EXTRACT | ✅ done |
 | 32 | 62–63 | Osborne | A1–A3 | T37 | 24 (N-series) | EXTRACT | ✅ done |
 
