@@ -3,6 +3,15 @@
 This is the "constant reminder" doc. Every extraction agent and every checker agent must
 re-read this before touching a file. It encodes the ways this task goes wrong.
 
+> **This project is a training substrate.** The goal is not just 20 JSONs — it is a repeatable
+> methodology an agent (or Nulla AI) can follow on any future EPD. The full playbook with
+> detect→tackle→verify for every scenario is **`docs/EPD_FIELD_GUIDE.md`**. Read it first.
+>
+> **Escalation principle:** defer a table ONLY for *risk* (genuinely un-mappable without
+> guessing) — never for *value*. A "low-value" table skipped today is how a whole hard document
+> gets skipped tomorrow. When you defer, record the exact structure + reason in the inventory so
+> it is a resumable item, never a silent gap. Hard cases are the point — tackle and record them.
+
 ## THE ONE HARD RULE
 Every carbon number must trace to: **source PDF filename · physical page · printed page ·
 section/table heading · lifecycle module (A1–A3, A4, A5, C1–C4, D…) · unit · status**
