@@ -24,6 +24,8 @@ const STAGE_LABEL: Record<string, string> = {
   D: "D Beyond system (reuse/recovery)",
 };
 
+const clip = (s: string, n: number) => (s.length > n ? s.slice(0, n).trimEnd() + "…" : s);
+
 const EXTRA_INDICATORS: [string, string][] = [
   ["GWP_fossil", "GWP-fossil"],
   ["GWP_biogenic", "GWP-biogenic"],
@@ -166,11 +168,15 @@ export default function ProductDetail({
                       : statusBadge(c.status)}
                   </td>
                   <td className="small">
-                    {prov?.page ? (
-                      <a href={pdfHref(row, prov.page)} target="_blank" rel="noreferrer">
+                    {c?.status === "estimated" ? (
+                      <a href={pdfHref(row, prov?.page)} target="_blank" rel="noreferrer" title={(prov as any)?.note || "Density-scaled estimate — EPD's stated method (annex p.70)"}>
+                        p.{prov?.page}{printedLabel(row, prov?.page) ? ` (${printedLabel(row, prov?.page)})` : ""} · density-scaled est
+                      </a>
+                    ) : prov?.page ? (
+                      <a href={pdfHref(row, prov.page)} target="_blank" rel="noreferrer" title={prov.section || undefined}>
                         p.{prov.page}
                         {printedLabel(row, prov.page) ? ` · printed ${printedLabel(row, prov.page)}` : ""}
-                        {prov.section ? ` · ${String(prov.section).slice(0, 42)}` : ""}
+                        {prov.section ? ` · ${clip(String(prov.section), 40)}` : ""}
                       </a>
                     ) : (prov as any)?.note ? (
                       <span title={(prov as any).note}>see boundary note</span>
@@ -271,6 +277,7 @@ export default function ProductDetail({
       <div className="legend" style={{ marginTop: 14 }}>
         <span><span className="badge nd">ND</span> not declared (≠ 0)</span>
         <span><span className="badge nrep">not reported</span> in scope but unpublished (≠ 0)</span>
+        <span><span className="badge est">est</span> derived by the EPD&apos;s stated method (not measured)</span>
         <span><span className="badge zero">0</span> declared as zero</span>
         <span><span className="badge nd">img</span> read from rasterised table</span>
       </div>

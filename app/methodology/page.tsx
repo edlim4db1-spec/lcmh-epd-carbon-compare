@@ -40,6 +40,22 @@ export default function Methodology() {
         treated as 0. A declared zero is shown distinctly as <span className="badge zero">0</span>.
       </p>
 
+      <h3>Estimated values (<span className="badge est">est</span>)</h3>
+      <p>
+        A few EPDs publish a result for one representative product and give a documented method to
+        derive it for the others. The Hallett EPD prints end-of-life modules (C1–C4 + D) for a
+        single representative mix (N3220P S50, 2332&nbsp;kg/m³) and states these modules are
+        &ldquo;only sensitive to mass&rdquo;, scaling linearly with density (annex, printed p.70).
+        Where we apply that method — <span className="mono">value × density ÷ 2332</span> — the cell
+        is marked <span className="badge est">est</span>, cites the representative table and the
+        method page, and is <em>never</em> summed into the &ldquo;declared&rdquo; total (a separate
+        &ldquo;incl.&nbsp;estimated&rdquo; figure is shown). It is the EPD&apos;s own sanctioned
+        derivation, not our assumption, and we verified it reproduces the EPD&apos;s worked example.
+        This is a general rule: when a future EPD provides a sanctioned calculation for a value it
+        doesn&apos;t print per-product, we compute it, label it <span className="badge est">est</span>,
+        and cite the method — never presenting it as a measured, declared figure.
+      </p>
+
       <h3>Comparability</h3>
       <p>
         Two products are only directly comparable when they declare the same modules, on the

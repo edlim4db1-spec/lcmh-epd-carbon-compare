@@ -11,7 +11,7 @@ export function statusBadge(status: CellStatus) {
   if (status === "not_relevant") return <span className="badge nr" title="Module not relevant">NR</span>;
   if (status === "not_reported") return <span className="badge nrep" title="In scope per the EPD's system boundary, but no value was published for it — not zero">not reported</span>;
   if (status === "missing") return <span className="badge nd" title="Missing / could not extract">—</span>;
-  if (status === "estimated") return <span className="badge zero" title="Estimated">est</span>;
+  if (status === "estimated") return <span className="badge est" title="Estimated by the EPD's stated method (not independently measured)">est</span>;
   return null;
 }
 
@@ -45,7 +45,7 @@ export default function StageValue({
         <span className="badge zero" style={{ marginLeft: 6 }} title="Declared as zero (not missing)">0</span>
       ) : null}
       {cell.status === "estimated" ? (
-        <span className="badge nrep" style={{ marginLeft: 6 }} title={cell.provenance?.note || "Estimated by the EPD's stated density-scaling method"}>est</span>
+        <span className="badge est" style={{ marginLeft: 6 }} title={cell.provenance?.note || "Estimated by the EPD's stated density-scaling method"}>est</span>
       ) : null}
       {href && page ? (
         <>

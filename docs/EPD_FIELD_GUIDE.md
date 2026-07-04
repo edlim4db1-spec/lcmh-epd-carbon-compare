@@ -74,10 +74,17 @@ multi-table inventory), `docs/VERIFICATION.md` (gate results), `scripts/` (the t
   modules (C1-C4/D) are plant-independent → reuse. Verify: per-plant values differ ±1-2% as expected.
 - **R10 CONT'D tables.** Detect: "… CONT'D" heading. Tackle: merge the sheet pair into one logical
   table before mapping columns. Verify: merged column count matches the mix list.
-- **R11 Derived values (method stated by the EPD).** Detect: EPD gives a formula for values it
-  doesn't print per-mix (e.g. C/D by density: `value × density/2332`). Tackle: compute, store as
-  `estimated`, provenance → the method table; never as declared. Verify: recompute the EPD's own
-  worked example (matched 14.8×2410/2332 = 15.3).
+- **R11 Derived values (method stated by the EPD) — GENERAL.** This is not Hallett-specific. An
+  EPD may print a result for one representative item and give a **documented method** to obtain it
+  for the rest — and the method, the module, and the driver differ per document (Hallett: C1-C4+D
+  by *density*, `value × density/2332`; another EPD might derive A4 transport by *distance*, or a
+  module by *mass*, *SCM %*, etc.). Detect: look for an annex / "calculation steps" / "results for
+  other mixes can be determined by…" statement. Tackle: apply the EPD's exact formula, store
+  `status:"estimated"`, provenance → the representative table + the method page + the driver value
+  and its source; **never** label it declared, and **never** sum it into the declared total (show a
+  separate "incl. estimated"). Verify: recompute the EPD's own worked example if it gives one
+  (Hallett matched 14.8×2410/2332 = 15.3). UI: one consistent `est` badge + a Methodology note, so a
+  reviewer sees the assumption without opening a cell.
 - **R12 Compressive strength.** Detect: strength encoded in a product code (N32, AR2520, S32).
   Tackle: take the MPa from stated text only (caught P252080: code implied 40, text said 25).
   Verify: the MPa appears verbatim near "strength/grade" in the source.

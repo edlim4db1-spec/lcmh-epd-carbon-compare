@@ -177,6 +177,8 @@ table.data .rowlabel { font-weight: 600; }
 .badge.nr { background: #eef2ff; color: #4f46e5; }
 .badge.nrep { background: var(--warn-bg); color: var(--warn-ink); border: 1px solid var(--warn-line); }
 .badge.zero { background: var(--teal-50); color: var(--teal-700); }
+/* estimated = present but derived by the EPD's stated method — one consistent "computed" style */
+.badge.est { background: #eef4ff; color: #1e5fb4; border: 1px solid #c3dafe; }
 
 /* callouts */
 .callout { border: 1px solid var(--warn-line); background: var(--warn-bg); color: var(--warn-ink); border-radius: var(--radius); padding: 12px 14px; font-size: 13px; margin: 14px 0; }
