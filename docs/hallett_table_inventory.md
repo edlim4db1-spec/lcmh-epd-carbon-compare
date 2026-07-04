@@ -19,7 +19,8 @@ here with an explicit disposition **before** extraction. Citations show `sheet (
 | 11 | 20–21 | Dry Creek | A1–A3 | T13 | 24 | EXTRACT | ✅ done (N-series) |
 | 11 | 20–21 | Dry Creek | A1–A3 | T13 (2nd block) | ~20 | EXTRACT | ⛔ S-series pending |
 | 16 | 30–31 | Elizabeth | A1–A3 | T19 | 24 (N-series) | EXTRACT | ✅ done |
-| 19+20 | 36–39 | Mile End | A1–A3 | T25 (4 sub-tables) | 76 | EXTRACT | ⏸ deferred — see note |
+| 19 | 36–37 | Mile End | A1–A3 | T25 (2 sub-tables) | 40 | EXTRACT | ✅ done (two-engine verified) |
+| 20 | 38–39 | Mile End | A1–A3 | T25 CONT'D | ~36 | EXTRACT | ⏸ remainder — see note |
 | 29 | 56–57 | McLaren Vale | A1–A3 | T31 | 24 (N-series) | EXTRACT | ✅ done |
 | 32 | 62–63 | Osborne | A1–A3 | T37 | 24 (N-series) | EXTRACT | ✅ done |
 
