@@ -18,10 +18,19 @@ here with an explicit disposition **before** extraction. Citations show `sheet (
 |---|---|---|---|---|---|---|---|
 | 11 | 20–21 | Dry Creek | A1–A3 | T13 | 24 | EXTRACT | ✅ done (N-series) |
 | 11 | 20–21 | Dry Creek | A1–A3 | T13 (2nd block) | ~20 | EXTRACT | ⛔ S-series pending |
-| 16 | 30–31 | Elizabeth | A1–A3 | T19 | 24 | EXTRACT | ⛔ pending |
-| 19+20 | 36–39 | Mile End | A1–A3 | T25 (+CONT'D) | ~38 | EXTRACT | ⛔ pending (spans 2 sheets) |
-| 29 | 56–57 | McLaren Vale | A1–A3 | T31 | 24 | EXTRACT | ⛔ pending |
-| 32 | 62–63 | Osborne | A1–A3 | T37 | 24 | EXTRACT | ⛔ pending |
+| 16 | 30–31 | Elizabeth | A1–A3 | T19 | 24 (N-series) | EXTRACT | ✅ done |
+| 19+20 | 36–39 | Mile End | A1–A3 | T25 (4 sub-tables) | 76 | EXTRACT | ⏸ deferred — see note |
+| 29 | 56–57 | McLaren Vale | A1–A3 | T31 | 24 (N-series) | EXTRACT | ✅ done |
+| 32 | 62–63 | Osborne | A1–A3 | T37 | 24 (N-series) | EXTRACT | ✅ done |
+
+### Mile End detail (why deferred)
+Unlike the other plants' clean 24-mix N-series, Mile End is **4 sub-tables across 2 sheets**,
+76 columns, with extra families (N2010P, S2020P, S4010, S5020) and **non-structural products**
+(CLSM = controlled low-strength material; NO FINES = no-fines concrete). Variant counts differ
+per family (e.g. N2020P has 6 variants here: -, 100, 120, Ref, F30, S30, S50). Reliable
+extraction requires building a full authoritative (family,variant) order for all 76 columns
+from Table 1 — doable, but the highest column-mapping risk in the document for the lowest
+marginal value (same mixes as the other plants, ±1-2%). Deferred pending an explicit decision.
 | 35 | 68–69 | (all) | C1–C4+D | T43 | 1 (representative) | EXTRACT-rep | ✅ done |
 | 36 | 70–71 | (all) | C1–C4+D | T48 | — | DERIVE (× density/2332) | ⛔ pending |
 
