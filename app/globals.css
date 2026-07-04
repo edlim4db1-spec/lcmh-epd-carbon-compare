@@ -138,6 +138,12 @@ select, input[type="number"], input[type="text"] {
   color: var(--teal-700); margin: 14px 0 8px; padding-top: 8px; border-top: 1px solid var(--line);
 }
 .group-expanded .grid { margin-bottom: 4px; }
+.mix-family { margin: 0 0 6px; }
+.mix-subhead {
+  font-size: 13px; font-weight: 700; color: var(--ink);
+  margin: 10px 0 6px; padding-left: 2px;
+}
+.mix-subhead .small { font-weight: 500; color: var(--muted); }
 
 /* Sticky action bar for the results header — solid background so it never
    visually collides with the product cards scrolling beneath it. */

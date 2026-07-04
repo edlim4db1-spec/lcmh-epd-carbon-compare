@@ -177,14 +177,32 @@ export default function Catalog({ cards }: { cards: CardData[] }) {
             <button className="btn ghost" onClick={() => toggleExpand(pdf)}>Collapse ▴</button>
           )}
         </div>
-        {Array.from(byPlant.entries()).map(([plant, pcs]) => (
-          <div key={plant}>
-            {plants.length > 1 && <div className="plant-subhead">{plant} <span className="small">({pcs.length})</span></div>}
-            <div className="grid">
-              {pcs.map((c) => <ProductCard c={c} key={c.key} />)}
+        {Array.from(byPlant.entries()).map(([plant, pcs]) => {
+          // within each plant, group variants under their mix family (first name token)
+          const byFamily = new Map<string, CardData[]>();
+          for (const c of pcs) {
+            const fam = c.name.split(" ")[0];
+            (byFamily.get(fam) ?? byFamily.set(fam, []).get(fam)!).push(c);
+          }
+          return (
+            <div key={plant}>
+              {plants.length > 1 && <div className="plant-subhead">{plant} <span className="small">({pcs.length})</span></div>}
+              {Array.from(byFamily.entries()).map(([fam, fcs]) => (
+                <div key={fam} className="mix-family">
+                  <div className="mix-subhead">
+                    {fam}
+                    <span className="small">
+                      {fcs[0].mpa != null ? ` · ${fcs[0].mpa} MPa` : ""} · {fcs.length} variant{fcs.length === 1 ? "" : "s"}
+                    </span>
+                  </div>
+                  <div className="grid">
+                    {fcs.map((c) => <ProductCard c={c} key={c.key} />)}
+                  </div>
+                </div>
+              ))}
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
     );
   }
