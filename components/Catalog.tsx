@@ -26,21 +26,24 @@ type CardData = {
 };
 
 export default function Catalog({ cards }: { cards: CardData[] }) {
+  const [query, setQuery] = useState("");
   const [minMpa, setMinMpa] = useState("");
   const [maxMpa, setMaxMpa] = useState("");
   const [loc, setLoc] = useState("all");
   const [program, setProgram] = useState("all");
   const [selected, setSelected] = useState<string[]>([]);
-  const [sort, setSort] = useState("a13");
+  const [sort, setSort] = useState("mpa"); // default: compressive strength (per brief's filters)
   const [expanded, setExpanded] = useState<Set<string>>(new Set());
 
   const locations = useMemo(() => Array.from(new Set(cards.map((c) => c.location).filter(Boolean))).sort(), [cards]);
   const programs = useMemo(() => Array.from(new Set(cards.map((c) => c.program).filter(Boolean))).sort(), [cards]);
 
-  const filterActive = loc !== "all" || program !== "all" || minMpa !== "" || maxMpa !== "";
+  const filterActive = query !== "" || loc !== "all" || program !== "all" || minMpa !== "" || maxMpa !== "";
 
   const filtered = useMemo(() => {
+    const q = query.trim().toLowerCase();
     let out = cards.filter((c) => {
+      if (q && !`${c.name} ${c.manufacturer} ${c.epdId} ${c.location} ${c.strengthClass ?? ""}`.toLowerCase().includes(q)) return false;
       if (loc !== "all" && c.location !== loc) return false;
       if (program !== "all" && c.program !== program) return false;
       if (minMpa && (c.mpa == null || c.mpa < Number(minMpa))) return false;
@@ -48,12 +51,15 @@ export default function Catalog({ cards }: { cards: CardData[] }) {
       return true;
     });
     out = [...out].sort((a, b) => {
+      if (sort === "mpa") {
+        const d = (a.mpa ?? Infinity) - (b.mpa ?? Infinity);
+        return d !== 0 ? d : (a.a13 ?? Infinity) - (b.a13 ?? Infinity); // then greenest first
+      }
       if (sort === "a13") return (a.a13 ?? Infinity) - (b.a13 ?? Infinity);
-      if (sort === "mpa") return (a.mpa ?? 0) - (b.mpa ?? 0);
       return a.name.localeCompare(b.name);
     });
     return out;
-  }, [cards, loc, program, minMpa, maxMpa, sort]);
+  }, [cards, query, loc, program, minMpa, maxMpa, sort]);
 
   // group filtered products by EPD, preserving sorted order (first appearance)
   const groups = useMemo(() => {
@@ -136,7 +142,9 @@ export default function Catalog({ cards }: { cards: CardData[] }) {
               <h4>{title}</h4>
               <div className="maker">{cs.length} products · {plants.length} plant{plants.length === 1 ? "" : "s"} · one EPD</div>
             </div>
-            {mpas.length ? <span className="chip">{Math.min(...mpas)}–{Math.max(...mpas)} MPa</span> : null}
+            <div style={{ textAlign: "right" }}>
+              {mpas.length ? <span className="chip">{Math.min(...mpas)}–{Math.max(...mpas)} MPa</span> : null}
+            </div>
           </div>
           <div className="headline">
             {a13s.length ? (
@@ -188,6 +196,11 @@ export default function Catalog({ cards }: { cards: CardData[] }) {
       <aside className="panel panel-pad filters">
         <h3>Filter</h3>
         <div className="filter-group">
+          <label>Search</label>
+          <input type="text" placeholder="mix, supplier, plant…" value={query}
+            onChange={(e) => setQuery(e.target.value)} aria-label="Search products" />
+        </div>
+        <div className="filter-group">
           <label>Compressive strength (MPa)</label>
           <div className="range-row">
             <input type="number" placeholder="min" value={minMpa} onChange={(e) => setMinMpa(e.target.value)} />
@@ -212,8 +225,8 @@ export default function Catalog({ cards }: { cards: CardData[] }) {
         <div className="filter-group">
           <label>Sort by</label>
           <select value={sort} onChange={(e) => setSort(e.target.value)}>
+            <option value="mpa">Compressive strength (then carbon)</option>
             <option value="a13">A1–A3 carbon (low → high)</option>
-            <option value="mpa">Strength (MPa)</option>
             <option value="name">Name</option>
           </select>
         </div>

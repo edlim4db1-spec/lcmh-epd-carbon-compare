@@ -23,7 +23,6 @@ function Logo() {
       <span className="brand-words">
         Low Carbon<br />Materials Hub
       </span>
-      <span className="brand-app">Carbon Compare</span>
     </span>
   );
 }
