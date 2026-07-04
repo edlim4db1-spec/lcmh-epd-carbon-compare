@@ -49,7 +49,14 @@ multi-table inventory), `docs/VERIFICATION.md` (gate results), `scripts/` (the t
   nearest-x coordinate — it mislabels (bit us: "S3220 PLC2" tagged as "S2520"). Use an
   **authoritative order** (the document's own version-history / registry list), or positional
   zip of values L→R against a known ordered key list. Verify: value count == key count; second
-  engine (pypdf/pdfplumber) reproduces the same L→R values.
+  engine (pypdf/pdfplumber) reproduces the same L→R values. **AND validate every (family,variant)
+  against the registry table** (`scripts/hallett_validate.py`): a value can zip to the correct
+  *position* but the wrong *label* when a family's variant count is off by one — the S3220/S4010
+  bug (E1100 was an S3220 variant, mislabelled S4010) passed value-verification but failed
+  registry-validation. Build/consume counts from the registry, never from assumption.
+- **R5b +A1 vs +A2 on spot-checks.** A reviewer zooming a PDF may land on the +A1 table (numbers
+  differ ~2-3% from +A2). Before trusting a reported mismatch, find which page the crop is from
+  (searching the value revealed page 27 = the +A1 table, not the +A2 we ship).
 - **R4 Status semantics.** `declared` (value) / `declared_zero` (printed 0.00E+00) / `not_declared`
   (ND, out of boundary) / `not_relevant` (NR) / `not_reported` (in boundary but no value) / absent.
   Never collapse to 0. Verify: schema forbids a value on not_declared/not_relevant.

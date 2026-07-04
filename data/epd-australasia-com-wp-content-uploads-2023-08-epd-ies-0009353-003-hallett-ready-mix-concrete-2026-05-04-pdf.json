@@ -23229,18 +23229,18 @@
       }
     },
     {
-      "name": "S4010 E1100",
+      "name": "S3220 E1100",
       "manufacturer": "Hallett Group",
       "concrete_type": "Ready-mix concrete",
       "compressive_strength": {
-        "value_mpa": 40,
-        "class": "S4010",
+        "value_mpa": 32,
+        "class": "S3220",
         "at_days": 28,
-        "raw": "40",
+        "raw": "32",
         "status": "found",
         "provenance": {
           "page": 5,
-          "snippet": "Table 1 grades ... S4010 ... 40"
+          "snippet": "Table 1 grades ... S3220 ... 32"
         }
       },
       "manufacturing_location": {

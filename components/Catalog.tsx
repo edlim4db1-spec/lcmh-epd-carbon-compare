@@ -132,6 +132,7 @@ export default function Catalog({ cards }: { cards: CardData[] }) {
     const mpas = cs.map((c) => c.mpa).filter((v): v is number => v != null);
     const a13s = cs.map((c) => c.a13).filter((v): v is number => v != null);
     const plants = Array.from(new Set(cs.map((c) => c.location)));
+    const mixFamilies = new Set(cs.map((c) => c.name.split(" ")[0])).size;
     const title = cs[0].manufacturer || cs[0].epdId;
 
     if (!isOpen) {
@@ -140,7 +141,7 @@ export default function Catalog({ cards }: { cards: CardData[] }) {
           <div className="card-top">
             <div>
               <h4>{title}</h4>
-              <div className="maker">{cs.length} products · {plants.length} plant{plants.length === 1 ? "" : "s"} · one EPD</div>
+              <div className="maker">{cs.length} products · {mixFamilies} mixes · {plants.length} plant{plants.length === 1 ? "" : "s"} · one EPD</div>
             </div>
             <div style={{ textAlign: "right" }}>
               {mpas.length ? <span className="chip">{Math.min(...mpas)}–{Math.max(...mpas)} MPa</span> : null}
@@ -184,9 +185,14 @@ export default function Catalog({ cards }: { cards: CardData[] }) {
             const fam = c.name.split(" ")[0];
             (byFamily.get(fam) ?? byFamily.set(fam, []).get(fam)!).push(c);
           }
+          const mixCount = byFamily.size;
           return (
             <div key={plant}>
-              {plants.length > 1 && <div className="plant-subhead">{plant} <span className="small">({pcs.length})</span></div>}
+              {plants.length > 1 && (
+                <div className="plant-subhead">
+                  {plant} <span className="small">· {mixCount} mix{mixCount === 1 ? "" : "es"} · {pcs.length} product{pcs.length === 1 ? "" : "s"}</span>
+                </div>
+              )}
               {Array.from(byFamily.entries()).map(([fam, fcs]) => (
                 <div key={fam} className="mix-family">
                   <div className="mix-subhead">

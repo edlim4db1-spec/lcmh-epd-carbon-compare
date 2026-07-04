@@ -23,8 +23,8 @@ ORDER = [("N2010P", "-"), ("N2010P", "100"),
     ("N5020P", "Ref"), ("N5020P", "F30"), ("N5020P", "S30"), ("N5020P", "T50"), ("N5020P", "S50"),
     ("S1020", "PLC1"), ("S1520", "PLC1120"), ("S1520", "PLC2120"), ("S2020P", "200"),
     ("S2520", "PLC1"), ("S2520", "E1100"),
-    ("S3220", "PLC2"), ("S3220", "LSLC2"), ("S3220", "PLC2XYP"), ("S3220", "PLC2120"),
-    ("S4010", "E1100"), ("S4010", "SCPH")]
+    ("S3220", "PLC2"), ("S3220", "LSLC2"), ("S3220", "PLC2XYP"), ("S3220", "PLC2120"), ("S3220", "E1100"),
+    ("S4010", "SCPH")]  # FIX: E1100 is an S3220 variant (Table 1), not S4010; S4010 has only SCPH
 GRADE = {"N2010P": 20, "N2020P": 20, "N2520P": 25, "N3220P": 32, "N4020P": 40, "N5020P": 50,
          "S1020": 10, "S1520": 15, "S2020P": 20, "S2520": 25, "S3220": 32, "S4010": 40}
 
@@ -46,6 +46,10 @@ def main():
     for k in r:
         assert len(r[k]) == len(ORDER), f"{k}: {len(r[k])} != {len(ORDER)}"
     corr = json.load(open(CORR))
+    # idempotent: drop any previously-added Mile End products before re-adding
+    corr["products"] = [p for p in corr["products"]
+                        if (p.get("manufacturing_location") or {}).get("city") != "Mile End"]
+    corr["needs_review"] = [n for n in corr.get("needs_review", []) if "Mile End sheet 20" not in n]
     rep = next(p for p in corr["products"] if p["indicators"]["GWP_total"]["modules"].get("C1", {}).get("value") is not None)
     rep_cd = {m: rep["indicators"]["GWP_total"]["modules"][m] for m in ("C1", "C2", "C3", "C4", "D")}
     import copy
