@@ -29,6 +29,7 @@ export interface Provenance {
   snippet?: string | null;
   source_type?: string | null; // "image" => read visually from a rasterised table
   verification?: string | null;
+  note?: string | null; // e.g. estimation method for density-scaled cells
 }
 
 export interface Cell {

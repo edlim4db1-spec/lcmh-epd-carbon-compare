@@ -113,6 +113,14 @@ export default function ProductDetail({
           <span className="unit" style={{ marginLeft: 14 }}>
             declared total {total.total.toLocaleString()} over {total.included.length} stage{total.included.length === 1 ? "" : "s"}
             {total.excluded.length ? ` (excl. ${formatModuleList(total.excluded)})` : ""}
+            {total.estTotal != null ? (
+              <>
+                {" · "}
+                <span title="Includes density-scaled estimated C1–C4 + D per the EPD's stated method">
+                  {total.estTotal.toLocaleString()} incl. estimated {formatModuleList(total.estIncluded)}
+                </span>
+              </>
+            ) : null}
           </span>
         )}
       </div>

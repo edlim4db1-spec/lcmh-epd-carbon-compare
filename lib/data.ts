@@ -68,10 +68,14 @@ export function declaredTotal(row: ProductRow): {
   total: number | null;
   included: string[];
   excluded: string[];
+  estTotal: number | null; // declared + estimated (e.g. density-scaled C/D)
+  estIncluded: string[]; // modules added by estimation
 } {
   const included: string[] = [];
   const excluded: string[] = [];
+  const estIncluded: string[] = [];
   let total = 0;
+  let estExtra = 0;
   let any = false;
   for (const m of FULL_LIFECYCLE) {
     const c = gwpCell(row, m);
@@ -80,11 +84,21 @@ export function declaredTotal(row: ProductRow): {
       total += c.value;
       included.push(m);
       any = true;
+    } else if (c && c.status === "estimated" && typeof c.value === "number") {
+      estExtra += c.value;
+      estIncluded.push(m);
     } else {
       excluded.push(m);
     }
   }
-  return { total: any ? Math.round(total * 100) / 100 : null, included, excluded };
+  const total2 = any ? Math.round(total * 100) / 100 : null;
+  return {
+    total: total2,
+    included,
+    excluded,
+    estTotal: estIncluded.length && total2 != null ? Math.round((total + estExtra) * 100) / 100 : null,
+    estIncluded,
+  };
 }
 
 // Compact a module list for display: collapse a full B1..B7 run into "B1–B7".

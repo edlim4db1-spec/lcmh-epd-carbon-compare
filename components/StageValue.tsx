@@ -24,7 +24,12 @@ export default function StageValue({
   href?: string;
   printed?: string | null;
 }) {
-  if (!cell || (cell.status !== "declared" && cell.status !== "declared_zero")) {
+  // Cells that carry a real number: declared, declared-zero, or estimated (derived by the
+  // EPD's own stated method). Estimated shows its value + an "est" marker.
+  const hasValue =
+    (cell?.status === "declared" || cell?.status === "declared_zero" || cell?.status === "estimated") &&
+    typeof cell?.value === "number";
+  if (!cell || !hasValue) {
     return <span>{statusBadge(cell?.status ?? "not_declared")}</span>;
   }
   const val = typeof cell.value === "number" ? fmt(cell.value) : "—";
@@ -38,6 +43,9 @@ export default function StageValue({
       ) : null}
       {cell.status === "declared_zero" ? (
         <span className="badge zero" style={{ marginLeft: 6 }} title="Declared as zero (not missing)">0</span>
+      ) : null}
+      {cell.status === "estimated" ? (
+        <span className="badge nrep" style={{ marginLeft: 6 }} title={cell.provenance?.note || "Estimated by the EPD's stated density-scaling method"}>est</span>
       ) : null}
       {href && page ? (
         <>
