@@ -167,6 +167,9 @@ table.data th, table.data td { padding: 10px 12px; text-align: left; border-bott
 table.data thead th { background: var(--bg-soft); font-size: 12px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); }
 table.data td.num, table.data th.num { text-align: right; font-variant-numeric: tabular-nums; font-family: var(--mono); }
 table.data tr.stage-total td { font-weight: 700; background: var(--teal-50); }
+/* second total ("incl. estimated") reads as secondary to the declared total:
+   lighter weight/tint so it isn't mistaken for a duplicate hard number. */
+table.data tr.est-total td { font-weight: 600; background: #f4f8ff; border-top: 0; }
 table.data .rowlabel { font-weight: 600; }
 .prov { display: inline-block; font-size: 11px; color: var(--muted); }
 .prov a { font-family: var(--mono); font-size: 11px; }

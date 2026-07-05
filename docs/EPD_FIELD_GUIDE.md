@@ -147,7 +147,13 @@ The extraction can be honest and the UI still mislead. Enforce, and re-check aft
   exclusions on totals).
 - **Show totals, and keep declared vs estimated separate.** A per-stage table needs a total; the
   declared total sums only declared/declared_zero; any estimated contribution is shown as a
-  separate "incl. estimated" figure, never blended into the declared number.
+  separate "incl. estimated" figure, never blended into the declared number. Render them as **two
+  distinct total rows on BOTH the audit (product) and decision (compare) views** — a "Declared
+  total" (measured only) and a secondary "Total incl. estimated" (declared + density-scaled est,
+  badged). The second row appears only when a product actually has estimated modules; on compare,
+  products without estimated modules show "—" there (their declared total already covers their full
+  extracted lifecycle). The declared number is the auditable figure; the incl.-estimated number is
+  the full-lifecycle comparison — a builder reads both.
 - **Citations: physical page for the link, printed folio for the reader.** Links target the
   physical PDF sheet (so they land); display both when they differ, e.g. `p.19 (36–37)`.
 - **Long provenance/section labels truncate cleanly** (ellipsis, full text in tooltip) — never a

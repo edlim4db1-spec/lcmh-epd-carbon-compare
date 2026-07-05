@@ -205,7 +205,7 @@ export default function Compare({
               </tr>
             ))}
 
-            {/* declared total */}
+            {/* declared total — measured/declared stages only */}
             <tr className="stage-total">
               <td>Declared total (sum of declared stages)</td>
               {rows.map((r) => {
@@ -227,6 +227,31 @@ export default function Compare({
                 );
               })}
             </tr>
+
+            {/* total incl. estimated — shown only when a selected product has estimated
+                (density-scaled) modules; kept separate from the declared number, never blended */}
+            {rows.some((r) => declaredTotal(r).estTotal != null) && (
+              <tr className="stage-total est-total">
+                <td>Total incl. estimated</td>
+                {rows.map((r) => {
+                  const t = declaredTotal(r);
+                  return (
+                    <td key={r.key} className="num">
+                      {t.estTotal != null ? (
+                        <>
+                          <span className="mono">{t.estTotal.toLocaleString()}</span>
+                          <div className="small" style={{ fontWeight: 400 }}>
+                            <span className="badge est">est</span> + {formatModuleList(t.estIncluded)}
+                          </div>
+                        </>
+                      ) : (
+                        <span className="small" style={{ fontWeight: 400 }} title="No estimated modules for this product — its declared total already covers its full extracted lifecycle">—</span>
+                      )}
+                    </td>
+                  );
+                })}
+              </tr>
+            )}
           </tbody>
         </table>
       </div>

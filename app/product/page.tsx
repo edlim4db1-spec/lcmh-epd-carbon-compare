@@ -189,14 +189,23 @@ export default function ProductDetail({
             })}
             {total.total != null && (
               <tr className="stage-total">
-                <td>Total (GWP-total)</td>
+                <td>Declared total</td>
                 <td className="num">{total.total.toLocaleString()}</td>
+                <td className="small" style={{ fontWeight: 400 }}>—</td>
                 <td className="small" style={{ fontWeight: 400 }}>declared</td>
-                <td className="small" style={{ fontWeight: 400 }}>{total.included.length} declared stage{total.included.length === 1 ? "" : "s"}</td>
                 <td className="small" style={{ fontWeight: 400 }}>
-                  {total.estTotal != null
-                    ? <>{total.estTotal.toLocaleString()} incl. <span className="badge est">est</span> {formatModuleList(total.estIncluded)}</>
-                    : "—"}
+                  {total.included.length} declared stage{total.included.length === 1 ? "" : "s"} · measured only
+                </td>
+              </tr>
+            )}
+            {total.estTotal != null && (
+              <tr className="stage-total est-total">
+                <td>Total incl. estimated</td>
+                <td className="num">{total.estTotal.toLocaleString()}</td>
+                <td className="small" style={{ fontWeight: 400 }}>—</td>
+                <td className="small" style={{ fontWeight: 400 }}><span className="badge est">est</span></td>
+                <td className="small" style={{ fontWeight: 400 }}>
+                  declared + {formatModuleList(total.estIncluded)} · density-scaled (EPD&apos;s stated method)
                 </td>
               </tr>
             )}
