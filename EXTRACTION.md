@@ -40,3 +40,15 @@ read visually at high zoom, verified twice, and flagged `source_type: "image"` r
 passing silently. Its boundary declares A5/C/D in scope yet publishes no values — recorded as
 `not_reported`, a distinct state from `not_declared`, because both honesty and comparability
 depend on the difference.
+
+## Roadmap — scaling accuracy further
+The pipeline here is deterministic and fully verified: every shipped figure is independently
+cross-checked and traceable, and anything un-verifiable is a labelled gap rather than a guess. The
+natural next phase keeps those same gates and wraps an **agent-in-loop orchestration** layer around
+them: each document is extracted by several independent methods in parallel and reconciled
+cell-by-cell, so a value ships only when the methods **agree** on the identical raw string and it
+traces to its source page; anything they can't agree on is re-worked within a bounded budget and
+otherwise escalated to `needs_review` — never invented. The existing validators become the loop's
+scoring functions, making this an **additive layer, not a rewrite**. The intent is to tighten the
+accuracy/coverage boundary on unfamiliar formats while preserving the core invariant unchanged —
+no figure ships without independent agreement and full provenance.
