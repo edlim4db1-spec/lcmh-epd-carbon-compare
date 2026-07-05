@@ -107,6 +107,15 @@ multi-table inventory), `docs/VERIFICATION.md` (gate results), `scripts/` (the t
   different indicator block (resource use / waste / biogenic-content / additional — exclude,
   non-carbon). Number of tables per sheet varies (some sheets show one, some two); take the ones
   that qualify, skip the ones that don't — and record the disposition per table in the inventory.
+- **R14 Text & metadata fields (not just the numbers).** The provenance hard rule applies to
+  every displayed fact — manufacturer, manufacturing location, declared unit/mass, strength — each
+  must cite its exact source page. Two live traps: (a) a name/text field read off coordinates near
+  an ALL-CAPS section header captured a header fragment ("AND SITE") — read named fields from their
+  labelled location and skip all-caps heading lines; (b) metadata dates (`valid_until`, `published`)
+  can be TEMPLATE BOILERPLATE printed in the layout — verify against the registration / version
+  history, not a default that merely sits on the page (a boilerplate 2025 date should have been
+  2030). Verify: each non-carbon field round-trips to a labelled source location, and dates match
+  the registry entry, not just the template.
 - **R13 Non-structural products.** Detect: CLSM (controlled low-strength fill), NO FINES, flowable
   fill. Tackle: extract if completeness requires, but label `concrete_type` clearly and keep them
   out of default structural comparisons. Verify: flagged, not silently mixed with structural mixes.

@@ -53,6 +53,15 @@ A number without provenance is WORSE than no number.
 - V1. PyMuPDF page index is 0-based; store physical page (index+1) AND the printed page number (cover offset differs).
 - V2. Cite the authoritative results table, not the p2 summary duplicate (note both).
 - V3. Table/section heading must be copied exactly.
+- V4. **Provenance is uniform across ALL facts, not just carbon.** Strength, manufacturing
+  location, declared unit and mass each cite their exact source page too — the hard rule applies
+  to context, not only the GWP numbers.
+- V5. **Text/metadata fields pick up junk — read the labelled field, not what's nearby.** A
+  manufacturer read off coordinates near an ALL-CAPS section header captured a header fragment
+  ("AND SITE"); skip all-caps heading lines and read named fields from their labelled location.
+  Metadata dates (e.g. `valid_until`) can be TEMPLATE BOILERPLATE sitting in the layout — verify
+  against the registration / version history, not a default that merely happens to be on the page
+  (caught live: a boilerplate 2025 date that the registry showed should be 2030).
 
 ## HONESTY TRAPS (the "don't fake completeness" list)
 - H1. No blanket missing→0.
@@ -81,10 +90,19 @@ A number without provenance is WORSE than no number.
   status (declared, declared_zero, not_declared, not_relevant, not_reported, estimated,
   missing). A blank cell is indistinguishable from a bug. (Caught live: declared_zero
   rendered no STATUS label on the product page.)
-- D2. The product detail page is the AUDIT view: it must mirror the source table 1:1 —
-  all 15 modules always, ND shown as ND. Compare is the DECISION view: adaptive rows are
-  fine there, but exclusions must be stated on totals. (Caught live: PDF printed B1-B7 'ND'
-  columns; detail page hid the rows entirely.)
+- D2. The product detail page is the AUDIT view: it mirrors the source RESULTS table
+  column-for-column — render a stage row IFF the document's results table addressed that
+  module (a value, a printed 0, or a printed ND), and OMIT modules whose columns the PDF
+  never printed (those live only in the system-boundary strip below). Compare is the DECISION
+  view: adaptive rows are fine there, but exclusions must be stated on totals. (Evolved from an
+  earlier "always show all 15 rows" rule — that printed rows the source table never had, which
+  is the mirror-image of the original bug where B1-B7 'ND' columns the PDF *did* print were
+  hidden. The rule is: match the source table exactly, neither add nor drop.)
+- D3. Totals are TWO distinct rows on BOTH views — "Declared total" (sums declared /
+  declared_zero only; the auditable figure) and a secondary "Total incl. estimated" (adds the
+  EPD-derived density-scaled modules, badged `est`). Never blend est into the declared number.
+  The second row appears only when the product has estimated modules; on compare, a product with
+  none shows "—" there (its declared total already covers its full extracted lifecycle).
 
 ## COMPARABILITY TRAPS (app must surface)
 - C1. Different EPDs declare different modules → cradle-to-grave totals not directly comparable. Flag it.
