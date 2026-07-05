@@ -72,8 +72,12 @@ multi-table inventory), `docs/VERIFICATION.md` (gate results), `scripts/` (the t
 - **R9 Multi-plant.** Detect: same mixes re-tabulated per plant. Tackle: one product per (mix,plant);
   A1-A3 per plant; `location.city` = plant (so the location filter is a plant selector); mass-only
   modules (C1-C4/D) are plant-independent → reuse. Verify: per-plant values differ ±1-2% as expected.
-- **R10 CONT'D tables.** Detect: "… CONT'D" heading. Tackle: merge the sheet pair into one logical
-  table before mapping columns. Verify: merged column count matches the mix list.
+- **R10 CONT'D tables.** Detect: "… CONT'D" heading — this is the SAME +A2 table continued onto
+  the next sheet(s), not a new section. Tackle: treat the "…CONT'D" page(s) as part of the same
+  logical table and extract them too (a common miss is taking only the first page and dropping the
+  continuation, losing products). Merge the sheet run into one logical table before mapping columns.
+  Verify: merged column count matches the mix list; confirm each continued page still reads
+  "+A2 CONT'D" (not a switch to +A1 — see R15).
 - **R11 Derived values (method stated by the EPD) — GENERAL.** This is not Hallett-specific. An
   EPD may print a result for one representative item and give a **documented method** to obtain it
   for the rest — and the method, the module, and the driver differ per document (Hallett: C1-C4+D
@@ -97,6 +101,12 @@ multi-table inventory), `docs/VERIFICATION.md` (gate results), `scripts/` (the t
   Σ(values across all GWPt rows on the sheet) == Σ(mixes mapped from that sheet). A shortcut
   that skips the bottom table passes value-verification on what it *did* take, so this count
   gate is the only thing that catches under-extraction.
+  **Standard/indicator consistency (critical):** a sheet may stack tables of DIFFERENT kinds.
+  Only extract/merge tables under the SAME heading you're collecting — **EN 15804+A2 core GWP**.
+  Before taking a table, confirm its heading hasn't swapped to **+A1** (exclude, R5) or to a
+  different indicator block (resource use / waste / biogenic-content / additional — exclude,
+  non-carbon). Number of tables per sheet varies (some sheets show one, some two); take the ones
+  that qualify, skip the ones that don't — and record the disposition per table in the inventory.
 - **R13 Non-structural products.** Detect: CLSM (controlled low-strength fill), NO FINES, flowable
   fill. Tackle: extract if completeness requires, but label `concrete_type` clearly and keep them
   out of default structural comparisons. Verify: flagged, not silently mixed with structural mixes.
@@ -118,7 +128,35 @@ Every figure: source PDF · physical page (+ printed folio) · section · module
 verbatim raw. ND / not_reported / NR are never 0. Estimated values are badged and cite their
 method. Genuinely un-extractable items go in `needs_review`, not invented.
 
+## 5b. UI display rules (the interface must not lie either)
+The extraction can be honest and the UI still mislead. Enforce, and re-check after every UI change:
+- **Every status enum renders a visible label** in every view that shows status (declared /
+  declared_zero → "declared (zero)" / not_declared → ND / not_relevant → NR / not_reported /
+  estimated → est / image). A blank cell is indistinguishable from a bug. (Caught live:
+  declared_zero rendered no status label; estimated used two different colours.)
+- **One consistent badge per state** — same glyph and colour everywhere it appears (value column,
+  status column, legend). Add every state used to the on-screen legend.
+- **Mirror the source's own labels.** If the EPD prints "N/A" for a field (e.g. fill materials
+  CLSM / no-fines have no compressive-strength grade), show "N/A", not a "?" placeholder.
+- **Provenance is uniform across ALL displayed facts**, not just carbon: strength, location,
+  declared unit and mass each click through to their exact source page too.
+- **Stage table mirrors the source RESULTS table column-for-column** (R4-style): show a stage row
+  only when the document's results table addressed that module (a number, a printed 0, or a
+  printed ND); omit modules whose columns the PDF omits (they live in the system-boundary strip).
+  Product page = audit view (1:1 with source). Compare = decision view (adaptive rows, but state
+  exclusions on totals).
+- **Show totals, and keep declared vs estimated separate.** A per-stage table needs a total; the
+  declared total sums only declared/declared_zero; any estimated contribution is shown as a
+  separate "incl. estimated" figure, never blended into the declared number.
+- **Citations: physical page for the link, printed folio for the reader.** Links target the
+  physical PDF sheet (so they land); display both when they differ, e.g. `p.19 (36–37)`.
+- **Long provenance/section labels truncate cleanly** (ellipsis, full text in tooltip) — never a
+  mid-word cut.
+
 ## 6. Escalation
 Defer only what is genuinely un-mappable without guessing — and when you defer, **document the
 exact structure and reason in the inventory** so it is a recorded, resumable item, never a silent
 gap. Deferral for *risk* (can't map safely yet) is legitimate; deferral for *value* is not.
+Do **not** overlook a table because a plant/sheet isn't structurally identical to an easy one, or
+because it isn't a single clean table — PDFs vary; a harder layout is a reason to slow down and map
+it, not to drop it. Every EN 15804+A2 table that exists is in scope; record the disposition of each.

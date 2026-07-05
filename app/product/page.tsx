@@ -187,6 +187,19 @@ export default function ProductDetail({
                 </tr>
               );
             })}
+            {total.total != null && (
+              <tr className="stage-total">
+                <td>Total (GWP-total)</td>
+                <td className="num">{total.total.toLocaleString()}</td>
+                <td className="small" style={{ fontWeight: 400 }}>declared</td>
+                <td className="small" style={{ fontWeight: 400 }}>{total.included.length} declared stage{total.included.length === 1 ? "" : "s"}</td>
+                <td className="small" style={{ fontWeight: 400 }}>
+                  {total.estTotal != null
+                    ? <>{total.estTotal.toLocaleString()} incl. <span className="badge est">est</span> {formatModuleList(total.estIncluded)}</>
+                    : "—"}
+                </td>
+              </tr>
+            )}
           </tbody>
         </table>
       </div>
