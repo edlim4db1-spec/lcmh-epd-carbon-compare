@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { loadEpds } from "@/lib/data";
+import EngineFlow from "@/components/EngineFlow";
 
 export const dynamic = "force-static";
 
@@ -187,6 +188,20 @@ export default function Pipeline() {
         they run once at the end; the loop runs them every iteration and steers by their output. So the
         core invariant is unchanged: no figure ships without independent agreement and full provenance.
       </p>
+
+      {/* Scaled engine — animated routing + cost view */}
+      <div style={{ marginTop: 40 }}>
+        <span className="looptag">Scaled engine</span>
+        <h3 style={{ margin: "12px 0 0" }}>End-to-end flow, model routing &amp; cost</h3>
+      </div>
+      <p className="small" style={{ fontSize: 13.5, marginTop: 6, maxWidth: 720 }}>
+        How a new EPD moves through the routed pipeline: a fast model triages, the right-sized model
+        extracts, independent methods must agree, six gates decide, and anything unverifiable is
+        flagged — never guessed. Model choice is empirical: a model earns its tier only by
+        reproducing the verified benchmark. Costs shown are illustrative estimates of a routed,
+        cache-warmed pipeline — not quotes.
+      </p>
+      <EngineFlow />
 
       <p style={{ marginTop: 22 }}>
         <Link href="/methodology" className="btn secondary">Read the methodology →</Link>
